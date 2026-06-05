@@ -1,0 +1,42 @@
+# oil_gas_pipeline | requirements.txt
+# Install all dependencies with:
+# pip install -r requirements.txt
+
+# ── Core Python utilities ─────────────────────────────────────────────────────
+python-dotenv==1.0.1          # loads .env file into environment variables
+pathlib2==2.3.7               # file path utilities (backport)
+
+# ── Database ──────────────────────────────────────────────────────────────────
+psycopg2-binary==2.9.9        # PostgreSQL driver (binary = no C compiler needed)
+sqlalchemy>=1.4.36,<2.0            # ORM + connection pooling for PostgreSQL
+
+# ── Data processing ───────────────────────────────────────────────────────────
+pandas==2.2.2                 # DataFrames, time series resampling, CSV I/O
+numpy==1.26.4                 # numerical operations, arrays
+pyarrow==16.1.0               # parquet file read/write (used by forecast_dag)
+
+# ── HTTP / API ────────────────────────────────────────────────────────────────
+requests==2.32.3              # EIA API calls in eia_client.py
+
+# ── Forecasting models ────────────────────────────────────────────────────────
+statsmodels==0.14.2           # SARIMA model
+prophet==1.1.5                # Meta Prophet model
+scikit-learn==1.5.0           # metrics, preprocessing utilities
+
+# ── dbt ───────────────────────────────────────────────────────────────────────
+dbt-core==1.10.0               # dbt core engine
+dbt-postgres==1.10.0           # dbt PostgreSQL adapter
+
+# ── Apache Airflow ────────────────────────────────────────────────────────────
+apache-airflow==2.9.2         # orchestration — DAGs, scheduling, UI
+# Note: Airflow has many sub-dependencies. If you hit conflicts run:
+# pip install apache-airflow==2.9.2 --constraint
+# "https://raw.githubusercontent.com/apache/airflow/constraints-2.9.2/constraints-3.11.txt"
+
+# ── Dashboard ─────────────────────────────────────────────────────────────────
+streamlit==1.35.0             # dashboard framework
+plotly==5.22.0                # interactive charts used in all 4 pages
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+pytest==8.2.2                 # test runner
+pytest-cov==5.0.0             # coverage reports

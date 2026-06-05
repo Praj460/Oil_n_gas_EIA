@@ -1,0 +1,56 @@
+[2026-06-04T23:49:28.549-0500] {processor.py:161} INFO - Started process (PID=95179) to work on /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py
+[2026-06-04T23:49:28.549-0500] {processor.py:830} INFO - Processing file /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py for tasks to queue
+[2026-06-04T23:49:28.549-0500] {logging_mixin.py:188} INFO - [2026-06-04T23:49:28.549-0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py
+[2026-06-04T23:49:28.581-0500] {logging_mixin.py:188} INFO - [2026-06-04T23:49:28.581-0500] {dagbag.py:355} ERROR - Failed to import: /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py
+Traceback (most recent call last):
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py", line 13, in <module>
+    from config.logging_config import setup_logging
+ModuleNotFoundError: No module named 'config'
+[2026-06-04T23:49:28.582-0500] {processor.py:842} WARNING - No viable dags retrieved from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py
+[2026-06-04T23:49:28.607-0500] {processor.py:183} INFO - Processing /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py took 0.060 seconds
+[2026-06-04T23:51:42.112-0500] {processor.py:161} INFO - Started process (PID=95551) to work on /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py
+[2026-06-04T23:51:42.113-0500] {processor.py:830} INFO - Processing file /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py for tasks to queue
+[2026-06-04T23:51:42.113-0500] {logging_mixin.py:188} INFO - [2026-06-04T23:51:42.113-0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py
+[2026-06-04T23:51:42.144-0500] {logging_mixin.py:188} INFO - [2026-06-04T23:51:42.143-0500] {dagbag.py:355} ERROR - Failed to import: /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py
+Traceback (most recent call last):
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py", line 13, in <module>
+    from config.logging_config import setup_logging
+ModuleNotFoundError: No module named 'config'
+[2026-06-04T23:51:42.144-0500] {processor.py:842} WARNING - No viable dags retrieved from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py
+[2026-06-04T23:51:42.169-0500] {processor.py:183} INFO - Processing /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py took 0.058 seconds
+[2026-06-04T23:52:14.276-0500] {processor.py:161} INFO - Started process (PID=95630) to work on /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py
+[2026-06-04T23:52:14.277-0500] {processor.py:830} INFO - Processing file /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py for tasks to queue
+[2026-06-04T23:52:14.277-0500] {logging_mixin.py:188} INFO - [2026-06-04T23:52:14.277-0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py
+[2026-06-04T23:52:14.307-0500] {logging_mixin.py:188} INFO - [2026-06-04T23:52:14.306-0500] {dagbag.py:355} ERROR - Failed to import: /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py
+Traceback (most recent call last):
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py", line 13, in <module>
+    from config.logging_config import setup_logging
+ModuleNotFoundError: No module named 'config'
+[2026-06-04T23:52:14.307-0500] {processor.py:842} WARNING - No viable dags retrieved from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py
+[2026-06-04T23:52:14.333-0500] {processor.py:183} INFO - Processing /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py took 0.058 seconds
+[2026-06-04T23:52:45.417-0500] {processor.py:161} INFO - Started process (PID=95700) to work on /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py
+[2026-06-04T23:52:45.418-0500] {processor.py:830} INFO - Processing file /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py for tasks to queue
+[2026-06-04T23:52:45.419-0500] {logging_mixin.py:188} INFO - [2026-06-04T23:52:45.419-0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py
+[2026-06-04T23:52:45.449-0500] {logging_mixin.py:188} INFO - [2026-06-04T23:52:45.449-0500] {dagbag.py:355} ERROR - Failed to import: /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py
+Traceback (most recent call last):
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py", line 13, in <module>
+    from config.logging_config import setup_logging
+ModuleNotFoundError: No module named 'config'
+[2026-06-04T23:52:45.449-0500] {processor.py:842} WARNING - No viable dags retrieved from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py
+[2026-06-04T23:52:45.475-0500] {processor.py:183} INFO - Processing /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py took 0.059 seconds

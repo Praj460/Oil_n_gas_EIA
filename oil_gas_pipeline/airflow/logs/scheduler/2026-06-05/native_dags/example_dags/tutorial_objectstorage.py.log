@@ -1,0 +1,14 @@
+[2026-06-04T23:48:05.147-0500] {processor.py:161} INFO - Started process (PID=94947) to work on /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2026-06-04T23:48:05.147-0500] {processor.py:830} INFO - Processing file /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py for tasks to queue
+[2026-06-04T23:48:05.148-0500] {logging_mixin.py:188} INFO - [2026-06-04T23:48:05.148-0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2026-06-04T23:48:05.199-0500] {processor.py:840} INFO - DAG(s) 'tutorial_objectstorage' retrieved from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2026-06-04T23:48:05.208-0500] {logging_mixin.py:188} INFO - [2026-06-04T23:48:05.208-0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-04T23:48:05.234-0500] {logging_mixin.py:188} INFO - [2026-06-04T23:48:05.234-0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_objectstorage to None, run_after=None
+[2026-06-04T23:48:05.240-0500] {processor.py:183} INFO - Processing /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py took 0.094 seconds
+[2026-06-04T23:49:45.247-0500] {processor.py:161} INFO - Started process (PID=95221) to work on /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2026-06-04T23:49:45.248-0500] {processor.py:830} INFO - Processing file /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py for tasks to queue
+[2026-06-04T23:49:45.249-0500] {logging_mixin.py:188} INFO - [2026-06-04T23:49:45.249-0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2026-06-04T23:49:45.306-0500] {processor.py:840} INFO - DAG(s) 'tutorial_objectstorage' retrieved from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2026-06-04T23:49:45.363-0500] {logging_mixin.py:188} INFO - [2026-06-04T23:49:45.363-0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-04T23:49:45.366-0500] {logging_mixin.py:188} INFO - [2026-06-04T23:49:45.366-0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_objectstorage to None, run_after=None
+[2026-06-04T23:49:45.372-0500] {processor.py:183} INFO - Processing /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py took 0.126 seconds

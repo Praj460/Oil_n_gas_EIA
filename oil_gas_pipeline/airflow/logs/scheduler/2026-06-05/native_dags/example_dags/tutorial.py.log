@@ -1,0 +1,14 @@
+[2026-06-04T23:48:09.057-0500] {processor.py:161} INFO - Started process (PID=94957) to work on /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial.py
+[2026-06-04T23:48:09.058-0500] {processor.py:830} INFO - Processing file /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2026-06-04T23:48:09.058-0500] {logging_mixin.py:188} INFO - [2026-06-04T23:48:09.058-0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial.py
+[2026-06-04T23:48:09.061-0500] {processor.py:840} INFO - DAG(s) 'tutorial' retrieved from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial.py
+[2026-06-04T23:48:09.091-0500] {logging_mixin.py:188} INFO - [2026-06-04T23:48:09.091-0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-04T23:48:09.120-0500] {logging_mixin.py:188} INFO - [2026-06-04T23:48:09.120-0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial to 2026-06-04 00:00:00+00:00, run_after=2026-06-05 00:00:00+00:00
+[2026-06-04T23:48:09.126-0500] {processor.py:183} INFO - Processing /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial.py took 0.070 seconds
+[2026-06-04T23:49:49.332-0500] {processor.py:161} INFO - Started process (PID=95232) to work on /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial.py
+[2026-06-04T23:49:49.334-0500] {processor.py:830} INFO - Processing file /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2026-06-04T23:49:49.334-0500] {logging_mixin.py:188} INFO - [2026-06-04T23:49:49.334-0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial.py
+[2026-06-04T23:49:49.337-0500] {processor.py:840} INFO - DAG(s) 'tutorial' retrieved from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial.py
+[2026-06-04T23:49:49.428-0500] {logging_mixin.py:188} INFO - [2026-06-04T23:49:49.427-0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-04T23:49:49.434-0500] {logging_mixin.py:188} INFO - [2026-06-04T23:49:49.434-0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial to 2026-06-04 00:00:00+00:00, run_after=2026-06-05 00:00:00+00:00
+[2026-06-04T23:49:49.441-0500] {processor.py:183} INFO - Processing /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial.py took 0.110 seconds

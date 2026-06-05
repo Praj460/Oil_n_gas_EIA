@@ -1,0 +1,167 @@
+# oil_gas_pipeline | dbt/models/schema.yml
+# Column-level documentation and dbt built-in tests
+# Run with: dbt test
+# dbt will automatically test not_null, unique, accepted_values constraints
+
+version: 2
+
+models:
+
+  # ── Staging: Silver Petroleum ───────────────────────────────────────────────
+  - name: stg_petroleum
+    description: >
+      Cleaned and pivoted petroleum data from the EIA API.
+      One row per month. Contains WTI price, Brent price,
+      US crude production, and derived features.
+    columns:
+      - name: id
+        description: Unique row identifier (UUID)
+        tests:
+          - unique
+          - not_null
+
+      - name: period
+        description: First day of the reporting month (DATE)
+        tests:
+          - unique
+          - not_null
+
+      - name: wti_price
+        description: WTI crude oil spot price in USD per barrel
+        tests:
+          - not_null
+
+      - name: brent_price
+        description: Brent crude oil spot price in USD per barrel
+
+      - name: us_production
+        description: US crude oil production in thousand barrels per day
+
+      - name: price_spread
+        description: Brent price minus WTI price (Brent premium)
+
+      - name: wti_mom_change
+        description: Month-over-month percentage change in WTI price
+
+      - name: is_outlier
+        description: True if WTI price is more than 3 standard deviations from the mean
+        tests:
+          - not_null
+          - accepted_values:
+              values: [true, false]
+
+      - name: transformed_at
+        description: Timestamp when dbt created this row
+        tests:
+          - not_null
+
+  # ── Staging: Silver Natural Gas ─────────────────────────────────────────────
+  - name: stg_natural_gas
+    description: >
+      Cleaned and pivoted natural gas data from the EIA API.
+      One row per month. Contains Henry Hub price, US storage,
+      US production, and derived features.
+    columns:
+      - name: id
+        description: Unique row identifier (UUID)
+        tests:
+          - unique
+          - not_null
+
+      - name: period
+        description: First day of the reporting month (DATE)
+        tests:
+          - unique
+          - not_null
+
+      - name: henry_hub_price
+        description: Henry Hub natural gas spot price in USD per MMBtu
+        tests:
+          - not_null
+
+      - name: us_storage_bcf
+        description: US natural gas storage in billion cubic feet (BCF)
+
+      - name: us_production
+        description: US natural gas production in BCF per month
+
+      - name: price_mom_change
+        description: Month-over-month percentage change in Henry Hub price
+
+      - name: is_outlier
+        description: True if Henry Hub price is more than 3 std devs from mean
+        tests:
+          - not_null
+          - accepted_values:
+              values: [true, false]
+
+  # ── Mart: Gold Energy Prices ─────────────────────────────────────────────────
+  - name: mart_energy_prices
+    description: >
+      Gold layer — analysis-ready table combining petroleum and natural gas
+      into one wide table. One row per month. Used directly by the
+      ForecastModel and Streamlit dashboard. Contains cross-commodity
+      features like oil-to-gas ratio and rolling averages.
+    columns:
+      - name: id
+        description: Unique row identifier (UUID)
+        tests:
+          - unique
+          - not_null
+
+      - name: period
+        description: First day of the reporting month (DATE)
+        tests:
+          - unique
+          - not_null
+
+      - name: wti_price
+        description: WTI crude oil spot price in USD per barrel
+
+      - name: brent_price
+        description: Brent crude oil spot price in USD per barrel
+
+      - name: price_spread
+        description: Brent minus WTI — Brent premium indicator
+
+      - name: us_oil_production
+        description: US crude oil production in thousand barrels per day
+
+      - name: wti_mom_change
+        description: Month-over-month % change in WTI price
+
+      - name: wti_3m_avg
+        description: Rolling 3-month average WTI price
+
+      - name: wti_yoy_change
+        description: Year-over-year change in WTI price
+
+      - name: henry_hub_price
+        description: Henry Hub natural gas spot price in USD per MMBtu
+
+      - name: us_gas_storage_bcf
+        description: US natural gas storage in billion cubic feet
+
+      - name: us_gas_production
+        description: US natural gas production in BCF per month
+
+      - name: gas_mom_change
+        description: Month-over-month % change in Henry Hub price
+
+      - name: henry_hub_3m_avg
+        description: Rolling 3-month average Henry Hub price
+
+      - name: oil_gas_ratio
+        description: WTI price divided by Henry Hub price — key cross-commodity metric
+
+      - name: has_outlier
+        description: True if either WTI or Henry Hub was flagged as an outlier this month
+        tests:
+          - not_null
+          - accepted_values:
+              values: [true, false]
+
+      - name: created_at
+        description: Timestamp when dbt created this row
+        tests:
+          - not_null

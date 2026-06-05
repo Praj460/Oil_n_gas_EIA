@@ -1,0 +1,7 @@
+[2026-06-04T23:49:05.094-0500] {processor.py:161} INFO - Started process (PID=95121) to work on /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_display_name.py
+[2026-06-04T23:49:05.095-0500] {processor.py:830} INFO - Processing file /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_display_name.py for tasks to queue
+[2026-06-04T23:49:05.095-0500] {logging_mixin.py:188} INFO - [2026-06-04T23:49:05.095-0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_display_name.py
+[2026-06-04T23:49:05.132-0500] {processor.py:840} INFO - DAG(s) 'example_display_name' retrieved from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_display_name.py
+[2026-06-04T23:49:05.189-0500] {logging_mixin.py:188} INFO - [2026-06-04T23:49:05.189-0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-04T23:49:05.191-0500] {logging_mixin.py:188} INFO - [2026-06-04T23:49:05.191-0500] {dag.py:3954} INFO - Setting next_dagrun for example_display_name to None, run_after=None
+[2026-06-04T23:49:05.198-0500] {processor.py:183} INFO - Processing /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_display_name.py took 0.105 seconds

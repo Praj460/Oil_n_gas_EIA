@@ -1,0 +1,26 @@
+# oil_gas_pipeline | great_expectations/great_expectations.yml
+# Configuration for the data quality layer
+# Suites run after every ingestion, results logged to data_quality_results table
+
+config_version: 1.0
+
+project_name: oil_gas_pipeline
+
+suites:
+  - name: petroleum_suite
+    table: bronze_petroleum
+    module: great_expectations.petroleum_suite
+    class: PetroleumSuite
+    run_after: petroleum_ingestion
+
+  - name: gas_suite
+    table: bronze_natural_gas
+    module: great_expectations.gas_suite
+    class: GasSuite
+    run_after: natural_gas_ingestion
+
+# Minimum passing rate to allow pipeline to continue to dbt transforms
+# If success_rate drops below this threshold, the Airflow DAG raises an alert
+quality_gate:
+  min_success_rate: 80.0   # percent
+  fail_pipeline_on_breach: true

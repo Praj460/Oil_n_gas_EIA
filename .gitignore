@@ -1,0 +1,42 @@
+# Environment variables
+.env
+.env.local
+*.env
+
+# Database credentials (don't commit these!)
+config/.env
+database/credentials.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Streamlit
+.streamlit/
+.streamlit/secrets.toml
+
+# dbt
+dbt/target/
+dbt/dbt_packages/
+
+# Airflow
+airflow/logs/
+airflow/dags/__pycache__/
+
+# Data files
+*.csv
+*.parquet
+data/raw/

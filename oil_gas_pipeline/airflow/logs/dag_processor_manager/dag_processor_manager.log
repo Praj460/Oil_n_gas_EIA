@@ -1,0 +1,347 @@
+[2026-06-04T23:47:51.862-0500] {manager.py:470} INFO - Processing files using up to 1 processes at a time 
+[2026-06-04T23:47:51.862-0500] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2026-06-04T23:47:51.862-0500] {manager.py:472} INFO - Checking for new files in /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags every 300 seconds
+[2026-06-04T23:47:51.862-0500] {manager.py:737} INFO - Searching for files in /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags
+[2026-06-04T23:47:51.874-0500] {manager.py:740} INFO - There are 54 files in /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags
+[2026-06-04T23:47:52.893-0500] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.95s           2026-06-05T04:47:52
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/forecast_dag.py                                                                                                                        0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py                                                                                                                    0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py                                                                                                                       0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_latest_only.py                                                               0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_complex.py                                                                   0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_python_operator.py                                                           0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                                  0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py                                                            0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py                                                             0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_setup_teardown.py                                                            0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_branch_operator.py                                                           0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_branch_labels.py                                                             0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group.py                                                                0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial.py                                                                          0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_python_decorator.py                                                          0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py                                                                   0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_dag_decorator.py                                                             0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py                                                                      0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcomargs.py                                                                  0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_display_name.py                                                              0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py                                                                  0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_datasets.py                                                                  0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py                                                                      0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_bash_decorator.py                                                            0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py                                                                   0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_subdag_operator.py                                                           0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/plugins/decreasing_priority_weight_strategy.py                                       0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0
+================================================================================
+[2026-06-04T23:48:24.411-0500] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0  1.14s           2026-06-05T04:47:55
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcomargs.py                                                                  2           0  1.13s           2026-06-05T04:48:11
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group.py                                                                1           0  1.00s           2026-06-05T04:48:22
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                                  1           0  0.98s           2026-06-05T04:48:01
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        1           0  0.98s           2026-06-05T04:48:15
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   1           0  0.97s           2026-06-05T04:48:19
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             1           0  0.96s           2026-06-05T04:48:03
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.95s           2026-06-05T04:47:52
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py                                                            1           0  0.95s           2026-06-05T04:48:05
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_subdag_operator.py                                                           3           0  0.94s           2026-06-05T04:48:24
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      1           0  0.93s           2026-06-05T04:48:21
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py                                                                      1           0  0.93s           2026-06-05T04:48:07
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0  0.92s           2026-06-05T04:47:58
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0  0.92s           2026-06-05T04:47:56
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    1           0  0.92s           2026-06-05T04:48:17
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/plugins/decreasing_priority_weight_strategy.py                                       0           0  0.90s           2026-06-05T04:48:00
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial.py                                                                          1           0  0.90s           2026-06-05T04:48:09
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py                                                                      1           0  0.88s           2026-06-05T04:48:13
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/forecast_dag.py                                                                                                                        0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py                                                                                                                    0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py                                                                                                                       0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_latest_only.py                                                               0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_complex.py                                                                   0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_python_operator.py                                                           0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py                                                             0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_setup_teardown.py                                                            0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_branch_operator.py                                                           0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_branch_labels.py                                                             0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_python_decorator.py                                                          0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py                                                                   0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_dag_decorator.py                                                             0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_display_name.py                                                              0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py                                                                  0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_datasets.py                                                                  0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_bash_decorator.py                                                            0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py                                                                   0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      0           0
+================================================================================
+[2026-06-04T23:48:55.442-0500] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0  1.14s           2026-06-05T04:47:55
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcomargs.py                                                                  2           0  1.13s           2026-06-05T04:48:11
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py                                                                  1           0  1.13s           2026-06-05T04:48:28
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_latest_only.py                                                               1           0  1.06s           2026-06-05T04:48:55
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group.py                                                                1           0  1.00s           2026-06-05T04:48:22
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py                                                                   1           0  1.00s           2026-06-05T04:48:36
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    1           0  0.99s           2026-06-05T04:48:30
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         1           0  0.98s           2026-06-05T04:48:48
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_python_decorator.py                                                          1           0  0.98s           2026-06-05T04:48:42
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                                  1           0  0.98s           2026-06-05T04:48:01
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        1           0  0.98s           2026-06-05T04:48:15
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         1           0  0.97s           2026-06-05T04:48:50
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        1           0  0.97s           2026-06-05T04:48:46
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          1           0  0.97s           2026-06-05T04:48:38
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_setup_teardown.py                                                            1           0  0.97s           2026-06-05T04:48:35
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   1           0  0.97s           2026-06-05T04:48:19
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             1           0  0.96s           2026-06-05T04:48:03
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           1           0  0.95s           2026-06-05T04:48:44
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.95s           2026-06-05T04:47:52
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_python_operator.py                                                           1           0  0.95s           2026-06-05T04:48:40
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  1           0  0.95s           2026-06-05T04:48:54
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py                                                            1           0  0.95s           2026-06-05T04:48:05
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_subdag_operator.py                                                           3           0  0.94s           2026-06-05T04:48:24
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py                                                                   1           0  0.93s           2026-06-05T04:48:26
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 0           0  0.93s           2026-06-05T04:48:52
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   1           0  0.93s           2026-06-05T04:48:32
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      1           0  0.93s           2026-06-05T04:48:21
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py                                                                      1           0  0.93s           2026-06-05T04:48:07
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0  0.92s           2026-06-05T04:47:58
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0  0.92s           2026-06-05T04:47:56
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    1           0  0.92s           2026-06-05T04:48:17
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   1           0  0.91s           2026-06-05T04:48:33
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/plugins/decreasing_priority_weight_strategy.py                                       0           0  0.90s           2026-06-05T04:48:00
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial.py                                                                          1           0  0.90s           2026-06-05T04:48:09
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py                                                                      1           0  0.88s           2026-06-05T04:48:13
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/forecast_dag.py                                                                                                                        0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py                                                                                                                    0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py                                                                                                                       0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_complex.py                                                                   0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py                                                             0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_branch_operator.py                                                           0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_branch_labels.py                                                             0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_dag_decorator.py                                                             0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_display_name.py                                                              0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_datasets.py                                                                  0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_bash_decorator.py                                                            0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      0           0
+================================================================================
+[2026-06-04T23:49:25.753-0500] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_datasets.py                                                                 10           0  1.19s           2026-06-05T04:49:06
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0  1.14s           2026-06-05T04:47:55
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcomargs.py                                                                  2           0  1.13s           2026-06-05T04:48:11
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_branch_labels.py                                                             1           0  1.13s           2026-06-05T04:49:17
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py                                                                  1           0  1.13s           2026-06-05T04:48:28
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_latest_only.py                                                               1           0  1.06s           2026-06-05T04:48:55
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_dag_decorator.py                                                             1           0  1.03s           2026-06-05T04:49:08
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_bash_decorator.py                                                            1           0  1.01s           2026-06-05T04:49:25
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group.py                                                                1           0  1.00s           2026-06-05T04:48:22
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              1           0  1.00s           2026-06-05T04:49:12
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py                                                                   1           0  1.00s           2026-06-05T04:48:36
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_branch_operator.py                                                           1           0  0.99s           2026-06-05T04:49:16
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    1           0  0.99s           2026-06-05T04:48:30
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         1           0  0.98s           2026-06-05T04:48:48
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_python_decorator.py                                                          1           0  0.98s           2026-06-05T04:48:42
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 1           0  0.98s           2026-06-05T04:49:14
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                                  1           0  0.98s           2026-06-05T04:48:01
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_complex.py                                                                   1           0  0.98s           2026-06-05T04:49:10
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        1           0  0.98s           2026-06-05T04:48:15
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_display_name.py                                                              1           0  0.97s           2026-06-05T04:49:05
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  2           0  0.97s           2026-06-05T04:48:59
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         1           0  0.97s           2026-06-05T04:48:50
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        1           0  0.97s           2026-06-05T04:48:46
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          1           0  0.97s           2026-06-05T04:48:38
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_setup_teardown.py                                                            1           0  0.97s           2026-06-05T04:48:35
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   1           0  0.97s           2026-06-05T04:48:19
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             1           0  0.96s           2026-06-05T04:48:03
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           1           0  0.95s           2026-06-05T04:48:44
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.95s           2026-06-05T04:47:52
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_python_operator.py                                                           1           0  0.95s           2026-06-05T04:48:40
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      1           0  0.95s           2026-06-05T04:49:03
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           1           0  0.95s           2026-06-05T04:49:01
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  1           0  0.95s           2026-06-05T04:48:54
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py                                                            1           0  0.95s           2026-06-05T04:48:05
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_subdag_operator.py                                                           3           0  0.94s           2026-06-05T04:48:24
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py                                                             1           0  0.93s           2026-06-05T04:49:23
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py                                                                   1           0  0.93s           2026-06-05T04:48:26
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 0           0  0.93s           2026-06-05T04:48:52
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               1           0  0.93s           2026-06-05T04:49:19
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   1           0  0.93s           2026-06-05T04:48:32
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      1           0  0.93s           2026-06-05T04:48:21
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py                                                                      1           0  0.93s           2026-06-05T04:48:07
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  3           0  0.93s           2026-06-05T04:49:21
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0  0.92s           2026-06-05T04:47:58
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0  0.92s           2026-06-05T04:47:56
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    1           0  0.92s           2026-06-05T04:48:17
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   1           0  0.91s           2026-06-05T04:48:33
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/plugins/decreasing_priority_weight_strategy.py                                       0           0  0.90s           2026-06-05T04:48:00
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial.py                                                                          1           0  0.90s           2026-06-05T04:48:09
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       0           0  0.89s           2026-06-05T04:48:57
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py                                                                      1           0  0.88s           2026-06-05T04:48:13
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/forecast_dag.py                                                                                                                        0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py                                                                                                                    0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py                                                                                                                       0           0
+================================================================================
+[2026-06-04T23:49:57.384-0500] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_datasets.py                                                                 10           0  1.19s           2026-06-05T04:49:06
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_branch_labels.py                                                             1           0  1.13s           2026-06-05T04:49:17
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py                                                                  1           0  1.13s           2026-06-05T04:48:28
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0  1.10s           2026-06-05T04:49:33
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_latest_only.py                                                               1           0  1.06s           2026-06-05T04:48:55
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcomargs.py                                                                  2           0  1.05s           2026-06-05T04:49:51
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial.py                                                                          1           0  1.04s           2026-06-05T04:49:49
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_dag_decorator.py                                                             1           0  1.03s           2026-06-05T04:49:08
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_bash_decorator.py                                                            1           0  1.01s           2026-06-05T04:49:25
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py                                                                      1           0  1.01s           2026-06-05T04:49:53
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group.py                                                                1           0  1.00s           2026-06-05T04:48:22
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              1           0  1.00s           2026-06-05T04:49:12
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py                                                                   1           0  1.00s           2026-06-05T04:48:36
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_branch_operator.py                                                           1           0  0.99s           2026-06-05T04:49:16
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    1           0  0.99s           2026-06-05T04:48:30
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py                                                                      1           0  0.99s           2026-06-05T04:49:47
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         1           0  0.98s           2026-06-05T04:48:48
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        1           0  0.98s           2026-06-05T04:49:55
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_python_decorator.py                                                          1           0  0.98s           2026-06-05T04:48:42
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 1           0  0.98s           2026-06-05T04:49:14
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_complex.py                                                                   1           0  0.98s           2026-06-05T04:49:10
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_display_name.py                                                              1           0  0.97s           2026-06-05T04:49:05
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  2           0  0.97s           2026-06-05T04:48:59
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         1           0  0.97s           2026-06-05T04:48:50
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                                  1           0  0.97s           2026-06-05T04:49:41
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        1           0  0.97s           2026-06-05T04:48:46
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          1           0  0.97s           2026-06-05T04:48:38
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_setup_teardown.py                                                            1           0  0.97s           2026-06-05T04:48:35
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   1           0  0.97s           2026-06-05T04:48:19
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py                                                            1           0  0.96s           2026-06-05T04:49:45
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           1           0  0.95s           2026-06-05T04:48:44
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             1           0  0.95s           2026-06-05T04:49:43
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_python_operator.py                                                           1           0  0.95s           2026-06-05T04:48:40
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      1           0  0.95s           2026-06-05T04:49:03
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           1           0  0.95s           2026-06-05T04:49:01
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  1           0  0.95s           2026-06-05T04:48:54
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_subdag_operator.py                                                           3           0  0.94s           2026-06-05T04:48:24
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    1           0  0.93s           2026-06-05T04:49:57
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py                                                             1           0  0.93s           2026-06-05T04:49:23
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_sla_dag.py                                                                   1           0  0.93s           2026-06-05T04:48:26
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 0           0  0.93s           2026-06-05T04:48:52
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               1           0  0.93s           2026-06-05T04:49:19
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   1           0  0.93s           2026-06-05T04:48:32
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      1           0  0.93s           2026-06-05T04:48:21
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  3           0  0.93s           2026-06-05T04:49:21
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   1           0  0.91s           2026-06-05T04:48:33
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py                                                                                                                       0           1  0.89s           2026-06-05T04:49:27
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0  0.89s           2026-06-05T04:49:35
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       0           0  0.89s           2026-06-05T04:48:57
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/forecast_dag.py                                                                                                                        0           1  0.89s           2026-06-05T04:49:30
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py                                                                                                                    0           1  0.88s           2026-06-05T04:49:28
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/plugins/decreasing_priority_weight_strategy.py                                       0           0  0.87s           2026-06-05T04:49:39
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0  0.87s           2026-06-05T04:49:37
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.85s           2026-06-05T04:49:32
+================================================================================
+[2026-06-04T23:49:59.744-0500] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2026-06-04T23:51:39.434-0500] {manager.py:470} INFO - Processing files using up to 1 processes at a time 
+[2026-06-04T23:51:39.434-0500] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2026-06-04T23:51:39.434-0500] {manager.py:472} INFO - Checking for new files in /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags every 300 seconds
+[2026-06-04T23:51:39.434-0500] {manager.py:737} INFO - Searching for files in /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags
+[2026-06-04T23:51:39.434-0500] {manager.py:740} INFO - There are 3 files in /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags
+[2026-06-04T23:51:40.386-0500] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py                              0           1  0.91s           2026-06-05T04:51:40
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/forecast_dag.py                               0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py                           0           0
+================================================================================
+[2026-06-04T23:52:12.524-0500] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py                              0           1  1.12s           2026-06-05T04:52:12
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py                           0           1  0.86s           2026-06-05T04:51:42
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/forecast_dag.py                               0           1  0.86s           2026-06-05T04:51:44
+================================================================================
+[2026-06-04T23:52:43.734-0500] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py                              0           1  0.98s           2026-06-05T04:52:43
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py                           0           1  0.89s           2026-06-05T04:52:14
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/forecast_dag.py                               0           1  0.88s           2026-06-05T04:52:16
+================================================================================
+[2026-06-04T23:53:13.796-0500] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
