@@ -20,8 +20,15 @@ from great_expectations.gas_suite import GasSuite
 
 logger = logging.getLogger(__name__)
 
-DB = dict(host="localhost", port=5432, dbname="oil_gas_db",
-          user="prajwalanand", password="India@1947")
+load_dotenv()
+
+DB = dict(
+    host=os.getenv("DB_HOST", "localhost"),
+    port=int(os.getenv("DB_PORT", "5432")),
+    dbname=os.getenv("DB_NAME", "oil_gas_db"),
+    user=os.getenv("DB_USER"),
+    password=os.getenv("DB_PASSWORD")
+)
 
 def main():
     print("\n" + "=" * 60)

@@ -10,7 +10,6 @@ from typing import Optional
 import pandas as pd
 
 from ingestion.eia_client import EIAClient
-from ingestion.kaggle_loader import KaggleLoader
 from database.db_manager import DatabaseManager
 
 logger = logging.getLogger(__name__)
@@ -32,7 +31,6 @@ class DataIngester:
 
     def __init__(self):
         self.eia_client  = EIAClient()
-        self.kaggle      = KaggleLoader()
         self.db          = DatabaseManager()
         logger.info("DataIngester initialized")
 

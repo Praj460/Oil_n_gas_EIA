@@ -1,12 +1,11 @@
 # oil_gas_pipeline | tests/test_ingester.py
-# Unit tests for EIAClient, KaggleLoader, and DataIngester
+# Unit tests for EIAClient, and DataIngester
 # Run with: python3 -m pytest tests/test_ingester.py -v
 
 import pytest
 import pandas as pd
 from unittest.mock import patch, MagicMock
 from ingestion.eia_client import EIAClient
-from ingestion.kaggle_loader import KaggleLoader
 from ingestion.ingester import DataIngester
 
 
@@ -138,56 +137,6 @@ class TestEIAClient:
         with pytest.raises(RuntimeError):
             client._get("/petroleum/pri/spt/data/", {})
 
-
-# ── KaggleLoader tests ────────────────────────────────────────────────────────
-
-class TestKaggleLoader:
-
-    def test_column_map_normalizes_names(self):
-        """_clean should map variant column names to standard names."""
-        loader = KaggleLoader()
-        raw = pd.DataFrame({
-            "WellID":          ["W001", "W002"],
-            "State":           ["TX", "OK"],
-            "ReportDate":      ["2022-01-01", "2022-02-01"],
-            "OilBBL":          [1200, 980],
-            "GasMCF":          [3400, 2100],
-        })
-        cleaned = loader._clean(raw)
-        assert "well_id"         in cleaned.columns
-        assert "state"           in cleaned.columns
-        assert "production_date" in cleaned.columns
-        assert "oil_bbl"         in cleaned.columns
-        assert "gas_mcf"         in cleaned.columns
-
-    def test_clean_drops_null_oil_and_gas(self):
-        """Rows where both oil_bbl and gas_mcf are null should be dropped."""
-        loader = KaggleLoader()
-        raw = pd.DataFrame({
-            "production_date": ["2022-01-01", "2022-02-01", "2022-03-01"],
-            "oil_bbl":         [1200.0, None, None],
-            "gas_mcf":         [3400.0, None, None],
-        })
-        cleaned = loader._clean(raw)
-        assert len(cleaned) == 1
-
-    def test_clean_clips_negative_values(self):
-        """Negative production values should be clipped to zero."""
-        loader = KaggleLoader()
-        raw = pd.DataFrame({
-            "production_date": ["2022-01-01"],
-            "oil_bbl":         [-500.0],
-            "gas_mcf":         [-100.0],
-        })
-        cleaned = loader._clean(raw)
-        assert cleaned["oil_bbl"].iloc[0] == 0.0
-        assert cleaned["gas_mcf"].iloc[0] == 0.0
-
-    def test_load_raises_if_file_missing(self, tmp_path):
-        """load() should raise FileNotFoundError if CSV doesn't exist."""
-        loader = KaggleLoader(file_path=tmp_path / "missing.csv")
-        with pytest.raises(FileNotFoundError):
-            loader.load()
 
 
 # ── DataIngester tests ────────────────────────────────────────────────────────
