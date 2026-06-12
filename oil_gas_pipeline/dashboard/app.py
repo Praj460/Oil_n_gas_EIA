@@ -10,8 +10,16 @@ import psycopg2
 
 st.set_page_config(page_title="Data Quality", page_icon="✅", layout="wide")
 
-DB = dict(host="localhost", port=5432, dbname="oil_gas_db",
-          user="prajwalanand", password="India@1947")
+import os
+load_dotenv()
+
+DB = dict(
+    host=os.getenv("DB_HOST", "localhost"),
+    port=int(os.getenv("DB_PORT", "5432")),
+    dbname=os.getenv("DB_NAME", "oil_gas_db"),
+    user=os.getenv("DB_USER"),
+    password=os.getenv("DB_PASSWORD")
+)
 
 # -- Data loading ------------------------------------------------------
 
