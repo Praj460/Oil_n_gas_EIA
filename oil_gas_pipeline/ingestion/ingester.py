@@ -213,61 +213,7 @@ class DataIngester:
 
     # ── Kaggle well production ingestion ──────────────────────────────────────
 
-    def ingest_well_production(self) -> dict:
-        """
-        Loads Kaggle well production CSV and writes to bronze_well_production.
-        This is a one-time historical load — not refreshed daily.
 
-        Returns:
-            Dict with rows_inserted and status
-        """
-        logger.info("Starting Kaggle well production ingestion...")
-        started_at = datetime.now(timezone.utc)
-
-        try:
-            df = self.kaggle.load()
-            summary = self.kaggle.summary(df)
-            logger.info(f"Kaggle data loaded | summary={summary}")
-        except FileNotFoundError as e:
-            logger.error(str(e))
-            self.db.log_pipeline_run(
-                run_name="well_production_ingestion",
-                status="failed",
-                error_message=str(e),
-                started_at=started_at,
-            )
-            return {"rows_inserted": 0, "status": "failed", "error": str(e)}
-
-        required = {"production_date"}
-        if not self._validate(df, required, "well production"):
-            self.db.log_pipeline_run(
-                run_name="well_production_ingestion",
-                status="failed",
-                error_message="Validation failed",
-                started_at=started_at,
-            )
-            return {"rows_inserted": 0, "status": "failed"}
-
-        try:
-            rows_inserted = self.db.write_bronze_well_production(df)
-            self.db.log_pipeline_run(
-                run_name="well_production_ingestion",
-                status="success",
-                rows_ingested=rows_inserted,
-                started_at=started_at,
-            )
-            logger.info(f"Well production ingestion complete | inserted={rows_inserted}")
-            return {"rows_inserted": rows_inserted, "status": "success"}
-
-        except Exception as e:
-            logger.error(f"Failed to write well production data | {e}")
-            self.db.log_pipeline_run(
-                run_name="well_production_ingestion",
-                status="failed",
-                error_message=str(e),
-                started_at=started_at,
-            )
-            return {"rows_inserted": 0, "status": "failed", "error": str(e)}
 
     # ── Run everything ────────────────────────────────────────────────────────
 

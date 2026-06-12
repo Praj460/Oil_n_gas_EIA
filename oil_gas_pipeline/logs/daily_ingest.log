@@ -1,0 +1,116 @@
+2026-06-11 20:08:44 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/daily_ingest.log
+2026-06-11 20:08:44 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-11 20:08:44 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: daily_ingest_dag>
+2026-06-11 20:08:44 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:667 | Running dagbag.sync_to_db with retries. Try 1 of 3
+2026-06-11 20:08:44 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:672 | Calling the DAG.bulk_sync_to_db method
+2026-06-11 20:08:44 | DEBUG    | airflow.models.serialized_dag | write_dag:166 | Checking if DAG (daily_ingest_dag) changed
+2026-06-11 20:08:44 | DEBUG    | airflow.models.serialized_dag | write_dag:180 | Writing Serialized DAG: daily_ingest_dag to the DB
+2026-06-11 20:08:44 | DEBUG    | airflow.models.serialized_dag | write_dag:182 | DAG: daily_ingest_dag written to the DB
+2026-06-11 20:08:44 | DEBUG    | airflow.models.dagbag.DagBag | _sync_perm_for_dag:701 | Syncing DAG permissions: daily_ingest_dag to the DB
+2026-06-11 20:08:44 | INFO     | airflow.providers.fab.auth_manager.security_manager.override | create_permission:1829 | Created Permission View: can delete on DAG:daily_ingest_dag
+2026-06-11 20:08:44 | INFO     | airflow.providers.fab.auth_manager.security_manager.override | create_permission:1829 | Created Permission View: can edit on DAG:daily_ingest_dag
+2026-06-11 20:08:44 | INFO     | airflow.providers.fab.auth_manager.security_manager.override | create_permission:1829 | Created Permission View: can read on DAG:daily_ingest_dag
+2026-06-11 20:08:44 | DEBUG    | airflow.www.security_appless.ApplessAirflowSecurityManager | sync_perm_for_dag:1090 | Not syncing DAG-level permissions for DAG 'DAG:daily_ingest_dag' as access control is unset.
+2026-06-11 20:08:44 | INFO     | airflow.models.dag | bulk_write_to_db:3096 | Sync 1 DAGs
+2026-06-11 20:08:44 | INFO     | airflow.models.dag | bulk_write_to_db:3118 | Creating ORM DAG for daily_ingest_dag
+2026-06-11 20:08:44 | INFO     | airflow.models.dag | calculate_dagrun_date_fields:3954 | Setting next_dagrun for daily_ingest_dag to 2026-06-10 06:00:00+00:00, run_after=2026-06-11 06:00:00+00:00
+2026-06-11 20:08:44 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 55672)
+2026-06-11 20:08:44 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 55672)
+2026-06-11 20:09:16 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/daily_ingest.log
+2026-06-11 20:09:16 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-11 20:09:16 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: daily_ingest_dag>
+2026-06-11 20:09:16 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:667 | Running dagbag.sync_to_db with retries. Try 1 of 3
+2026-06-11 20:09:16 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:672 | Calling the DAG.bulk_sync_to_db method
+2026-06-11 20:09:16 | DEBUG    | airflow.models.serialized_dag | write_dag:166 | Checking if DAG (daily_ingest_dag) changed
+2026-06-11 20:09:16 | DEBUG    | airflow.models.serialized_dag | write_dag:177 | Serialized DAG (daily_ingest_dag) is unchanged. Skipping writing to DB
+2026-06-11 20:09:16 | INFO     | airflow.models.dag | bulk_write_to_db:3096 | Sync 1 DAGs
+2026-06-11 20:09:16 | INFO     | airflow.models.dag | calculate_dagrun_date_fields:3954 | Setting next_dagrun for daily_ingest_dag to 2026-06-10 06:00:00+00:00, run_after=2026-06-11 06:00:00+00:00
+2026-06-11 20:09:16 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 55767)
+2026-06-11 20:09:16 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 55767)
+2026-06-11 20:09:47 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/daily_ingest.log
+2026-06-11 20:09:47 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-11 20:09:47 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: daily_ingest_dag>
+2026-06-11 20:09:47 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:667 | Running dagbag.sync_to_db with retries. Try 1 of 3
+2026-06-11 20:09:47 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:672 | Calling the DAG.bulk_sync_to_db method
+2026-06-11 20:09:47 | DEBUG    | airflow.models.serialized_dag | write_dag:166 | Checking if DAG (daily_ingest_dag) changed
+2026-06-11 20:09:47 | DEBUG    | airflow.models.serialized_dag | write_dag:177 | Serialized DAG (daily_ingest_dag) is unchanged. Skipping writing to DB
+2026-06-11 20:09:47 | INFO     | airflow.models.dag | bulk_write_to_db:3096 | Sync 1 DAGs
+2026-06-11 20:09:47 | INFO     | airflow.models.dag | calculate_dagrun_date_fields:3954 | Setting next_dagrun for daily_ingest_dag to 2026-06-10 06:00:00+00:00, run_after=2026-06-11 06:00:00+00:00
+2026-06-11 20:09:47 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 55843)
+2026-06-11 20:09:47 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 55843)
+2026-06-11 20:10:19 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/daily_ingest.log
+2026-06-11 20:10:19 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-11 20:10:19 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: daily_ingest_dag>
+2026-06-11 20:10:19 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:667 | Running dagbag.sync_to_db with retries. Try 1 of 3
+2026-06-11 20:10:19 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:672 | Calling the DAG.bulk_sync_to_db method
+2026-06-11 20:10:19 | DEBUG    | airflow.models.serialized_dag | write_dag:166 | Checking if DAG (daily_ingest_dag) changed
+2026-06-11 20:10:19 | DEBUG    | airflow.models.serialized_dag | write_dag:177 | Serialized DAG (daily_ingest_dag) is unchanged. Skipping writing to DB
+2026-06-11 20:10:19 | INFO     | airflow.models.dag | bulk_write_to_db:3096 | Sync 1 DAGs
+2026-06-11 20:10:19 | INFO     | airflow.models.dag | calculate_dagrun_date_fields:3954 | Setting next_dagrun for daily_ingest_dag to 2026-06-10 06:00:00+00:00, run_after=2026-06-11 06:00:00+00:00
+2026-06-11 20:10:19 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 55954)
+2026-06-11 20:10:19 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 55954)
+2026-06-11 20:10:50 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/daily_ingest.log
+2026-06-11 20:10:50 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-11 20:10:51 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: daily_ingest_dag>
+2026-06-11 20:10:51 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:667 | Running dagbag.sync_to_db with retries. Try 1 of 3
+2026-06-11 20:10:51 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:672 | Calling the DAG.bulk_sync_to_db method
+2026-06-11 20:10:51 | DEBUG    | airflow.models.serialized_dag | write_dag:166 | Checking if DAG (daily_ingest_dag) changed
+2026-06-11 20:10:51 | DEBUG    | airflow.models.serialized_dag | write_dag:177 | Serialized DAG (daily_ingest_dag) is unchanged. Skipping writing to DB
+2026-06-11 20:10:51 | INFO     | airflow.models.dag | bulk_write_to_db:3096 | Sync 1 DAGs
+2026-06-11 20:10:51 | INFO     | airflow.models.dag | calculate_dagrun_date_fields:3954 | Setting next_dagrun for daily_ingest_dag to 2026-06-10 06:00:00+00:00, run_after=2026-06-11 06:00:00+00:00
+2026-06-11 20:10:51 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 56057)
+2026-06-11 20:10:51 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 56057)
+2026-06-11 20:11:22 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/daily_ingest.log
+2026-06-11 20:11:22 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-11 20:11:22 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: daily_ingest_dag>
+2026-06-11 20:11:22 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:667 | Running dagbag.sync_to_db with retries. Try 1 of 3
+2026-06-11 20:11:22 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:672 | Calling the DAG.bulk_sync_to_db method
+2026-06-11 20:11:22 | DEBUG    | airflow.models.serialized_dag | write_dag:166 | Checking if DAG (daily_ingest_dag) changed
+2026-06-11 20:11:22 | DEBUG    | airflow.models.serialized_dag | write_dag:177 | Serialized DAG (daily_ingest_dag) is unchanged. Skipping writing to DB
+2026-06-11 20:11:22 | INFO     | airflow.models.dag | bulk_write_to_db:3096 | Sync 1 DAGs
+2026-06-11 20:11:22 | INFO     | airflow.models.dag | calculate_dagrun_date_fields:3954 | Setting next_dagrun for daily_ingest_dag to 2026-06-10 06:00:00+00:00, run_after=2026-06-11 06:00:00+00:00
+2026-06-11 20:11:22 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 56145)
+2026-06-11 20:11:22 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 56145)
+2026-06-11 20:11:53 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/daily_ingest.log
+2026-06-11 20:11:53 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-11 20:11:53 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: daily_ingest_dag>
+2026-06-11 20:11:53 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:667 | Running dagbag.sync_to_db with retries. Try 1 of 3
+2026-06-11 20:11:53 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:672 | Calling the DAG.bulk_sync_to_db method
+2026-06-11 20:11:53 | DEBUG    | airflow.models.serialized_dag | write_dag:166 | Checking if DAG (daily_ingest_dag) changed
+2026-06-11 20:11:53 | DEBUG    | airflow.models.serialized_dag | write_dag:177 | Serialized DAG (daily_ingest_dag) is unchanged. Skipping writing to DB
+2026-06-11 20:11:53 | INFO     | airflow.models.dag | bulk_write_to_db:3096 | Sync 1 DAGs
+2026-06-11 20:11:53 | INFO     | airflow.models.dag | calculate_dagrun_date_fields:3954 | Setting next_dagrun for daily_ingest_dag to 2026-06-10 06:00:00+00:00, run_after=2026-06-11 06:00:00+00:00
+2026-06-11 20:11:53 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 56235)
+2026-06-11 20:11:53 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 56235)
+2026-06-11 20:12:25 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/daily_ingest.log
+2026-06-11 20:12:25 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-11 20:12:25 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: daily_ingest_dag>
+2026-06-11 20:12:25 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:667 | Running dagbag.sync_to_db with retries. Try 1 of 3
+2026-06-11 20:12:25 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:672 | Calling the DAG.bulk_sync_to_db method
+2026-06-11 20:12:25 | DEBUG    | airflow.models.serialized_dag | write_dag:166 | Checking if DAG (daily_ingest_dag) changed
+2026-06-11 20:12:25 | DEBUG    | airflow.models.serialized_dag | write_dag:177 | Serialized DAG (daily_ingest_dag) is unchanged. Skipping writing to DB
+2026-06-11 20:12:25 | INFO     | airflow.models.dag | bulk_write_to_db:3096 | Sync 1 DAGs
+2026-06-11 20:12:25 | INFO     | airflow.models.dag | calculate_dagrun_date_fields:3954 | Setting next_dagrun for daily_ingest_dag to 2026-06-10 06:00:00+00:00, run_after=2026-06-11 06:00:00+00:00
+2026-06-11 20:12:25 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 56307)
+2026-06-11 20:12:25 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 56307)
+2026-06-11 20:12:56 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/daily_ingest.log
+2026-06-11 20:12:56 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-11 20:12:56 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: daily_ingest_dag>
+2026-06-11 20:12:56 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:667 | Running dagbag.sync_to_db with retries. Try 1 of 3
+2026-06-11 20:12:56 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:672 | Calling the DAG.bulk_sync_to_db method
+2026-06-11 20:12:56 | DEBUG    | airflow.models.serialized_dag | write_dag:166 | Checking if DAG (daily_ingest_dag) changed
+2026-06-11 20:12:56 | DEBUG    | airflow.models.serialized_dag | write_dag:177 | Serialized DAG (daily_ingest_dag) is unchanged. Skipping writing to DB
+2026-06-11 20:12:56 | INFO     | airflow.models.dag | bulk_write_to_db:3096 | Sync 1 DAGs
+2026-06-11 20:12:56 | INFO     | airflow.models.dag | calculate_dagrun_date_fields:3954 | Setting next_dagrun for daily_ingest_dag to 2026-06-10 06:00:00+00:00, run_after=2026-06-11 06:00:00+00:00
+2026-06-11 20:12:56 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 56373)
+2026-06-11 20:12:56 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 56373)
+2026-06-11 20:13:17 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/daily_ingest.log
+2026-06-11 20:13:17 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-11 20:13:17 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: daily_ingest_dag>
+2026-06-11 20:13:17 | DEBUG    | airflow.plugins_manager | ensure_plugins_loaded:332 | Plugins are already loaded. Skipping.
+2026-06-11 20:13:17 | DEBUG    | airflow.plugins_manager | integrate_macros_plugins:516 | Integrate DAG plugins
+2026-06-11 20:13:17 | DEBUG    | airflow.models.taskinstance | _get_previous_execution_date:1042 | previous_execution_date was called
+2026-06-11 20:13:17 | INFO     | airflow.cli.commands.task_command | task_run:426 | Running <TaskInstance: daily_ingest_dag.ingest_petroleum scheduled__2026-06-10T06:00:00+00:00 [queued]> on host prajwals-macbook-air.local
+2026-06-11 20:13:17 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 56422)
+2026-06-11 20:13:17 | DEBUG    | airflow.settings | configure_orm:250 | Setting up DB connection pool (PID 56422)
+2026-06-11 20:13:17 | DEBUG    | airflow.settings | prepare_engine_args:298 | settings.prepare_engine_args(): Using NullPool

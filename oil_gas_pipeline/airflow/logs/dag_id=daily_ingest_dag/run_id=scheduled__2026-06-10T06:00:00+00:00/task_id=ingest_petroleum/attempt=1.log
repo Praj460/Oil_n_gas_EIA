@@ -1,0 +1,19 @@
+[2026-06-11T20:13:17.790-0500] {taskinstance.py:1042} DEBUG - previous_execution_date was called
+[2026-06-11T20:13:17.856-0500] {taskinstance.py:1042} DEBUG - previous_execution_date was called
+[2026-06-11T20:13:17.858-0500] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-11T20:13:17.872-0500] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: daily_ingest_dag.ingest_petroleum scheduled__2026-06-10T06:00:00+00:00 [queued]>
+[2026-06-11T20:13:17.874-0500] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: daily_ingest_dag.ingest_petroleum scheduled__2026-06-10T06:00:00+00:00 [queued]>
+[2026-06-11T20:13:17.874-0500] {taskinstance.py:2306} INFO - Starting attempt 1 of 3
+[2026-06-11T20:13:17.877-0500] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): ingest_petroleum> on 2026-06-10 06:00:00+00:00
+[2026-06-11T20:13:17.883-0500] {logging_mixin.py:188} WARNING - /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=56422) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-06-11T20:13:17.884-0500] {standard_task_runner.py:63} INFO - Started process 56425 to run task
+[2026-06-11T20:13:17.882-0500] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'daily_ingest_dag', 'ingest_petroleum', 'scheduled__2026-06-10T06:00:00+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/daily_ingest_dag.py', '--cfg-path', '/var/folders/ms/f1knphyj7ql38tmz93dy8nlc0000gn/T/tmpv14v8k9m']
+[2026-06-11T20:13:17.887-0500] {standard_task_runner.py:91} INFO - Job 6: Subtask ingest_petroleum
+[2026-06-11T20:13:17.902-0500] {taskinstance.py:1042} DEBUG - previous_execution_date was called
+[2026-06-11T20:13:17.903-0500] {task_command.py:426} INFO - Running <TaskInstance: daily_ingest_dag.ingest_petroleum scheduled__2026-06-10T06:00:00+00:00 [running]> on host prajwals-macbook-air.local
+[2026-06-11T20:13:17.904-0500] {settings.py:363} DEBUG - Disposing DB connection pool (PID 56425)
+[2026-06-11T20:13:17.904-0500] {settings.py:250} DEBUG - Setting up DB connection pool (PID 56425)
+[2026-06-11T20:13:17.904-0500] {settings.py:298} DEBUG - settings.prepare_engine_args(): Using NullPool
+[2026-06-11T20:13:17.913-0500] {taskinstance.py:1042} DEBUG - previous_execution_date was called
+[2026-06-11T20:13:17.924-0500] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='oil_gas_pipeline' AIRFLOW_CTX_DAG_ID='daily_ingest_dag' AIRFLOW_CTX_TASK_ID='ingest_petroleum' AIRFLOW_CTX_EXECUTION_DATE='2026-06-10T06:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-06-10T06:00:00+00:00'
+[2026-06-11T20:13:17.925-0500] {taskinstance.py:430} INFO - ::endgroup::

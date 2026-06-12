@@ -1,115 +1,150 @@
-# oil_gas_pipeline | dashboard/pages/4_data_quality.py
+# oil_gas_pipeline | dashboard/app.py
+# Main page - Data Quality & Pipeline Monitoring
+
 import sys
-import os
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+sys.path.insert(0, "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline")
 
 import streamlit as st
 import pandas as pd
 import psycopg2
-import plotly.graph_objects as go
-import plotly.express as px
 
 st.set_page_config(page_title="Data Quality", page_icon="✅", layout="wide")
 
 DB = dict(host="localhost", port=5432, dbname="oil_gas_db",
           user="prajwalanand", password="India@1947")
 
-def get_conn():
-    return psycopg2.connect(**DB)
-
-st.title("✅ Data Quality & Pipeline Monitoring")
-st.caption("Great Expectations validation results and pipeline run history")
-st.divider()
+# -- Data loading ------------------------------------------------------
 
 @st.cache_data(ttl=60)
-def load_all():
-    conn    = get_conn()
-    quality = pd.read_sql("SELECT * FROM data_quality_results ORDER BY run_at DESC LIMIT 100", conn)
-    runs    = pd.read_sql("SELECT * FROM pipeline_runs ORDER BY started_at DESC LIMIT 50", conn)
-    tables  = {}
-    for t in ["bronze_petroleum","bronze_natural_gas","bronze_well_production",
-              "silver_petroleum","silver_natural_gas","gold_energy_prices","gold_forecast_results"]:
-        try:
-            tables[t] = int(pd.read_sql(f"SELECT COUNT(*) as cnt FROM {t}", conn).iloc[0]["cnt"])
-        except:
-            tables[t] = 0
+def load_counts():
+    conn = psycopg2.connect(**DB)
+    cur = conn.cursor()
+    counts = {}
+    for name, table in [
+        ("pet",  "bronze_petroleum"),
+        ("gas",  "bronze_natural_gas"),
+        ("gold", "gold_energy_prices"),
+        ("fc",   "gold_forecast_results"),
+    ]:
+        cur.execute(f"SELECT COUNT(*) FROM {table}")
+        counts[name] = cur.fetchone()[0]
     conn.close()
-    return quality, runs, tables
+    return counts
 
-with st.spinner("Loading monitoring data..."):
-    try:
-        quality_df, pipeline_df, table_counts = load_all()
-    except Exception as e:
-        st.error(f"Failed to load: {e}")
-        st.stop()
+@st.cache_data(ttl=60)
+def load_quality_results():
+    conn = psycopg2.connect(**DB)
+    df = pd.read_sql(
+        "SELECT suite_name, table_name, total_expectations, passed, "
+        "failed, success_rate, run_at "
+        "FROM data_quality_results ORDER BY run_at DESC", conn)
+    conn.close()
+    return df
 
-# Medallion row counts
-st.subheader("🏛️ Medallion Architecture — Row Counts")
-b_col, s_col, g_col = st.columns(3)
-with b_col:
-    st.markdown("**🟤 Bronze Layer**")
-    st.metric("Petroleum Records",      f"{table_counts.get('bronze_petroleum',0):,}")
-    st.metric("Natural Gas Records",    f"{table_counts.get('bronze_natural_gas',0):,}")
-    st.metric("Well Production Records",f"{table_counts.get('bronze_well_production',0):,}")
-with s_col:
-    st.markdown("**⚪ Silver Layer**")
-    st.metric("Petroleum (cleaned)",    f"{table_counts.get('silver_petroleum',0):,}")
-    st.metric("Natural Gas (cleaned)",  f"{table_counts.get('silver_natural_gas',0):,}")
-with g_col:
-    st.markdown("**🟡 Gold Layer**")
-    st.metric("Energy Prices (mart)",   f"{table_counts.get('gold_energy_prices',0):,}")
-    st.metric("Forecast Results",       f"{table_counts.get('gold_forecast_results',0):,}")
+@st.cache_data(ttl=60)
+def load_pipeline_runs():
+    conn = psycopg2.connect(**DB)
+    df = pd.read_sql(
+        "SELECT run_name, status, rows_ingested, rows_failed, "
+        "error_message, started_at, finished_at "
+        "FROM pipeline_runs ORDER BY started_at DESC LIMIT 50", conn)
+    conn.close()
+    return df
 
-st.divider()
+counts  = load_counts()
+quality = load_quality_results()
+runs    = load_pipeline_runs()
 
-# Great Expectations results
-st.subheader("🧪 Great Expectations — Validation Results")
-if quality_df.empty:
-    st.info("No quality results yet. Run the ingestion pipeline to trigger validations.")
-else:
-    latest = quality_df.sort_values("run_at").groupby("suite_name").last().reset_index()
-    q1, q2 = st.columns(2)
-    for i, row in latest.iterrows():
-        col  = q1 if i % 2 == 0 else q2
-        rate = row["success_rate"]
-        with col:
-            st.metric(
-                label=f"{row['suite_name']} — {row['table_name']}",
-                value=f"{rate:.1f}% {'✅ PASSING' if rate >= 80 else '❌ FAILING'}",
-                delta=f"{int(row['passed'])}/{int(row['total_expectations'])} checks passed",
-            )
+# -- Header ------------------------------------------------------------
 
-    st.subheader("📉 Quality Score Over Time")
-    fig = px.line(quality_df.sort_values("run_at"), x="run_at", y="success_rate",
-                  color="suite_name", markers=True,
-                  labels={"run_at":"Run Time","success_rate":"Pass Rate (%)","suite_name":"Suite"})
-    fig.add_hline(y=80, line_dash="dash", line_color="red", annotation_text="Quality Gate (80%)")
-    fig.update_layout(height=300, margin=dict(l=0,r=0,t=10,b=0), yaxis=dict(range=[0,105]))
-    st.plotly_chart(fig, use_container_width=True)
+st.title("✅ Data Quality & Pipeline Monitoring")
+st.caption("End-to-end pipeline health: data collected, quality checks, and run history")
 
 st.divider()
 
-# Pipeline run history
-st.subheader("🔄 Pipeline Run History")
-if pipeline_df.empty:
-    st.info("No pipeline runs recorded yet.")
+# -- Data overview (plain language, no empty tables) -------------------
+
+st.header("📦 Data in the Pipeline")
+
+c1, c2, c3, c4 = st.columns(4)
+
+c1.metric(
+    "Raw Oil Price Records",
+    counts["pet"],
+    help="WTI, Brent, and US production data pulled from the EIA API (bronze layer)",
+)
+c2.metric(
+    "Raw Gas Price Records",
+    counts["gas"],
+    help="Henry Hub, storage, and gas production data from the EIA API (bronze layer)",
+)
+c3.metric(
+    "Monthly Combined Table",
+    f"{counts['gold']} months",
+    help="One clean row per month with all prices and derived features (gold layer) - used by charts and models",
+)
+c4.metric(
+    "Stored Forecasts",
+    counts["fc"],
+    help="Forecast rows from SARIMA and Prophet - includes 2024 validation and next-12-month future forecasts",
+)
+
+st.caption(
+    "Flow: EIA API → raw records → quality checks → combined monthly table → forecasts"
+)
+
+st.divider()
+
+# -- Great Expectations section ----------------------------------------
+
+st.header("🧪 Data Quality Checks")
+
+if quality.empty:
+    st.info("No quality results yet. Run: python3 scripts/2_quality_check.py")
 else:
-    p1, p2, p3, p4 = st.columns(4)
-    total   = len(pipeline_df)
-    success = (pipeline_df["status"] == "success").sum()
-    failed  = (pipeline_df["status"] == "failed").sum()
-    rate    = (success / total * 100) if total > 0 else 0
-    with p1: st.metric("Total Runs",   total)
-    with p2: st.metric("Successful",   success)
-    with p3: st.metric("Failed",       failed)
-    with p4: st.metric("Success Rate", f"{rate:.1f}%")
+    latest = quality.drop_duplicates(subset=["suite_name"], keep="first")
 
-    display = pipeline_df[["run_name","status","rows_ingested","rows_failed",
-                            "error_message","started_at","finished_at"]].head(20)
+    cols = st.columns(len(latest))
+    for col, (_, row) in zip(cols, latest.iterrows()):
+        passing = row["failed"] == 0
+        col.metric(
+            label=row["suite_name"].replace("_", " ").title(),
+            value=f"{row['passed']}/{row['total_expectations']} passed",
+            delta=f"{row['success_rate']:.1f}% success rate",
+            delta_color="normal" if passing else "inverse",
+        )
 
-    def highlight(row):
-        if row["status"] == "success": return ["background-color:#d4edda"]*len(row)
-        if row["status"] == "failed":  return ["background-color:#f8d7da"]*len(row)
-        return [""]*len(row)
+    st.subheader("Check History")
+    q_table = quality.copy()
+    q_table["run_at"] = pd.to_datetime(q_table["run_at"]).dt.strftime("%Y-%m-%d %H:%M")
+    q_table.columns = ["Suite", "Table", "Total Checks", "Passed",
+                       "Failed", "Success %", "Run At"]
+    st.dataframe(q_table, use_container_width=True, hide_index=True)
 
-    st.dataframe(display.style.apply(highlight, axis=1), use_container_width=True, height=350)
+st.divider()
+
+# -- Pipeline run history ----------------------------------------------
+
+st.header("🔄 Pipeline Run History")
+
+if runs.empty:
+    st.info("No pipeline runs yet. Run: python3 scripts/1_ingest.py")
+else:
+    total      = len(runs)
+    successful = (runs["status"] == "success").sum()
+    failed     = (runs["status"] == "failed").sum()
+    rate       = (successful / total * 100) if total else 0
+
+    c1, c2, c3, c4 = st.columns(4)
+    c1.metric("Total Runs", total)
+    c2.metric("Successful", successful)
+    c3.metric("Failed", failed)
+    c4.metric("Success Rate", f"{rate:.1f}%")
+
+    r_table = runs.copy()
+    r_table["started_at"]  = pd.to_datetime(r_table["started_at"]).dt.strftime("%Y-%m-%d %H:%M")
+    r_table["finished_at"] = pd.to_datetime(r_table["finished_at"]).dt.strftime("%Y-%m-%d %H:%M")
+    r_table["error_message"] = r_table["error_message"].fillna("—")
+    r_table.columns = ["Run Name", "Status", "Rows Ingested", "Rows Failed",
+                       "Error", "Started", "Finished"]
+    st.dataframe(r_table, use_container_width=True, hide_index=True)

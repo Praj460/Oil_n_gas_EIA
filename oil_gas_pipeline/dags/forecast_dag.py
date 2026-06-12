@@ -3,6 +3,10 @@
 # Reads gold_energy_prices → preprocesses → fits SARIMA + Prophet
 # → saves forecast results to gold_forecast_results table
 
+import sys
+sys.path.insert(0, '/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline')
+
+
 from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.python import PythonOperator
@@ -13,6 +17,7 @@ setup_logging(log_filename="forecast.log")
 
 import logging
 logger = logging.getLogger(__name__)
+
 
 # ── Default DAG arguments ─────────────────────────────────────────────────────
 

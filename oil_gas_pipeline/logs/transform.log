@@ -1,0 +1,106 @@
+2026-06-11 20:08:47 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/transform.log
+2026-06-11 20:08:47 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-11 20:08:47 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: transform_dag>
+2026-06-11 20:08:47 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:667 | Running dagbag.sync_to_db with retries. Try 1 of 3
+2026-06-11 20:08:47 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:672 | Calling the DAG.bulk_sync_to_db method
+2026-06-11 20:08:47 | DEBUG    | airflow.models.serialized_dag | write_dag:166 | Checking if DAG (transform_dag) changed
+2026-06-11 20:08:47 | DEBUG    | airflow.models.serialized_dag | write_dag:180 | Writing Serialized DAG: transform_dag to the DB
+2026-06-11 20:08:47 | DEBUG    | airflow.models.serialized_dag | write_dag:182 | DAG: transform_dag written to the DB
+2026-06-11 20:08:47 | DEBUG    | airflow.models.dagbag.DagBag | _sync_perm_for_dag:701 | Syncing DAG permissions: transform_dag to the DB
+2026-06-11 20:08:47 | INFO     | airflow.providers.fab.auth_manager.security_manager.override | create_permission:1829 | Created Permission View: can read on DAG:transform_dag
+2026-06-11 20:08:47 | INFO     | airflow.providers.fab.auth_manager.security_manager.override | create_permission:1829 | Created Permission View: can delete on DAG:transform_dag
+2026-06-11 20:08:47 | INFO     | airflow.providers.fab.auth_manager.security_manager.override | create_permission:1829 | Created Permission View: can edit on DAG:transform_dag
+2026-06-11 20:08:47 | DEBUG    | airflow.www.security_appless.ApplessAirflowSecurityManager | sync_perm_for_dag:1090 | Not syncing DAG-level permissions for DAG 'DAG:transform_dag' as access control is unset.
+2026-06-11 20:08:47 | INFO     | airflow.models.dag | bulk_write_to_db:3096 | Sync 1 DAGs
+2026-06-11 20:08:47 | INFO     | airflow.models.dag | bulk_write_to_db:3118 | Creating ORM DAG for transform_dag
+2026-06-11 20:08:47 | INFO     | airflow.models.dag | calculate_dagrun_date_fields:3954 | Setting next_dagrun for transform_dag to 2026-06-10 07:00:00+00:00, run_after=2026-06-11 07:00:00+00:00
+2026-06-11 20:08:47 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 55690)
+2026-06-11 20:08:47 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 55690)
+2026-06-11 20:09:19 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/transform.log
+2026-06-11 20:09:19 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-11 20:09:19 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: transform_dag>
+2026-06-11 20:09:19 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:667 | Running dagbag.sync_to_db with retries. Try 1 of 3
+2026-06-11 20:09:19 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:672 | Calling the DAG.bulk_sync_to_db method
+2026-06-11 20:09:19 | DEBUG    | airflow.models.serialized_dag | write_dag:166 | Checking if DAG (transform_dag) changed
+2026-06-11 20:09:19 | DEBUG    | airflow.models.serialized_dag | write_dag:177 | Serialized DAG (transform_dag) is unchanged. Skipping writing to DB
+2026-06-11 20:09:19 | INFO     | airflow.models.dag | bulk_write_to_db:3096 | Sync 1 DAGs
+2026-06-11 20:09:19 | INFO     | airflow.models.dag | calculate_dagrun_date_fields:3954 | Setting next_dagrun for transform_dag to 2026-06-10 07:00:00+00:00, run_after=2026-06-11 07:00:00+00:00
+2026-06-11 20:09:19 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 55781)
+2026-06-11 20:09:19 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 55781)
+2026-06-11 20:09:51 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/transform.log
+2026-06-11 20:09:51 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-11 20:09:51 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: transform_dag>
+2026-06-11 20:09:51 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:667 | Running dagbag.sync_to_db with retries. Try 1 of 3
+2026-06-11 20:09:51 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:672 | Calling the DAG.bulk_sync_to_db method
+2026-06-11 20:09:51 | DEBUG    | airflow.models.serialized_dag | write_dag:166 | Checking if DAG (transform_dag) changed
+2026-06-11 20:09:51 | DEBUG    | airflow.models.serialized_dag | write_dag:177 | Serialized DAG (transform_dag) is unchanged. Skipping writing to DB
+2026-06-11 20:09:51 | INFO     | airflow.models.dag | bulk_write_to_db:3096 | Sync 1 DAGs
+2026-06-11 20:09:51 | INFO     | airflow.models.dag | calculate_dagrun_date_fields:3954 | Setting next_dagrun for transform_dag to 2026-06-10 07:00:00+00:00, run_after=2026-06-11 07:00:00+00:00
+2026-06-11 20:09:51 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 55853)
+2026-06-11 20:09:51 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 55853)
+2026-06-11 20:10:22 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/transform.log
+2026-06-11 20:10:22 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-11 20:10:22 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: transform_dag>
+2026-06-11 20:10:22 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:667 | Running dagbag.sync_to_db with retries. Try 1 of 3
+2026-06-11 20:10:22 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:672 | Calling the DAG.bulk_sync_to_db method
+2026-06-11 20:10:22 | DEBUG    | airflow.models.serialized_dag | write_dag:166 | Checking if DAG (transform_dag) changed
+2026-06-11 20:10:23 | DEBUG    | airflow.models.serialized_dag | write_dag:177 | Serialized DAG (transform_dag) is unchanged. Skipping writing to DB
+2026-06-11 20:10:23 | INFO     | airflow.models.dag | bulk_write_to_db:3096 | Sync 1 DAGs
+2026-06-11 20:10:23 | INFO     | airflow.models.dag | calculate_dagrun_date_fields:3954 | Setting next_dagrun for transform_dag to 2026-06-10 07:00:00+00:00, run_after=2026-06-11 07:00:00+00:00
+2026-06-11 20:10:23 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 55977)
+2026-06-11 20:10:23 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 55977)
+2026-06-11 20:10:53 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/transform.log
+2026-06-11 20:10:53 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-11 20:10:53 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: transform_dag>
+2026-06-11 20:10:54 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:667 | Running dagbag.sync_to_db with retries. Try 1 of 3
+2026-06-11 20:10:54 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:672 | Calling the DAG.bulk_sync_to_db method
+2026-06-11 20:10:54 | DEBUG    | airflow.models.serialized_dag | write_dag:166 | Checking if DAG (transform_dag) changed
+2026-06-11 20:10:54 | DEBUG    | airflow.models.serialized_dag | write_dag:177 | Serialized DAG (transform_dag) is unchanged. Skipping writing to DB
+2026-06-11 20:10:54 | INFO     | airflow.models.dag | bulk_write_to_db:3096 | Sync 1 DAGs
+2026-06-11 20:10:54 | INFO     | airflow.models.dag | calculate_dagrun_date_fields:3954 | Setting next_dagrun for transform_dag to 2026-06-10 07:00:00+00:00, run_after=2026-06-11 07:00:00+00:00
+2026-06-11 20:10:54 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 56073)
+2026-06-11 20:10:54 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 56073)
+2026-06-11 20:11:26 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/transform.log
+2026-06-11 20:11:26 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-11 20:11:26 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: transform_dag>
+2026-06-11 20:11:26 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:667 | Running dagbag.sync_to_db with retries. Try 1 of 3
+2026-06-11 20:11:26 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:672 | Calling the DAG.bulk_sync_to_db method
+2026-06-11 20:11:26 | DEBUG    | airflow.models.serialized_dag | write_dag:166 | Checking if DAG (transform_dag) changed
+2026-06-11 20:11:26 | DEBUG    | airflow.models.serialized_dag | write_dag:177 | Serialized DAG (transform_dag) is unchanged. Skipping writing to DB
+2026-06-11 20:11:26 | INFO     | airflow.models.dag | bulk_write_to_db:3096 | Sync 1 DAGs
+2026-06-11 20:11:26 | INFO     | airflow.models.dag | calculate_dagrun_date_fields:3954 | Setting next_dagrun for transform_dag to 2026-06-10 07:00:00+00:00, run_after=2026-06-11 07:00:00+00:00
+2026-06-11 20:11:26 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 56155)
+2026-06-11 20:11:26 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 56155)
+2026-06-11 20:11:57 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/transform.log
+2026-06-11 20:11:57 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-11 20:11:57 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: transform_dag>
+2026-06-11 20:11:57 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:667 | Running dagbag.sync_to_db with retries. Try 1 of 3
+2026-06-11 20:11:57 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:672 | Calling the DAG.bulk_sync_to_db method
+2026-06-11 20:11:57 | DEBUG    | airflow.models.serialized_dag | write_dag:166 | Checking if DAG (transform_dag) changed
+2026-06-11 20:11:57 | DEBUG    | airflow.models.serialized_dag | write_dag:177 | Serialized DAG (transform_dag) is unchanged. Skipping writing to DB
+2026-06-11 20:11:57 | INFO     | airflow.models.dag | bulk_write_to_db:3096 | Sync 1 DAGs
+2026-06-11 20:11:57 | INFO     | airflow.models.dag | calculate_dagrun_date_fields:3954 | Setting next_dagrun for transform_dag to 2026-06-10 07:00:00+00:00, run_after=2026-06-11 07:00:00+00:00
+2026-06-11 20:11:57 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 56245)
+2026-06-11 20:11:57 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 56245)
+2026-06-11 20:12:28 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/transform.log
+2026-06-11 20:12:28 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-11 20:12:28 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: transform_dag>
+2026-06-11 20:12:28 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:667 | Running dagbag.sync_to_db with retries. Try 1 of 3
+2026-06-11 20:12:28 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:672 | Calling the DAG.bulk_sync_to_db method
+2026-06-11 20:12:28 | DEBUG    | airflow.models.serialized_dag | write_dag:166 | Checking if DAG (transform_dag) changed
+2026-06-11 20:12:28 | DEBUG    | airflow.models.serialized_dag | write_dag:177 | Serialized DAG (transform_dag) is unchanged. Skipping writing to DB
+2026-06-11 20:12:28 | INFO     | airflow.models.dag | bulk_write_to_db:3096 | Sync 1 DAGs
+2026-06-11 20:12:28 | INFO     | airflow.models.dag | calculate_dagrun_date_fields:3954 | Setting next_dagrun for transform_dag to 2026-06-10 07:00:00+00:00, run_after=2026-06-11 07:00:00+00:00
+2026-06-11 20:12:28 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 56317)
+2026-06-11 20:12:28 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 56317)
+2026-06-11 20:12:59 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/transform.log
+2026-06-11 20:12:59 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-11 20:12:59 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: transform_dag>
+2026-06-11 20:12:59 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:667 | Running dagbag.sync_to_db with retries. Try 1 of 3
+2026-06-11 20:12:59 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:672 | Calling the DAG.bulk_sync_to_db method
+2026-06-11 20:12:59 | DEBUG    | airflow.models.serialized_dag | write_dag:166 | Checking if DAG (transform_dag) changed
+2026-06-11 20:12:59 | DEBUG    | airflow.models.serialized_dag | write_dag:177 | Serialized DAG (transform_dag) is unchanged. Skipping writing to DB
+2026-06-11 20:12:59 | INFO     | airflow.models.dag | bulk_write_to_db:3096 | Sync 1 DAGs
+2026-06-11 20:12:59 | INFO     | airflow.models.dag | calculate_dagrun_date_fields:3954 | Setting next_dagrun for transform_dag to 2026-06-10 07:00:00+00:00, run_after=2026-06-11 07:00:00+00:00
+2026-06-11 20:12:59 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 56383)
+2026-06-11 20:12:59 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 56383)

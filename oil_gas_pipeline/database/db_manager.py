@@ -120,20 +120,7 @@ class DatabaseManager:
         logger.info(f"Bronze natural gas — inserted {rows} rows")
         return rows
 
-    def write_bronze_well_production(self, df: pd.DataFrame) -> int:
-        with self.get_connection() as conn:
-            cur = conn.cursor()
-            data = [(row.get("well_id"), row.get("state"), row.get("production_date"),
-                     row.get("oil_bbl"), row.get("gas_mcf"), row.get("water_bbl"))
-                    for _, row in df.iterrows()]
-            psycopg2.extras.execute_batch(cur, """
-                INSERT INTO bronze_well_production
-                    (well_id, state, production_date, oil_bbl, gas_mcf, water_bbl)
-                VALUES (%s,%s,%s,%s,%s,%s)
-            """, data, page_size=500)
-        logger.info(f"Bronze well production — inserted {len(data)} rows")
-        return len(data)
-
+    
     # ── Silver reads ──────────────────────────────────────────────────────────
 
     def read_silver_petroleum(self, start_date=None, end_date=None) -> pd.DataFrame:

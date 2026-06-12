@@ -1,0 +1,85 @@
+[2026-06-11T20:08:47.674-0500] {processor.py:161} INFO - Started process (PID=55690) to work on /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py
+[2026-06-11T20:08:47.674-0500] {processor.py:830} INFO - Processing file /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py for tasks to queue
+[2026-06-11T20:08:47.674-0500] {logging_mixin.py:188} INFO - [2026-06-11T20:08:47.674-0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py
+[2026-06-11T20:08:47.711-0500] {logging_mixin.py:188} INFO - [2026-06-11T20:08:47.711-0500] {config.py:185} INFO - Config loaded | env=development | db=localhost/oil_gas_db
+[2026-06-11T20:08:47.711-0500] {logging_mixin.py:188} WARNING - 20:08:47 | INFO     | config.logging_config          | Logging configured | level=DEBUG | file=logs/transform.log
+[2026-06-11T20:08:47.715-0500] {processor.py:840} INFO - DAG(s) 'transform_dag' retrieved from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py
+[2026-06-11T20:08:47.776-0500] {logging_mixin.py:188} WARNING - 20:08:47 | INFO     | airflow.providers.fab.auth_manager.security_manager.override | Created Permission View: can read on DAG:transform_dag
+[2026-06-11T20:08:47.779-0500] {logging_mixin.py:188} WARNING - 20:08:47 | INFO     | airflow.providers.fab.auth_manager.security_manager.override | Created Permission View: can delete on DAG:transform_dag
+[2026-06-11T20:08:47.780-0500] {logging_mixin.py:188} WARNING - 20:08:47 | INFO     | airflow.providers.fab.auth_manager.security_manager.override | Created Permission View: can edit on DAG:transform_dag
+[2026-06-11T20:08:47.781-0500] {logging_mixin.py:188} WARNING - 20:08:47 | INFO     | airflow.models.dag             | Sync 1 DAGs
+[2026-06-11T20:08:47.784-0500] {logging_mixin.py:188} WARNING - 20:08:47 | INFO     | airflow.models.dag             | Creating ORM DAG for transform_dag
+[2026-06-11T20:08:47.787-0500] {logging_mixin.py:188} WARNING - 20:08:47 | INFO     | airflow.models.dag             | Setting next_dagrun for transform_dag to 2026-06-10 07:00:00+00:00, run_after=2026-06-11 07:00:00+00:00
+[2026-06-11T20:08:47.793-0500] {processor.py:183} INFO - Processing /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py took 0.121 seconds
+[2026-06-11T20:09:19.899-0500] {processor.py:161} INFO - Started process (PID=55781) to work on /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py
+[2026-06-11T20:09:19.901-0500] {processor.py:830} INFO - Processing file /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py for tasks to queue
+[2026-06-11T20:09:19.901-0500] {logging_mixin.py:188} INFO - [2026-06-11T20:09:19.901-0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py
+[2026-06-11T20:09:19.936-0500] {logging_mixin.py:188} INFO - [2026-06-11T20:09:19.936-0500] {config.py:185} INFO - Config loaded | env=development | db=localhost/oil_gas_db
+[2026-06-11T20:09:19.936-0500] {logging_mixin.py:188} WARNING - 20:09:19 | INFO     | config.logging_config          | Logging configured | level=DEBUG | file=logs/transform.log
+[2026-06-11T20:09:19.939-0500] {processor.py:840} INFO - DAG(s) 'transform_dag' retrieved from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py
+[2026-06-11T20:09:19.974-0500] {logging_mixin.py:188} WARNING - 20:09:19 | INFO     | airflow.models.dag             | Sync 1 DAGs
+[2026-06-11T20:09:19.980-0500] {logging_mixin.py:188} WARNING - 20:09:19 | INFO     | airflow.models.dag             | Setting next_dagrun for transform_dag to 2026-06-10 07:00:00+00:00, run_after=2026-06-11 07:00:00+00:00
+[2026-06-11T20:09:19.986-0500] {processor.py:183} INFO - Processing /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py took 0.087 seconds
+[2026-06-11T20:09:51.011-0500] {processor.py:161} INFO - Started process (PID=55853) to work on /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py
+[2026-06-11T20:09:51.013-0500] {processor.py:830} INFO - Processing file /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py for tasks to queue
+[2026-06-11T20:09:51.013-0500] {logging_mixin.py:188} INFO - [2026-06-11T20:09:51.013-0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py
+[2026-06-11T20:09:51.045-0500] {logging_mixin.py:188} INFO - [2026-06-11T20:09:51.045-0500] {config.py:185} INFO - Config loaded | env=development | db=localhost/oil_gas_db
+[2026-06-11T20:09:51.046-0500] {logging_mixin.py:188} WARNING - 20:09:51 | INFO     | config.logging_config          | Logging configured | level=DEBUG | file=logs/transform.log
+[2026-06-11T20:09:51.049-0500] {processor.py:840} INFO - DAG(s) 'transform_dag' retrieved from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py
+[2026-06-11T20:09:51.083-0500] {logging_mixin.py:188} WARNING - 20:09:51 | INFO     | airflow.models.dag             | Sync 1 DAGs
+[2026-06-11T20:09:51.088-0500] {logging_mixin.py:188} WARNING - 20:09:51 | INFO     | airflow.models.dag             | Setting next_dagrun for transform_dag to 2026-06-10 07:00:00+00:00, run_after=2026-06-11 07:00:00+00:00
+[2026-06-11T20:09:51.094-0500] {processor.py:183} INFO - Processing /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py took 0.083 seconds
+[2026-06-11T20:10:22.935-0500] {processor.py:161} INFO - Started process (PID=55977) to work on /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py
+[2026-06-11T20:10:22.935-0500] {processor.py:830} INFO - Processing file /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py for tasks to queue
+[2026-06-11T20:10:22.935-0500] {logging_mixin.py:188} INFO - [2026-06-11T20:10:22.935-0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py
+[2026-06-11T20:10:22.968-0500] {logging_mixin.py:188} INFO - [2026-06-11T20:10:22.968-0500] {config.py:185} INFO - Config loaded | env=development | db=localhost/oil_gas_db
+[2026-06-11T20:10:22.969-0500] {logging_mixin.py:188} WARNING - 20:10:22 | INFO     | config.logging_config          | Logging configured | level=DEBUG | file=logs/transform.log
+[2026-06-11T20:10:22.972-0500] {processor.py:840} INFO - DAG(s) 'transform_dag' retrieved from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py
+[2026-06-11T20:10:23.006-0500] {logging_mixin.py:188} WARNING - 20:10:23 | INFO     | airflow.models.dag             | Sync 1 DAGs
+[2026-06-11T20:10:23.011-0500] {logging_mixin.py:188} WARNING - 20:10:23 | INFO     | airflow.models.dag             | Setting next_dagrun for transform_dag to 2026-06-10 07:00:00+00:00, run_after=2026-06-11 07:00:00+00:00
+[2026-06-11T20:10:23.017-0500] {processor.py:183} INFO - Processing /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py took 0.084 seconds
+[2026-06-11T20:10:53.954-0500] {processor.py:161} INFO - Started process (PID=56073) to work on /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py
+[2026-06-11T20:10:53.954-0500] {processor.py:830} INFO - Processing file /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py for tasks to queue
+[2026-06-11T20:10:53.954-0500] {logging_mixin.py:188} INFO - [2026-06-11T20:10:53.954-0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py
+[2026-06-11T20:10:53.990-0500] {logging_mixin.py:188} INFO - [2026-06-11T20:10:53.990-0500] {config.py:185} INFO - Config loaded | env=development | db=localhost/oil_gas_db
+[2026-06-11T20:10:53.991-0500] {logging_mixin.py:188} WARNING - 20:10:53 | INFO     | config.logging_config          | Logging configured | level=DEBUG | file=logs/transform.log
+[2026-06-11T20:10:53.994-0500] {processor.py:840} INFO - DAG(s) 'transform_dag' retrieved from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py
+[2026-06-11T20:10:54.029-0500] {logging_mixin.py:188} WARNING - 20:10:54 | INFO     | airflow.models.dag             | Sync 1 DAGs
+[2026-06-11T20:10:54.034-0500] {logging_mixin.py:188} WARNING - 20:10:54 | INFO     | airflow.models.dag             | Setting next_dagrun for transform_dag to 2026-06-10 07:00:00+00:00, run_after=2026-06-11 07:00:00+00:00
+[2026-06-11T20:10:54.040-0500] {processor.py:183} INFO - Processing /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py took 0.088 seconds
+[2026-06-11T20:11:26.286-0500] {processor.py:161} INFO - Started process (PID=56155) to work on /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py
+[2026-06-11T20:11:26.287-0500] {processor.py:830} INFO - Processing file /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py for tasks to queue
+[2026-06-11T20:11:26.288-0500] {logging_mixin.py:188} INFO - [2026-06-11T20:11:26.288-0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py
+[2026-06-11T20:11:26.320-0500] {logging_mixin.py:188} INFO - [2026-06-11T20:11:26.320-0500] {config.py:185} INFO - Config loaded | env=development | db=localhost/oil_gas_db
+[2026-06-11T20:11:26.320-0500] {logging_mixin.py:188} WARNING - 20:11:26 | INFO     | config.logging_config          | Logging configured | level=DEBUG | file=logs/transform.log
+[2026-06-11T20:11:26.323-0500] {processor.py:840} INFO - DAG(s) 'transform_dag' retrieved from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py
+[2026-06-11T20:11:26.358-0500] {logging_mixin.py:188} WARNING - 20:11:26 | INFO     | airflow.models.dag             | Sync 1 DAGs
+[2026-06-11T20:11:26.363-0500] {logging_mixin.py:188} WARNING - 20:11:26 | INFO     | airflow.models.dag             | Setting next_dagrun for transform_dag to 2026-06-10 07:00:00+00:00, run_after=2026-06-11 07:00:00+00:00
+[2026-06-11T20:11:26.369-0500] {processor.py:183} INFO - Processing /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py took 0.083 seconds
+[2026-06-11T20:11:57.333-0500] {processor.py:161} INFO - Started process (PID=56245) to work on /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py
+[2026-06-11T20:11:57.334-0500] {processor.py:830} INFO - Processing file /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py for tasks to queue
+[2026-06-11T20:11:57.334-0500] {logging_mixin.py:188} INFO - [2026-06-11T20:11:57.334-0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py
+[2026-06-11T20:11:57.369-0500] {logging_mixin.py:188} INFO - [2026-06-11T20:11:57.368-0500] {config.py:185} INFO - Config loaded | env=development | db=localhost/oil_gas_db
+[2026-06-11T20:11:57.369-0500] {logging_mixin.py:188} WARNING - 20:11:57 | INFO     | config.logging_config          | Logging configured | level=DEBUG | file=logs/transform.log
+[2026-06-11T20:11:57.372-0500] {processor.py:840} INFO - DAG(s) 'transform_dag' retrieved from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py
+[2026-06-11T20:11:57.406-0500] {logging_mixin.py:188} WARNING - 20:11:57 | INFO     | airflow.models.dag             | Sync 1 DAGs
+[2026-06-11T20:11:57.411-0500] {logging_mixin.py:188} WARNING - 20:11:57 | INFO     | airflow.models.dag             | Setting next_dagrun for transform_dag to 2026-06-10 07:00:00+00:00, run_after=2026-06-11 07:00:00+00:00
+[2026-06-11T20:11:57.418-0500] {processor.py:183} INFO - Processing /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py took 0.086 seconds
+[2026-06-11T20:12:28.322-0500] {processor.py:161} INFO - Started process (PID=56317) to work on /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py
+[2026-06-11T20:12:28.323-0500] {processor.py:830} INFO - Processing file /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py for tasks to queue
+[2026-06-11T20:12:28.324-0500] {logging_mixin.py:188} INFO - [2026-06-11T20:12:28.324-0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py
+[2026-06-11T20:12:28.356-0500] {logging_mixin.py:188} INFO - [2026-06-11T20:12:28.356-0500] {config.py:185} INFO - Config loaded | env=development | db=localhost/oil_gas_db
+[2026-06-11T20:12:28.356-0500] {logging_mixin.py:188} WARNING - 20:12:28 | INFO     | config.logging_config          | Logging configured | level=DEBUG | file=logs/transform.log
+[2026-06-11T20:12:28.359-0500] {processor.py:840} INFO - DAG(s) 'transform_dag' retrieved from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py
+[2026-06-11T20:12:28.394-0500] {logging_mixin.py:188} WARNING - 20:12:28 | INFO     | airflow.models.dag             | Sync 1 DAGs
+[2026-06-11T20:12:28.399-0500] {logging_mixin.py:188} WARNING - 20:12:28 | INFO     | airflow.models.dag             | Setting next_dagrun for transform_dag to 2026-06-10 07:00:00+00:00, run_after=2026-06-11 07:00:00+00:00
+[2026-06-11T20:12:28.405-0500] {processor.py:183} INFO - Processing /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py took 0.084 seconds
+[2026-06-11T20:12:59.317-0500] {processor.py:161} INFO - Started process (PID=56383) to work on /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py
+[2026-06-11T20:12:59.317-0500] {processor.py:830} INFO - Processing file /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py for tasks to queue
+[2026-06-11T20:12:59.317-0500] {logging_mixin.py:188} INFO - [2026-06-11T20:12:59.317-0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py
+[2026-06-11T20:12:59.349-0500] {logging_mixin.py:188} INFO - [2026-06-11T20:12:59.349-0500] {config.py:185} INFO - Config loaded | env=development | db=localhost/oil_gas_db
+[2026-06-11T20:12:59.349-0500] {logging_mixin.py:188} WARNING - 20:12:59 | INFO     | config.logging_config          | Logging configured | level=DEBUG | file=logs/transform.log
+[2026-06-11T20:12:59.352-0500] {processor.py:840} INFO - DAG(s) 'transform_dag' retrieved from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py
+[2026-06-11T20:12:59.386-0500] {logging_mixin.py:188} WARNING - 20:12:59 | INFO     | airflow.models.dag             | Sync 1 DAGs
+[2026-06-11T20:12:59.391-0500] {logging_mixin.py:188} WARNING - 20:12:59 | INFO     | airflow.models.dag             | Setting next_dagrun for transform_dag to 2026-06-10 07:00:00+00:00, run_after=2026-06-11 07:00:00+00:00
+[2026-06-11T20:12:59.397-0500] {processor.py:183} INFO - Processing /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py took 0.082 seconds

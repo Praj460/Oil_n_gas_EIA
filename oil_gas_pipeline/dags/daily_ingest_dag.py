@@ -4,6 +4,9 @@
 # Then runs Great Expectations quality checks
 # If quality gate passes → triggers transform_dag
 
+import sys
+sys.path.insert(0, '/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline')
+
 from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.python import PythonOperator, BranchPythonOperator

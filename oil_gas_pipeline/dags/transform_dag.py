@@ -3,6 +3,9 @@
 # Executes dbt models: bronze → silver (staging) → gold (mart)
 # Schedule: daily at 7am — 1 hour after ingestion
 
+import sys
+sys.path.insert(0, '/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline')
+
 from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.python import PythonOperator
@@ -17,6 +20,8 @@ import os
 from pathlib import Path
 
 logger = logging.getLogger(__name__)
+
+
 
 # ── Default DAG arguments ─────────────────────────────────────────────────────
 

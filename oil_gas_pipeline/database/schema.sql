@@ -39,22 +39,12 @@ CREATE TABLE IF NOT EXISTS bronze_natural_gas (
     raw_response    JSONB
 );
 
-CREATE TABLE IF NOT EXISTS bronze_well_production (
-    id              UUID        DEFAULT uuid_generate_v4() PRIMARY KEY,
-    well_id         VARCHAR(60),
-    state           VARCHAR(40),
-    production_date DATE,
-    oil_bbl         NUMERIC(14, 2),                     -- oil production in barrels
-    gas_mcf         NUMERIC(14, 2),                     -- gas production in MCF
-    water_bbl       NUMERIC(14, 2),
-    source          VARCHAR(20) DEFAULT 'KAGGLE_CSV',
-    ingested_at     TIMESTAMPTZ DEFAULT NOW()
-);
+
 
 -- Indexes on bronze tables for faster lookups by series and period
 CREATE INDEX IF NOT EXISTS idx_bronze_pet_series  ON bronze_petroleum (series_id, period);
 CREATE INDEX IF NOT EXISTS idx_bronze_gas_series  ON bronze_natural_gas (series_id, period);
-CREATE INDEX IF NOT EXISTS idx_bronze_well_date   ON bronze_well_production (production_date);
+
 
 
 -- ─────────────────────────────────────────────────────────────────────────────

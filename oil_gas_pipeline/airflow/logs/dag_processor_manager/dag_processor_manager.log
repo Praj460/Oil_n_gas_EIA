@@ -345,3 +345,98 @@ File Path                                                                PID    
 /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/forecast_dag.py                               0           1  0.88s           2026-06-05T04:52:16
 ================================================================================
 [2026-06-04T23:53:13.796-0500] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2026-06-11T20:08:43.164-0500] {manager.py:470} INFO - Processing files using up to 1 processes at a time 
+[2026-06-11T20:08:43.165-0500] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2026-06-11T20:08:43.165-0500] {manager.py:472} INFO - Checking for new files in /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags every 300 seconds
+[2026-06-11T20:08:43.165-0500] {manager.py:737} INFO - Searching for files in /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags
+[2026-06-11T20:08:43.167-0500] {manager.py:740} INFO - There are 3 files in /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags
+[2026-06-11T20:08:44.284-0500] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py                           1           0  1.07s           2026-06-12T01:08:44
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/forecast_dag.py                               0           0
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py                              0           0
+================================================================================
+[2026-06-11T20:09:16.180-0500] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py                           1           0  1.01s           2026-06-12T01:09:16
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/forecast_dag.py                               1           0  0.99s           2026-06-12T01:08:46
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py                              1           0  0.98s           2026-06-12T01:08:47
+================================================================================
+[2026-06-11T20:09:47.633-0500] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py                           1           0  1.21s           2026-06-12T01:09:47
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py                              1           0  0.95s           2026-06-12T01:09:20
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/forecast_dag.py                               1           0  0.90s           2026-06-12T01:09:18
+================================================================================
+[2026-06-11T20:10:19.763-0500] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py                           1           0  1.17s           2026-06-12T01:10:19
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py                              1           0  0.91s           2026-06-12T01:09:51
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/forecast_dag.py                               1           0  0.89s           2026-06-12T01:09:49
+================================================================================
+[2026-06-11T20:10:51.168-0500] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py                           1           0  1.17s           2026-06-12T01:10:51
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/forecast_dag.py                               1           0  1.15s           2026-06-12T01:10:21
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py                              1           0  0.92s           2026-06-12T01:10:23
+================================================================================
+[2026-06-11T20:11:22.583-0500] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py                           1           0  1.17s           2026-06-12T01:11:22
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/forecast_dag.py                               1           0  0.98s           2026-06-12T01:10:53
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py                              1           0  0.93s           2026-06-12T01:10:54
+================================================================================
+[2026-06-11T20:11:53.945-0500] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py                           1           0  1.17s           2026-06-12T01:11:53
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/forecast_dag.py                               1           0  0.93s           2026-06-12T01:11:24
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py                              1           0  0.90s           2026-06-12T01:11:26
+================================================================================
+[2026-06-11T20:12:25.341-0500] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py                           1           0  1.16s           2026-06-12T01:12:25
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py                              1           0  0.93s           2026-06-12T01:11:57
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/forecast_dag.py                               1           0  0.91s           2026-06-12T01:11:55
+================================================================================
+[2026-06-11T20:12:56.645-0500] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py                           1           0  1.07s           2026-06-12T01:12:56
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/forecast_dag.py                               1           0  0.96s           2026-06-12T01:12:26
+/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/transform_dag.py                              1           0  0.94s           2026-06-12T01:12:28
+================================================================================
