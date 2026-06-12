@@ -3,4 +3,4 @@
 from ingestion.eia_client import EIAClient
 from ingestion.ingester import DataIngester
 
-__all__ = ["EIAClient", "KaggleLoader", "DataIngester"]
+__all__ = ["EIAClient", "DataIngester"]
