@@ -53,3 +53,685 @@
 [0m00:32:04.441263 [debug] [MainThread]: Connection 'debug' was properly closed.
 [0m00:32:04.441475 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1054d62d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105eb3dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105757f50>]}
 [0m00:32:04.441721 [debug] [MainThread]: Flushing usage events
+[0m20:23:41.409099 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109fb57d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109d665d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109d66e90>]}
+
+
+============================== 20:23:41.411997 | 54363d53-7b37-4e5f-a993-864629f7fb55 ==============================
+[0m20:23:41.411997 [info ] [MainThread]: Running with dbt=1.7.0
+[0m20:23:41.412322 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'debug': 'False', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'use_experimental_parser': 'False', 'log_format': 'default', 'static_parser': 'True', 'printer_width': '80', 'warn_error': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'quiet': 'False', 'partial_parse': 'True', 'no_print': 'None', 'invocation_command': 'dbt debug --profiles-dir .', 'use_colors': 'True', 'profiles_dir': '.', 'log_path': '/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dbt/logs', 'version_check': 'True', 'write_json': 'True'}
+[0m20:23:41.412676 [info ] [MainThread]: dbt version: 1.7.0
+[0m20:23:41.412855 [info ] [MainThread]: python version: 3.11.5
+[0m20:23:41.413024 [info ] [MainThread]: python path: /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dbt_venv/bin/python3.11
+[0m20:23:41.413175 [info ] [MainThread]: os info: macOS-14.2.1-arm64-arm-64bit
+[0m20:23:41.471923 [info ] [MainThread]: Using profiles dir at .
+[0m20:23:41.472246 [info ] [MainThread]: Using profiles.yml file at ./profiles.yml
+[0m20:23:41.472437 [info ] [MainThread]: Using dbt_project.yml file at /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dbt/dbt_project.yml
+[0m20:23:41.472797 [info ] [MainThread]: adapter type: postgres
+[0m20:23:41.472954 [info ] [MainThread]: adapter version: 1.7.0
+[0m20:23:41.505505 [info ] [MainThread]: Configuration:
+[0m20:23:41.505864 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m20:23:41.506038 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m20:23:41.506197 [info ] [MainThread]: Required dependencies:
+[0m20:23:41.506383 [debug] [MainThread]: Executing "git --help"
+[0m20:23:41.516263 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m20:23:41.516695 [debug] [MainThread]: STDERR: "b''"
+[0m20:23:41.516904 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m20:23:41.517082 [info ] [MainThread]: Connection:
+[0m20:23:41.517260 [info ] [MainThread]:   host: localhost
+[0m20:23:41.517394 [info ] [MainThread]:   port: 5432
+[0m20:23:41.517526 [info ] [MainThread]:   user: prajwalanand
+[0m20:23:41.517657 [info ] [MainThread]:   database: oil_gas_db
+[0m20:23:41.517787 [info ] [MainThread]:   schema: public
+[0m20:23:41.517917 [info ] [MainThread]:   connect_timeout: 10
+[0m20:23:41.518048 [info ] [MainThread]:   role: None
+[0m20:23:41.518180 [info ] [MainThread]:   search_path: None
+[0m20:23:41.518377 [info ] [MainThread]:   keepalives_idle: 0
+[0m20:23:41.518556 [info ] [MainThread]:   sslmode: None
+[0m20:23:41.518703 [info ] [MainThread]:   sslcert: None
+[0m20:23:41.518841 [info ] [MainThread]:   sslkey: None
+[0m20:23:41.518980 [info ] [MainThread]:   sslrootcert: None
+[0m20:23:41.519116 [info ] [MainThread]:   application_name: dbt
+[0m20:23:41.519249 [info ] [MainThread]:   retries: 1
+[0m20:23:41.519470 [info ] [MainThread]: Registered adapter: postgres=1.7.0
+[0m20:23:41.532836 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m20:23:41.533370 [debug] [MainThread]: Using postgres connection "debug"
+[0m20:23:41.533542 [debug] [MainThread]: On debug: select 1 as id
+[0m20:23:41.533714 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:23:41.554656 [debug] [MainThread]: SQL status: SELECT 1 in 0.0 seconds
+[0m20:23:41.555569 [debug] [MainThread]: On debug: Close
+[0m20:23:41.555829 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m20:23:41.556035 [info ] [MainThread]: [32mAll checks passed![0m
+[0m20:23:41.572956 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m20:23:41.573274 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109cb9150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109a2fe50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104fc0e90>]}
+[0m20:23:41.573565 [debug] [MainThread]: Flushing usage events
+[0m20:23:43.060936 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105890350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055b3290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055b1a50>]}
+
+
+============================== 20:23:43.063206 | e5761a02-e622-451e-a450-00c67f25dff6 ==============================
+[0m20:23:43.063206 [info ] [MainThread]: Running with dbt=1.7.0
+[0m20:23:43.063535 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'warn_error': 'None', 'indirect_selection': 'eager', 'version_check': 'True', 'profiles_dir': '.', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'log_cache_events': 'False', 'static_parser': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'introspect': 'True', 'debug': 'False', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'log_path': '/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dbt/logs', 'no_print': 'None', 'invocation_command': 'dbt run --profiles-dir .', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'printer_width': '80', 'write_json': 'True'}
+[0m20:23:43.147288 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e5761a02-e622-451e-a450-00c67f25dff6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1062d1710>]}
+[0m20:23:43.213288 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e5761a02-e622-451e-a450-00c67f25dff6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10551a590>]}
+[0m20:23:43.213802 [info ] [MainThread]: Registered adapter: postgres=1.7.0
+[0m20:23:43.223727 [debug] [MainThread]: checksum: 8434eacd4ffdf0ca3ab22bf0e2d55b45306c9599613e842b959405abc489e606, vars: {}, profile: , target: , version: 1.7.0
+[0m20:23:43.224183 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m20:23:43.224417 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e5761a02-e622-451e-a450-00c67f25dff6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069e7b10>]}
+[0m20:23:43.666831 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.oil_gas_pipeline.staging
+- models.oil_gas_pipeline.marts
+[0m20:23:43.669224 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e5761a02-e622-451e-a450-00c67f25dff6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d15850>]}
+[0m20:23:43.675928 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e5761a02-e622-451e-a450-00c67f25dff6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106beead0>]}
+[0m20:23:43.676198 [info ] [MainThread]: Found 3 models, 22 tests, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m20:23:43.676385 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e5761a02-e622-451e-a450-00c67f25dff6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d35a50>]}
+[0m20:23:43.677399 [info ] [MainThread]: 
+[0m20:23:43.677760 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m20:23:43.678289 [debug] [ThreadPool]: Acquiring new postgres connection 'list_oil_gas_db'
+[0m20:23:43.682678 [debug] [ThreadPool]: Using postgres connection "list_oil_gas_db"
+[0m20:23:43.682881 [debug] [ThreadPool]: On list_oil_gas_db: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "oil_gas_pipeline", "target_name": "dev", "connection_name": "list_oil_gas_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m20:23:43.683046 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:23:43.699368 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.0 seconds
+[0m20:23:43.700148 [debug] [ThreadPool]: On list_oil_gas_db: Close
+[0m20:23:43.700719 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_oil_gas_db, now create_oil_gas_db_public_public)
+[0m20:23:43.701110 [debug] [ThreadPool]: Creating schema "database: "oil_gas_db"
+schema: "public_public"
+"
+[0m20:23:43.703833 [debug] [ThreadPool]: Using postgres connection "create_oil_gas_db_public_public"
+[0m20:23:43.704019 [debug] [ThreadPool]: On create_oil_gas_db_public_public: BEGIN
+[0m20:23:43.704166 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:23:43.709833 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m20:23:43.710049 [debug] [ThreadPool]: Using postgres connection "create_oil_gas_db_public_public"
+[0m20:23:43.710207 [debug] [ThreadPool]: On create_oil_gas_db_public_public: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "oil_gas_pipeline", "target_name": "dev", "connection_name": "create_oil_gas_db_public_public"} */
+create schema if not exists "public_public"
+[0m20:23:43.714319 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.0 seconds
+[0m20:23:43.714802 [debug] [ThreadPool]: On create_oil_gas_db_public_public: COMMIT
+[0m20:23:43.714967 [debug] [ThreadPool]: Using postgres connection "create_oil_gas_db_public_public"
+[0m20:23:43.715111 [debug] [ThreadPool]: On create_oil_gas_db_public_public: COMMIT
+[0m20:23:43.715921 [debug] [ThreadPool]: SQL status: COMMIT in 0.0 seconds
+[0m20:23:43.716070 [debug] [ThreadPool]: On create_oil_gas_db_public_public: Close
+[0m20:23:43.717027 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_oil_gas_db_public_public, now list_oil_gas_db_public_public)
+[0m20:23:43.719907 [debug] [ThreadPool]: Using postgres connection "list_oil_gas_db_public_public"
+[0m20:23:43.720078 [debug] [ThreadPool]: On list_oil_gas_db_public_public: BEGIN
+[0m20:23:43.720218 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:23:43.725259 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m20:23:43.725429 [debug] [ThreadPool]: Using postgres connection "list_oil_gas_db_public_public"
+[0m20:23:43.725591 [debug] [ThreadPool]: On list_oil_gas_db_public_public: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "oil_gas_pipeline", "target_name": "dev", "connection_name": "list_oil_gas_db_public_public"} */
+select
+      'oil_gas_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_public'
+    union all
+    select
+      'oil_gas_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_public'
+    union all
+    select
+      'oil_gas_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_public'
+  
+[0m20:23:43.734101 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.0 seconds
+[0m20:23:43.734689 [debug] [ThreadPool]: On list_oil_gas_db_public_public: ROLLBACK
+[0m20:23:43.734944 [debug] [ThreadPool]: On list_oil_gas_db_public_public: Close
+[0m20:23:43.737071 [debug] [MainThread]: Using postgres connection "master"
+[0m20:23:43.737248 [debug] [MainThread]: On master: BEGIN
+[0m20:23:43.737389 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:23:43.741686 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m20:23:43.742301 [debug] [MainThread]: Using postgres connection "master"
+[0m20:23:43.742778 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "oil_gas_pipeline", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m20:23:43.753788 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m20:23:43.754361 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e5761a02-e622-451e-a450-00c67f25dff6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10564df50>]}
+[0m20:23:43.754688 [debug] [MainThread]: On master: ROLLBACK
+[0m20:23:43.755014 [debug] [MainThread]: Using postgres connection "master"
+[0m20:23:43.755199 [debug] [MainThread]: On master: BEGIN
+[0m20:23:43.755525 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m20:23:43.755709 [debug] [MainThread]: On master: COMMIT
+[0m20:23:43.755861 [debug] [MainThread]: Using postgres connection "master"
+[0m20:23:43.756002 [debug] [MainThread]: On master: COMMIT
+[0m20:23:43.756244 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m20:23:43.756389 [debug] [MainThread]: On master: Close
+[0m20:23:43.756718 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m20:23:43.756930 [info ] [MainThread]: 
+[0m20:23:43.758528 [debug] [Thread-1 (]: Began running node model.oil_gas_pipeline.stg_natural_gas
+[0m20:23:43.758777 [info ] [Thread-1 (]: 1 of 3 START sql view model public_public.silver_natural_gas ................... [RUN]
+[0m20:23:43.759251 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_oil_gas_db_public_public, now model.oil_gas_pipeline.stg_natural_gas)
+[0m20:23:43.759441 [debug] [Thread-1 (]: Began compiling node model.oil_gas_pipeline.stg_natural_gas
+[0m20:23:43.763201 [debug] [Thread-1 (]: Writing injected SQL for node "model.oil_gas_pipeline.stg_natural_gas"
+[0m20:23:43.763776 [debug] [Thread-1 (]: Timing info for model.oil_gas_pipeline.stg_natural_gas (compile): 20:23:43.759549 => 20:23:43.763663
+[0m20:23:43.763962 [debug] [Thread-1 (]: Began executing node model.oil_gas_pipeline.stg_natural_gas
+[0m20:23:43.780041 [debug] [Thread-1 (]: Writing runtime sql for node "model.oil_gas_pipeline.stg_natural_gas"
+[0m20:23:43.780622 [debug] [Thread-1 (]: Using postgres connection "model.oil_gas_pipeline.stg_natural_gas"
+[0m20:23:43.780808 [debug] [Thread-1 (]: On model.oil_gas_pipeline.stg_natural_gas: BEGIN
+[0m20:23:43.780974 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:23:43.785604 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m20:23:43.785808 [debug] [Thread-1 (]: Using postgres connection "model.oil_gas_pipeline.stg_natural_gas"
+[0m20:23:43.786058 [debug] [Thread-1 (]: On model.oil_gas_pipeline.stg_natural_gas: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "oil_gas_pipeline", "target_name": "dev", "node_id": "model.oil_gas_pipeline.stg_natural_gas"} */
+
+  create view "oil_gas_db"."public_public"."silver_natural_gas__dbt_tmp"
+    
+    
+  as (
+    -- oil_gas_pipeline | dbt/models/stg_natural_gas.sql
+-- Staging model — cleans and pivots bronze_natural_gas into silver_natural_gas
+-- Reads from: bronze_natural_gas (raw EIA API data)
+-- Writes to:  silver_natural_gas (one row per month, wide format)
+-- Materialized as: view (rebuilt on every dbt run)
+
+
+
+with
+
+-- ── Step 1: pull raw bronze data ──────────────────────────────────────────────
+raw as (
+    select
+        series_id,
+        series_name,
+        date_trunc('month', period::date)::date  as period,
+        value::numeric(12, 4)                    as value,
+        unit,
+        ingested_at
+    from bronze_natural_gas
+    where
+        value is not null
+        and period is not null
+        and value >= 0
+),
+
+-- ── Step 2: deduplicate — keep latest ingested row per series+period ─────────
+deduplicated as (
+    select distinct on (series_id, period)
+        series_id,
+        period,
+        value,
+        ingested_at
+    from raw
+    order by series_id, period, ingested_at desc
+),
+
+-- ── Step 3: pivot — one row per month ────────────────────────────────────────
+pivoted as (
+    select
+        period,
+
+        max(case when series_id = 'NG.RNGWHHD.M'              then value end) as henry_hub_price,
+        max(case when series_id = 'NG.NW2_EPG0_SWO_R48_BCF.M' then value end) as us_storage_bcf,
+        max(case when series_id = 'NG.N9010US2.M'              then value end) as us_production
+
+    from deduplicated
+    group by period
+),
+
+-- ── Step 4: add derived features ─────────────────────────────────────────────
+with_features as (
+    select
+        period,
+        henry_hub_price,
+        us_storage_bcf,
+        us_production,
+
+        -- Month-over-month % change in Henry Hub price
+        round(
+            (henry_hub_price - lag(henry_hub_price) over (order by period))
+            / nullif(lag(henry_hub_price) over (order by period), 0) * 100,
+            4
+        )                                                                   as price_mom_change,
+
+        -- Outlier flag — Henry Hub price > 3 std devs from mean
+        abs(henry_hub_price - avg(henry_hub_price) over ())
+            > 3 * stddev(henry_hub_price) over ()                           as is_outlier,
+
+        now()                                                               as transformed_at
+
+    from pivoted
+    where period is not null
+)
+
+-- ── Final select ──────────────────────────────────────────────────────────────
+select
+    gen_random_uuid()           as id,
+    period,
+    henry_hub_price,
+    us_storage_bcf,
+    us_production,
+    price_mom_change,
+    coalesce(is_outlier, false) as is_outlier,
+    transformed_at
+from with_features
+order by period asc
+  );
+[0m20:23:43.799427 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.0 seconds
+[0m20:23:43.802551 [debug] [Thread-1 (]: Using postgres connection "model.oil_gas_pipeline.stg_natural_gas"
+[0m20:23:43.802764 [debug] [Thread-1 (]: On model.oil_gas_pipeline.stg_natural_gas: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "oil_gas_pipeline", "target_name": "dev", "node_id": "model.oil_gas_pipeline.stg_natural_gas"} */
+alter table "oil_gas_db"."public_public"."silver_natural_gas__dbt_tmp" rename to "silver_natural_gas"
+[0m20:23:43.804271 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m20:23:43.811651 [debug] [Thread-1 (]: On model.oil_gas_pipeline.stg_natural_gas: COMMIT
+[0m20:23:43.811878 [debug] [Thread-1 (]: Using postgres connection "model.oil_gas_pipeline.stg_natural_gas"
+[0m20:23:43.812056 [debug] [Thread-1 (]: On model.oil_gas_pipeline.stg_natural_gas: COMMIT
+[0m20:23:43.812944 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m20:23:43.815730 [debug] [Thread-1 (]: Applying DROP to: "oil_gas_db"."public_public"."silver_natural_gas__dbt_backup"
+[0m20:23:43.818004 [debug] [Thread-1 (]: Using postgres connection "model.oil_gas_pipeline.stg_natural_gas"
+[0m20:23:43.818199 [debug] [Thread-1 (]: On model.oil_gas_pipeline.stg_natural_gas: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "oil_gas_pipeline", "target_name": "dev", "node_id": "model.oil_gas_pipeline.stg_natural_gas"} */
+drop view if exists "oil_gas_db"."public_public"."silver_natural_gas__dbt_backup" cascade
+[0m20:23:43.818629 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m20:23:43.819325 [debug] [Thread-1 (]: Timing info for model.oil_gas_pipeline.stg_natural_gas (execute): 20:23:43.764066 => 20:23:43.819225
+[0m20:23:43.819506 [debug] [Thread-1 (]: On model.oil_gas_pipeline.stg_natural_gas: Close
+[0m20:23:43.819861 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e5761a02-e622-451e-a450-00c67f25dff6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106320790>]}
+[0m20:23:43.820170 [info ] [Thread-1 (]: 1 of 3 OK created sql view model public_public.silver_natural_gas .............. [[32mCREATE VIEW[0m in 0.06s]
+[0m20:23:43.820445 [debug] [Thread-1 (]: Finished running node model.oil_gas_pipeline.stg_natural_gas
+[0m20:23:43.820645 [debug] [Thread-1 (]: Began running node model.oil_gas_pipeline.stg_petroleum
+[0m20:23:43.820899 [info ] [Thread-1 (]: 2 of 3 START sql view model public_public.silver_petroleum ..................... [RUN]
+[0m20:23:43.821268 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.oil_gas_pipeline.stg_natural_gas, now model.oil_gas_pipeline.stg_petroleum)
+[0m20:23:43.821441 [debug] [Thread-1 (]: Began compiling node model.oil_gas_pipeline.stg_petroleum
+[0m20:23:43.823043 [debug] [Thread-1 (]: Writing injected SQL for node "model.oil_gas_pipeline.stg_petroleum"
+[0m20:23:43.823426 [debug] [Thread-1 (]: Timing info for model.oil_gas_pipeline.stg_petroleum (compile): 20:23:43.821545 => 20:23:43.823331
+[0m20:23:43.823638 [debug] [Thread-1 (]: Began executing node model.oil_gas_pipeline.stg_petroleum
+[0m20:23:43.825482 [debug] [Thread-1 (]: Writing runtime sql for node "model.oil_gas_pipeline.stg_petroleum"
+[0m20:23:43.825820 [debug] [Thread-1 (]: Using postgres connection "model.oil_gas_pipeline.stg_petroleum"
+[0m20:23:43.825986 [debug] [Thread-1 (]: On model.oil_gas_pipeline.stg_petroleum: BEGIN
+[0m20:23:43.826145 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:23:43.831983 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m20:23:43.832216 [debug] [Thread-1 (]: Using postgres connection "model.oil_gas_pipeline.stg_petroleum"
+[0m20:23:43.832536 [debug] [Thread-1 (]: On model.oil_gas_pipeline.stg_petroleum: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "oil_gas_pipeline", "target_name": "dev", "node_id": "model.oil_gas_pipeline.stg_petroleum"} */
+
+  create view "oil_gas_db"."public_public"."silver_petroleum__dbt_tmp"
+    
+    
+  as (
+    -- oil_gas_pipeline | dbt/models/stg_petroleum.sql
+-- Staging model — cleans and pivots bronze_petroleum into silver_petroleum
+-- Reads from: bronze_petroleum (raw EIA API data)
+-- Writes to:  silver_petroleum (one row per month, wide format)
+-- Materialized as: view (rebuilt on every dbt run)
+
+
+
+with
+
+-- ── Step 1: pull raw bronze data ──────────────────────────────────────────────
+raw as (
+    select
+        series_id,
+        series_name,
+        -- normalize period to first day of the month
+        date_trunc('month', period::date)::date  as period,
+        value::numeric(12, 4)                    as value,
+        unit,
+        ingested_at
+    from bronze_petroleum
+    where
+        value is not null
+        and period is not null
+        -- exclude clearly bad values (negative prices)
+        and value >= 0
+),
+
+-- ── Step 2: deduplicate — keep latest ingested row per series+period ─────────
+deduplicated as (
+    select distinct on (series_id, period)
+        series_id,
+        period,
+        value,
+        unit,
+        ingested_at
+    from raw
+    order by series_id, period, ingested_at desc
+),
+
+-- ── Step 3: pivot — one row per month with each series as its own column ─────
+pivoted as (
+    select
+        period,
+
+        max(case when series_id = 'PET.RWTC.M'     then value end) as wti_price,
+        max(case when series_id = 'PET.RBRTE.M'    then value end) as brent_price,
+        max(case when series_id = 'PET.MCRFPUS2.M' then value end) as us_production
+
+    from deduplicated
+    group by period
+),
+
+-- ── Step 4: add derived features ─────────────────────────────────────────────
+with_features as (
+    select
+        period,
+        wti_price,
+        brent_price,
+        us_production,
+
+        -- Brent-WTI spread — useful market indicator
+        round(brent_price - wti_price, 4)                           as price_spread,
+
+        -- Month-over-month % change in WTI
+        round(
+            (wti_price - lag(wti_price) over (order by period))
+            / nullif(lag(wti_price) over (order by period), 0) * 100,
+            4
+        )                                                           as wti_mom_change,
+
+        -- Flag outliers: WTI price more than 3 standard deviations from mean
+        -- (computed over the whole dataset)
+        abs(wti_price - avg(wti_price) over ())
+            > 3 * stddev(wti_price) over ()                         as is_outlier,
+
+        now()                                                       as transformed_at
+
+    from pivoted
+    where period is not null
+)
+
+-- ── Final select ──────────────────────────────────────────────────────────────
+select
+    gen_random_uuid()   as id,
+    period,
+    wti_price,
+    brent_price,
+    us_production,
+    price_spread,
+    wti_mom_change,
+    coalesce(is_outlier, false) as is_outlier,
+    transformed_at
+from with_features
+order by period asc
+  );
+[0m20:23:43.839162 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.0 seconds
+[0m20:23:43.842259 [debug] [Thread-1 (]: Using postgres connection "model.oil_gas_pipeline.stg_petroleum"
+[0m20:23:43.842478 [debug] [Thread-1 (]: On model.oil_gas_pipeline.stg_petroleum: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "oil_gas_pipeline", "target_name": "dev", "node_id": "model.oil_gas_pipeline.stg_petroleum"} */
+alter table "oil_gas_db"."public_public"."silver_petroleum__dbt_tmp" rename to "silver_petroleum"
+[0m20:23:43.843405 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m20:23:43.844198 [debug] [Thread-1 (]: On model.oil_gas_pipeline.stg_petroleum: COMMIT
+[0m20:23:43.844377 [debug] [Thread-1 (]: Using postgres connection "model.oil_gas_pipeline.stg_petroleum"
+[0m20:23:43.844539 [debug] [Thread-1 (]: On model.oil_gas_pipeline.stg_petroleum: COMMIT
+[0m20:23:43.845098 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m20:23:43.846300 [debug] [Thread-1 (]: Applying DROP to: "oil_gas_db"."public_public"."silver_petroleum__dbt_backup"
+[0m20:23:43.846717 [debug] [Thread-1 (]: Using postgres connection "model.oil_gas_pipeline.stg_petroleum"
+[0m20:23:43.846883 [debug] [Thread-1 (]: On model.oil_gas_pipeline.stg_petroleum: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "oil_gas_pipeline", "target_name": "dev", "node_id": "model.oil_gas_pipeline.stg_petroleum"} */
+drop view if exists "oil_gas_db"."public_public"."silver_petroleum__dbt_backup" cascade
+[0m20:23:43.847253 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m20:23:43.847966 [debug] [Thread-1 (]: Timing info for model.oil_gas_pipeline.stg_petroleum (execute): 20:23:43.823741 => 20:23:43.847849
+[0m20:23:43.848154 [debug] [Thread-1 (]: On model.oil_gas_pipeline.stg_petroleum: Close
+[0m20:23:43.848599 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e5761a02-e622-451e-a450-00c67f25dff6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e037d0>]}
+[0m20:23:43.848892 [info ] [Thread-1 (]: 2 of 3 OK created sql view model public_public.silver_petroleum ................ [[32mCREATE VIEW[0m in 0.03s]
+[0m20:23:43.849156 [debug] [Thread-1 (]: Finished running node model.oil_gas_pipeline.stg_petroleum
+[0m20:23:43.849479 [debug] [Thread-1 (]: Began running node model.oil_gas_pipeline.mart_energy_prices
+[0m20:23:43.849734 [info ] [Thread-1 (]: 3 of 3 START sql table model public_public.gold_energy_prices .................. [RUN]
+[0m20:23:43.850109 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.oil_gas_pipeline.stg_petroleum, now model.oil_gas_pipeline.mart_energy_prices)
+[0m20:23:43.850292 [debug] [Thread-1 (]: Began compiling node model.oil_gas_pipeline.mart_energy_prices
+[0m20:23:43.852213 [debug] [Thread-1 (]: Writing injected SQL for node "model.oil_gas_pipeline.mart_energy_prices"
+[0m20:23:43.852613 [debug] [Thread-1 (]: Timing info for model.oil_gas_pipeline.mart_energy_prices (compile): 20:23:43.850444 => 20:23:43.852516
+[0m20:23:43.852786 [debug] [Thread-1 (]: Began executing node model.oil_gas_pipeline.mart_energy_prices
+[0m20:23:43.863606 [debug] [Thread-1 (]: Writing runtime sql for node "model.oil_gas_pipeline.mart_energy_prices"
+[0m20:23:43.864033 [debug] [Thread-1 (]: Using postgres connection "model.oil_gas_pipeline.mart_energy_prices"
+[0m20:23:43.864214 [debug] [Thread-1 (]: On model.oil_gas_pipeline.mart_energy_prices: BEGIN
+[0m20:23:43.864378 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:23:43.869687 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m20:23:43.869892 [debug] [Thread-1 (]: Using postgres connection "model.oil_gas_pipeline.mart_energy_prices"
+[0m20:23:43.870169 [debug] [Thread-1 (]: On model.oil_gas_pipeline.mart_energy_prices: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "oil_gas_pipeline", "target_name": "dev", "node_id": "model.oil_gas_pipeline.mart_energy_prices"} */
+
+  
+    
+
+  create  table "oil_gas_db"."public_public"."gold_energy_prices__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- oil_gas_pipeline | dbt/models/mart_energy_prices.sql
+-- Gold mart model — joins silver petroleum + silver natural gas
+-- into one wide, analysis-ready table for forecasting and the dashboard
+-- Reads from: silver_petroleum, silver_natural_gas (the two staging views)
+-- Writes to:  gold_energy_prices (persisted table)
+-- Materialized as: table (persisted — fast for Streamlit queries)
+
+
+
+with
+
+-- ── Pull from silver views (built by the two staging models) ──────────────────
+petroleum as (
+    select
+        period,
+        wti_price,
+        brent_price,
+        us_production       as us_oil_production,
+        price_spread,
+        wti_mom_change,
+        is_outlier          as oil_is_outlier
+    from "oil_gas_db"."public_public"."silver_petroleum"
+),
+
+natural_gas as (
+    select
+        period,
+        henry_hub_price,
+        us_storage_bcf      as us_gas_storage_bcf,
+        us_production       as us_gas_production,
+        price_mom_change    as gas_mom_change,
+        is_outlier          as gas_is_outlier
+    from "oil_gas_db"."public_public"."silver_natural_gas"
+),
+
+-- ── Full outer join — keep months even if one source is missing data ──────────
+joined as (
+    select
+        coalesce(p.period, g.period)    as period,
+
+        -- petroleum columns
+        p.wti_price,
+        p.brent_price,
+        p.price_spread,
+        p.us_oil_production,
+        p.wti_mom_change,
+        p.oil_is_outlier,
+
+        -- natural gas columns
+        g.henry_hub_price,
+        g.us_gas_storage_bcf,
+        g.us_gas_production,
+        g.gas_mom_change,
+        g.gas_is_outlier
+
+    from petroleum p
+    full outer join natural_gas g
+        on p.period = g.period
+),
+
+-- ── Add cross-commodity derived features ─────────────────────────────────────
+with_features as (
+    select
+        period,
+        wti_price,
+        brent_price,
+        price_spread,
+        us_oil_production,
+        wti_mom_change,
+        henry_hub_price,
+        us_gas_storage_bcf,
+        us_gas_production,
+        gas_mom_change,
+
+        -- Oil-to-gas price ratio — key metric for energy traders
+        -- tells you how many MMBtu of gas equals one barrel of oil
+        round(
+            wti_price / nullif(henry_hub_price, 0),
+            4
+        )                                                       as oil_gas_ratio,
+
+        -- Rolling 3-month average WTI — smooths out short-term spikes
+        round(
+            avg(wti_price) over (
+                order by period
+                rows between 2 preceding and current row
+            ),
+            4
+        )                                                       as wti_3m_avg,
+
+        -- Rolling 3-month average Henry Hub
+        round(
+            avg(henry_hub_price) over (
+                order by period
+                rows between 2 preceding and current row
+            ),
+            4
+        )                                                       as henry_hub_3m_avg,
+
+        -- Year-over-year WTI change
+        round(
+            wti_price - lag(wti_price, 12) over (order by period),
+            4
+        )                                                       as wti_yoy_change,
+
+        -- Flag if either commodity has an outlier this month
+        (coalesce(oil_is_outlier, false) or coalesce(gas_is_outlier, false)) as has_outlier,
+
+        now()                                                   as created_at
+
+    from joined
+    where period is not null
+)
+
+-- ── Final select ──────────────────────────────────────────────────────────────
+select
+    gen_random_uuid()   as id,
+    period,
+    wti_price,
+    brent_price,
+    price_spread,
+    us_oil_production,
+    wti_mom_change,
+    wti_3m_avg,
+    wti_yoy_change,
+    henry_hub_price,
+    us_gas_storage_bcf,
+    us_gas_production,
+    gas_mom_change,
+    henry_hub_3m_avg,
+    oil_gas_ratio,
+    has_outlier,
+    created_at
+from with_features
+order by period asc
+  );
+  
+[0m20:23:43.886447 [debug] [Thread-1 (]: SQL status: SELECT 136 in 0.0 seconds
+[0m20:23:43.888184 [debug] [Thread-1 (]: Using postgres connection "model.oil_gas_pipeline.mart_energy_prices"
+[0m20:23:43.888491 [debug] [Thread-1 (]: On model.oil_gas_pipeline.mart_energy_prices: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "oil_gas_pipeline", "target_name": "dev", "node_id": "model.oil_gas_pipeline.mart_energy_prices"} */
+alter table "oil_gas_db"."public_public"."gold_energy_prices__dbt_tmp" rename to "gold_energy_prices"
+[0m20:23:43.889273 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m20:23:43.891598 [debug] [Thread-1 (]: Using postgres connection "model.oil_gas_pipeline.mart_energy_prices"
+[0m20:23:43.891798 [debug] [Thread-1 (]: On model.oil_gas_pipeline.mart_energy_prices: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "oil_gas_pipeline", "target_name": "dev", "node_id": "model.oil_gas_pipeline.mart_energy_prices"} */
+
+        create index if not exists idx_gold_period on gold_energy_prices (period)
+      
+[0m20:23:43.893513 [debug] [Thread-1 (]: SQL status: CREATE INDEX in 0.0 seconds
+[0m20:23:43.894207 [debug] [Thread-1 (]: On model.oil_gas_pipeline.mart_energy_prices: COMMIT
+[0m20:23:43.894377 [debug] [Thread-1 (]: Using postgres connection "model.oil_gas_pipeline.mart_energy_prices"
+[0m20:23:43.894535 [debug] [Thread-1 (]: On model.oil_gas_pipeline.mart_energy_prices: COMMIT
+[0m20:23:43.895205 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m20:23:43.896472 [debug] [Thread-1 (]: Applying DROP to: "oil_gas_db"."public_public"."gold_energy_prices__dbt_backup"
+[0m20:23:43.897937 [debug] [Thread-1 (]: Using postgres connection "model.oil_gas_pipeline.mart_energy_prices"
+[0m20:23:43.898179 [debug] [Thread-1 (]: On model.oil_gas_pipeline.mart_energy_prices: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "oil_gas_pipeline", "target_name": "dev", "node_id": "model.oil_gas_pipeline.mart_energy_prices"} */
+drop table if exists "oil_gas_db"."public_public"."gold_energy_prices__dbt_backup" cascade
+[0m20:23:43.898563 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m20:23:43.899212 [debug] [Thread-1 (]: Timing info for model.oil_gas_pipeline.mart_energy_prices (execute): 20:23:43.852888 => 20:23:43.899116
+[0m20:23:43.899389 [debug] [Thread-1 (]: On model.oil_gas_pipeline.mart_energy_prices: Close
+[0m20:23:43.899736 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e5761a02-e622-451e-a450-00c67f25dff6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106dcd9d0>]}
+[0m20:23:43.900037 [info ] [Thread-1 (]: 3 of 3 OK created sql table model public_public.gold_energy_prices ............. [[32mSELECT 136[0m in 0.05s]
+[0m20:23:43.900300 [debug] [Thread-1 (]: Finished running node model.oil_gas_pipeline.mart_energy_prices
+[0m20:23:43.901015 [debug] [MainThread]: Using postgres connection "master"
+[0m20:23:43.901169 [debug] [MainThread]: On master: BEGIN
+[0m20:23:43.901304 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m20:23:43.905432 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m20:23:43.905585 [debug] [MainThread]: On master: COMMIT
+[0m20:23:43.905723 [debug] [MainThread]: Using postgres connection "master"
+[0m20:23:43.905856 [debug] [MainThread]: On master: COMMIT
+[0m20:23:43.906065 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m20:23:43.906207 [debug] [MainThread]: On master: Close
+[0m20:23:43.906482 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:23:43.906713 [debug] [MainThread]: Connection 'model.oil_gas_pipeline.mart_energy_prices' was properly closed.
+[0m20:23:43.906918 [info ] [MainThread]: 
+[0m20:23:43.907125 [info ] [MainThread]: Finished running 2 view models, 1 table model in 0 hours 0 minutes and 0.23 seconds (0.23s).
+[0m20:23:43.907550 [debug] [MainThread]: Command end result
+[0m20:23:43.912772 [info ] [MainThread]: 
+[0m20:23:43.912961 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:23:43.913127 [info ] [MainThread]: 
+[0m20:23:43.913332 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m20:23:43.914250 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b38110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10587bcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x100aab3d0>]}
+[0m20:23:43.914441 [debug] [MainThread]: Flushing usage events

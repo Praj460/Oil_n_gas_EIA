@@ -2,11 +2,11 @@ oil_gas_pipeline:
   target: dev
   outputs:
     dev:
-      type:     postgres
-      host:     localhost
-      port:     5432
-      dbname:   oil_gas_db
-      user:     postgres
-      password: ""
-      schema:   public
-      threads:  4
+      type: postgres
+      host: localhost
+      port: 5432
+      user: prajwalanand
+      password: India@1947
+      dbname: oil_gas_db
+      schema: public
+      threads: 1
