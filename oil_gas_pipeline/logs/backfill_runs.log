@@ -1,0 +1,7 @@
+2026-06-27 18:37:24 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/backfill_runs.log
+2026-06-27 18:37:25 | INFO     | database.db_manager | __init__:25 | DatabaseManager initialized | host=localhost | db=oil_gas_db
+2026-06-27 18:37:25 | INFO     | database.db_manager | log_pipeline_run:196 | Pipeline run logged | run=exogenous_petroleum_ingestion | status=success | id=3f4f25e5-8e6a-4f76-8f35-ff204b564443
+2026-06-27 18:37:25 | INFO     | database.db_manager | log_pipeline_run:196 | Pipeline run logged | run=fred_macro_ingestion | status=success | id=1b6671f9-2aca-43bc-95fa-b58e93677c67
+2026-06-27 18:37:25 | INFO     | database.db_manager | log_pipeline_run:196 | Pipeline run logged | run=steo_weather_ingestion | status=success | id=4e271345-8f4d-41c6-8bf4-09cada12596f
+2026-06-27 18:37:25 | INFO     | database.db_manager | log_pipeline_run:196 | Pipeline run logged | run=supply_signals_ingestion | status=success | id=d0ffd90f-0dd1-4d29-bde6-b5a76992a3eb
+2026-06-27 18:37:25 | INFO     | database.db_manager | log_pipeline_run:196 | Pipeline run logged | run=feature_engineering_build | status=success | id=3dcd48f7-f568-475a-8f41-65b76e9c3df2

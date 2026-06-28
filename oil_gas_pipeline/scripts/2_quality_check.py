@@ -13,7 +13,7 @@ setup_logging(log_filename="quality.log")
 import logging
 import pandas as pd
 import psycopg2
-
+from dotenv import load_dotenv
 from database.db_manager import DatabaseManager
 from great_expectations.petroleum_suite import PetroleumSuite
 from great_expectations.gas_suite import GasSuite

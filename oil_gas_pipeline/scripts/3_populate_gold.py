@@ -15,7 +15,7 @@ import logging
 import pandas as pd
 import psycopg2
 from psycopg2.extras import execute_batch
-
+from dotenv import load_dotenv
 logger = logging.getLogger(__name__)
 
 load_dotenv()

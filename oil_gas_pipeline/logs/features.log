@@ -1,0 +1,24 @@
+2026-06-16 23:54:45 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/features.log
+2026-06-16 23:54:46 | INFO     | __main__ | main:95 | joined bronze_crude_imports → crude_imports
+2026-06-16 23:54:46 | INFO     | __main__ | main:95 | joined bronze_refinery_utilization → refinery_util
+2026-06-16 23:54:46 | INFO     | __main__ | main:95 | joined bronze_gasoline_stocks → gasoline_stocks
+2026-06-16 23:54:46 | INFO     | __main__ | main:95 | joined bronze_distillate_stocks → distillate_stocks
+2026-06-16 23:54:46 | INFO     | __main__ | main:95 | joined bronze_heating_degree_days → hdd
+2026-06-16 23:54:46 | INFO     | __main__ | main:95 | joined bronze_cooling_degree_days → cdd
+2026-06-16 23:54:46 | INFO     | __main__ | main:95 | joined bronze_opec_spare_capacity → opec_spare
+2026-06-16 23:54:46 | INFO     | __main__ | main:95 | joined bronze_global_oil_inventory → global_inv
+2026-06-16 23:54:46 | INFO     | __main__ | main:95 | joined bronze_dollar_index → dollar_index
+2026-06-16 23:54:46 | INFO     | __main__ | main:95 | joined bronze_industrial_production → industrial_production
+2026-06-16 23:54:46 | INFO     | __main__ | main:95 | joined bronze_treasury_10y → treasury_10y
+2026-06-22 20:19:29 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/features.log
+2026-06-22 20:19:30 | INFO     | __main__ | main:95 | joined bronze_crude_imports → crude_imports
+2026-06-22 20:19:30 | INFO     | __main__ | main:95 | joined bronze_refinery_utilization → refinery_util
+2026-06-22 20:19:30 | INFO     | __main__ | main:95 | joined bronze_gasoline_stocks → gasoline_stocks
+2026-06-22 20:19:30 | INFO     | __main__ | main:95 | joined bronze_distillate_stocks → distillate_stocks
+2026-06-22 20:19:30 | INFO     | __main__ | main:95 | joined bronze_heating_degree_days → hdd
+2026-06-22 20:19:30 | INFO     | __main__ | main:95 | joined bronze_cooling_degree_days → cdd
+2026-06-22 20:19:30 | INFO     | __main__ | main:95 | joined bronze_opec_spare_capacity → opec_spare
+2026-06-22 20:19:30 | INFO     | __main__ | main:95 | joined bronze_global_oil_inventory → global_inv
+2026-06-22 20:19:30 | INFO     | __main__ | main:95 | joined bronze_dollar_index → dollar_index
+2026-06-22 20:19:30 | INFO     | __main__ | main:95 | joined bronze_industrial_production → industrial_production
+2026-06-22 20:19:30 | INFO     | __main__ | main:95 | joined bronze_treasury_10y → treasury_10y

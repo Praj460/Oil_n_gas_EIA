@@ -148,6 +148,16 @@ class DatabaseManager:
             raise ValueError(f"Missing columns: {missing}")
         with self.get_connection() as conn:
             cur  = conn.cursor()
+            # Delete existing rows for these model+target+period combos so re-runs
+            # replace instead of stacking up duplicates.
+            del_keys = {(row.get("target"), row.get("model_name"), row.get("forecast_period"))
+                        for _, row in df.iterrows()}
+            for tgt, mdl, period in del_keys:
+                cur.execute(
+                    "DELETE FROM gold_forecast_results "
+                    "WHERE target = %s AND model_name = %s AND forecast_period = %s",
+                    (tgt, mdl, period),
+                )
             data = [(row.get("target"), row.get("model_name"), row.get("forecast_period"),
                      row.get("forecast_value"), row.get("lower_bound"), row.get("upper_bound"),
                      row.get("rmse"), row.get("mape"), row.get("trained_on_periods"))

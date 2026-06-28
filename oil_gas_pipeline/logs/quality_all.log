@@ -1,0 +1,13 @@
+2026-06-27 18:37:24 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/quality_all.log
+2026-06-27 18:37:24 | INFO     | database.db_manager | __init__:25 | DatabaseManager initialized | host=localhost | db=oil_gas_db
+2026-06-27 18:37:24 | INFO     | database.db_manager | log_data_quality:208 | Data quality logged | suite=crude_imports_suite | passed=9/9
+2026-06-27 18:37:24 | INFO     | database.db_manager | log_data_quality:208 | Data quality logged | suite=refinery_util_suite | passed=9/9
+2026-06-27 18:37:24 | INFO     | database.db_manager | log_data_quality:208 | Data quality logged | suite=gasoline_stocks_suite | passed=9/9
+2026-06-27 18:37:24 | INFO     | database.db_manager | log_data_quality:208 | Data quality logged | suite=distillate_stocks_suite | passed=9/9
+2026-06-27 18:37:24 | INFO     | database.db_manager | log_data_quality:208 | Data quality logged | suite=hdd_suite | passed=9/9
+2026-06-27 18:37:24 | INFO     | database.db_manager | log_data_quality:208 | Data quality logged | suite=cdd_suite | passed=9/9
+2026-06-27 18:37:24 | INFO     | database.db_manager | log_data_quality:208 | Data quality logged | suite=opec_spare_suite | passed=9/9
+2026-06-27 18:37:24 | INFO     | database.db_manager | log_data_quality:208 | Data quality logged | suite=global_inv_suite | passed=9/9
+2026-06-27 18:37:24 | INFO     | database.db_manager | log_data_quality:208 | Data quality logged | suite=dollar_index_suite | passed=9/9
+2026-06-27 18:37:24 | INFO     | database.db_manager | log_data_quality:208 | Data quality logged | suite=industrial_prod_suite | passed=9/9
+2026-06-27 18:37:24 | INFO     | database.db_manager | log_data_quality:208 | Data quality logged | suite=treasury_10y_suite | passed=9/9

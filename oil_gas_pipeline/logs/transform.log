@@ -104,3 +104,670 @@
 2026-06-11 20:12:59 | INFO     | airflow.models.dag | calculate_dagrun_date_fields:3954 | Setting next_dagrun for transform_dag to 2026-06-10 07:00:00+00:00, run_after=2026-06-11 07:00:00+00:00
 2026-06-11 20:12:59 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 56383)
 2026-06-11 20:12:59 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 56383)
+2026-06-14 18:43:00 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/transform.log
+2026-06-14 18:43:00 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 18:43:00 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: transform_dag>
+2026-06-14 18:43:00 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:667 | Running dagbag.sync_to_db with retries. Try 1 of 3
+2026-06-14 18:43:00 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:672 | Calling the DAG.bulk_sync_to_db method
+2026-06-14 18:43:00 | DEBUG    | airflow.models.serialized_dag | write_dag:166 | Checking if DAG (transform_dag) changed
+2026-06-14 18:43:00 | DEBUG    | airflow.models.serialized_dag | write_dag:180 | Writing Serialized DAG: transform_dag to the DB
+2026-06-14 18:43:00 | DEBUG    | airflow.models.serialized_dag | write_dag:182 | DAG: transform_dag written to the DB
+2026-06-14 18:43:00 | DEBUG    | airflow.models.dagbag.DagBag | _sync_perm_for_dag:701 | Syncing DAG permissions: transform_dag to the DB
+2026-06-14 18:43:00 | DEBUG    | airflow.www.security_appless.ApplessAirflowSecurityManager | sync_perm_for_dag:1090 | Not syncing DAG-level permissions for DAG 'DAG:transform_dag' as access control is unset.
+2026-06-14 18:43:00 | INFO     | airflow.models.dag | bulk_write_to_db:3096 | Sync 1 DAGs
+2026-06-14 18:43:00 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 59489)
+2026-06-14 18:43:00 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 59489)
+2026-06-14 18:43:31 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/transform.log
+2026-06-14 18:43:31 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 18:43:31 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: transform_dag>
+2026-06-14 18:43:31 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:667 | Running dagbag.sync_to_db with retries. Try 1 of 3
+2026-06-14 18:43:31 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:672 | Calling the DAG.bulk_sync_to_db method
+2026-06-14 18:43:31 | DEBUG    | airflow.models.serialized_dag | write_dag:166 | Checking if DAG (transform_dag) changed
+2026-06-14 18:43:31 | DEBUG    | airflow.models.serialized_dag | write_dag:177 | Serialized DAG (transform_dag) is unchanged. Skipping writing to DB
+2026-06-14 18:43:31 | INFO     | airflow.models.dag | bulk_write_to_db:3096 | Sync 1 DAGs
+2026-06-14 18:43:31 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 59560)
+2026-06-14 18:43:31 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 59560)
+2026-06-14 18:44:04 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/transform.log
+2026-06-14 18:44:04 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 18:44:04 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: transform_dag>
+2026-06-14 18:44:04 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:667 | Running dagbag.sync_to_db with retries. Try 1 of 3
+2026-06-14 18:44:04 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:672 | Calling the DAG.bulk_sync_to_db method
+2026-06-14 18:44:04 | DEBUG    | airflow.models.serialized_dag | write_dag:166 | Checking if DAG (transform_dag) changed
+2026-06-14 18:44:04 | DEBUG    | airflow.models.serialized_dag | write_dag:177 | Serialized DAG (transform_dag) is unchanged. Skipping writing to DB
+2026-06-14 18:44:04 | INFO     | airflow.models.dag | bulk_write_to_db:3096 | Sync 1 DAGs
+2026-06-14 18:44:04 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 59631)
+2026-06-14 18:44:04 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 59631)
+2026-06-14 18:49:47 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/transform.log
+2026-06-14 18:49:47 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 18:49:47 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: transform_dag>
+2026-06-14 18:49:47 | DEBUG    | airflow.plugins_manager | ensure_plugins_loaded:332 | Plugins are already loaded. Skipping.
+2026-06-14 18:49:47 | DEBUG    | airflow.plugins_manager | integrate_macros_plugins:516 | Integrate DAG plugins
+2026-06-14 18:49:47 | DEBUG    | airflow.models.taskinstance | _get_previous_execution_date:1042 | previous_execution_date was called
+2026-06-14 18:49:47 | INFO     | airflow.cli.commands.task_command | task_run:426 | Running <TaskInstance: transform_dag.check_bronze_data manual__2026-06-12T01:13:28.835661+00:00 [queued]> on host prajwals-macbook-air.local
+2026-06-14 18:49:47 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 60493)
+2026-06-14 18:49:47 | DEBUG    | airflow.settings | configure_orm:250 | Setting up DB connection pool (PID 60493)
+2026-06-14 18:49:47 | DEBUG    | airflow.settings | prepare_engine_args:298 | settings.prepare_engine_args(): Using NullPool
+2026-06-14 19:02:22 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/transform.log
+2026-06-14 19:02:22 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 19:02:22 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: transform_dag>
+2026-06-14 19:02:22 | DEBUG    | airflow.plugins_manager | ensure_plugins_loaded:332 | Plugins are already loaded. Skipping.
+2026-06-14 19:02:22 | DEBUG    | airflow.plugins_manager | integrate_macros_plugins:516 | Integrate DAG plugins
+2026-06-14 19:02:22 | DEBUG    | airflow.models.taskinstance | _get_previous_execution_date:1042 | previous_execution_date was called
+2026-06-14 19:02:22 | INFO     | airflow.cli.commands.task_command | task_run:426 | Running <TaskInstance: transform_dag.check_bronze_data manual__2026-06-12T01:13:28.835661+00:00 [running]> on host prajwals-macbook-air.local
+2026-06-14 19:02:22 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 62322)
+2026-06-14 19:02:22 | DEBUG    | airflow.settings | configure_orm:250 | Setting up DB connection pool (PID 62322)
+2026-06-14 19:02:22 | DEBUG    | airflow.settings | prepare_engine_args:298 | settings.prepare_engine_args(): Using NullPool
+2026-06-14 19:02:22 | DEBUG    | airflow.utils.cli_action_loggers | on_post_execution:88 | Calling callbacks: []
+2026-06-14 19:02:22 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 62322)
+2026-06-14 19:02:59 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/transform.log
+2026-06-14 19:02:59 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 19:02:59 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: transform_dag>
+2026-06-14 19:02:59 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:02:59 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:02:59 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:02:59 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:02:59 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:02:59 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:02:59 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:02:59 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:02:59 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:02:59 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:02:59 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:02:59 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:02:59 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:02:59 | DEBUG    | airflow.utils.cli_action_loggers | on_post_execution:88 | Calling callbacks: []
+2026-06-14 19:02:59 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 62465)
+2026-06-14 19:03:13 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/transform.log
+2026-06-14 19:03:13 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 19:03:13 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: transform_dag>
+2026-06-14 19:03:13 | DEBUG    | airflow.plugins_manager | ensure_plugins_loaded:332 | Plugins are already loaded. Skipping.
+2026-06-14 19:03:13 | DEBUG    | airflow.plugins_manager | integrate_macros_plugins:516 | Integrate DAG plugins
+2026-06-14 19:03:13 | DEBUG    | airflow.models.taskinstance | _get_previous_execution_date:1042 | previous_execution_date was called
+2026-06-14 19:03:13 | INFO     | airflow.cli.commands.task_command | task_run:426 | Running <TaskInstance: transform_dag.check_bronze_data manual__2026-06-12T01:13:28.835661+00:00 [queued]> on host prajwals-macbook-air.local
+2026-06-14 19:03:13 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 62520)
+2026-06-14 19:03:13 | DEBUG    | airflow.settings | configure_orm:250 | Setting up DB connection pool (PID 62520)
+2026-06-14 19:03:13 | DEBUG    | airflow.settings | prepare_engine_args:298 | settings.prepare_engine_args(): Using NullPool
+2026-06-14 19:04:05 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/transform.log
+2026-06-14 19:04:05 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 19:04:05 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: transform_dag>
+2026-06-14 19:04:05 | DEBUG    | airflow.plugins_manager | ensure_plugins_loaded:332 | Plugins are already loaded. Skipping.
+2026-06-14 19:04:05 | DEBUG    | airflow.plugins_manager | integrate_macros_plugins:516 | Integrate DAG plugins
+2026-06-14 19:04:05 | DEBUG    | airflow.models.taskinstance | _get_previous_execution_date:1042 | previous_execution_date was called
+2026-06-14 19:04:05 | INFO     | airflow.cli.commands.task_command | task_run:426 | Running <TaskInstance: transform_dag.check_bronze_data manual__2026-06-12T01:13:28.835661+00:00 [running]> on host prajwals-macbook-air.local
+2026-06-14 19:04:05 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 62655)
+2026-06-14 19:04:05 | DEBUG    | airflow.settings | configure_orm:250 | Setting up DB connection pool (PID 62655)
+2026-06-14 19:04:05 | DEBUG    | airflow.settings | prepare_engine_args:298 | settings.prepare_engine_args(): Using NullPool
+2026-06-14 19:04:05 | DEBUG    | airflow.utils.cli_action_loggers | on_post_execution:88 | Calling callbacks: []
+2026-06-14 19:04:05 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 62655)
+2026-06-14 19:05:05 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/transform.log
+2026-06-14 19:05:05 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 19:05:05 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: transform_dag>
+2026-06-14 19:05:05 | DEBUG    | airflow.plugins_manager | ensure_plugins_loaded:332 | Plugins are already loaded. Skipping.
+2026-06-14 19:05:05 | DEBUG    | airflow.plugins_manager | integrate_macros_plugins:516 | Integrate DAG plugins
+2026-06-14 19:05:05 | DEBUG    | airflow.models.taskinstance | _get_previous_execution_date:1042 | previous_execution_date was called
+2026-06-14 19:05:05 | INFO     | airflow.cli.commands.task_command | task_run:426 | Running <TaskInstance: transform_dag.check_bronze_data manual__2026-06-12T01:13:28.835661+00:00 [queued]> on host prajwals-macbook-air.local
+2026-06-14 19:05:05 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 62877)
+2026-06-14 19:05:05 | DEBUG    | airflow.settings | configure_orm:250 | Setting up DB connection pool (PID 62877)
+2026-06-14 19:05:05 | DEBUG    | airflow.settings | prepare_engine_args:298 | settings.prepare_engine_args(): Using NullPool
+2026-06-14 19:08:13 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/transform.log
+2026-06-14 19:08:13 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 19:08:13 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: transform_dag>
+2026-06-14 19:08:13 | INFO     | airflow.task | are_dependencies_met:2076 | Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: forecast_dag.load_and_preprocess __airflow_temporary_run_2026-06-15T00:08:13.382756+00:00__ [None]>
+2026-06-14 19:08:13 | INFO     | airflow.task | are_dependencies_met:2076 | Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: forecast_dag.load_and_preprocess __airflow_temporary_run_2026-06-15T00:08:13.382756+00:00__ [None]>
+2026-06-14 19:08:13 | INFO     | airflow.task | _check_and_change_state_before_execution:2306 | Starting attempt 1 of 2
+2026-06-14 19:08:13 | WARNING  | airflow.task | emit_state_change_metric:2388 | cannot record queued_duration for task load_and_preprocess because previous state change time has not been saved
+2026-06-14 19:08:13 | INFO     | airflow.task | _check_and_change_state_before_execution:2330 | Executing <Task(PythonOperator): load_and_preprocess> on 2026-06-12 00:00:00+00:00
+2026-06-14 19:08:13 | DEBUG    | airflow.plugins_manager | ensure_plugins_loaded:338 | Loading plugins
+2026-06-14 19:08:13 | DEBUG    | airflow.plugins_manager | load_plugins_from_plugin_directory:264 | Loading plugins from directory: /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/airflow/plugins
+2026-06-14 19:08:13 | DEBUG    | airflow.plugins_manager | load_entrypoint_plugins:244 | Loading plugins from entrypoints
+2026-06-14 19:08:13 | DEBUG    | airflow.plugins_manager | integrate_macros_plugins:516 | Integrate DAG plugins
+2026-06-14 19:08:13 | DEBUG    | airflow.models.taskinstance | _get_previous_execution_date:1042 | previous_execution_date was called
+2026-06-14 19:08:13 | INFO     | airflow.task | _execute_task_with_callbacks:2648 | Exporting env vars: AIRFLOW_CTX_DAG_OWNER='oil_gas_pipeline' AIRFLOW_CTX_DAG_ID='forecast_dag' AIRFLOW_CTX_TASK_ID='load_and_preprocess' AIRFLOW_CTX_EXECUTION_DATE='2026-06-12T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='__airflow_temporary_run_2026-06-15T00:08:13.382756+00:00__'
+2026-06-14 19:08:13 | DEBUG    | airflow.plugins_manager | ensure_plugins_loaded:332 | Plugins are already loaded. Skipping.
+2026-06-14 19:08:13 | INFO     | airflow.models.taskinstance | _execute_callable:430 | ::endgroup::
+2026-06-14 19:08:14 | INFO     | database.db_manager | __init__:25 | DatabaseManager initialized | host=localhost | db=oil_gas_db
+2026-06-14 19:08:14 | INFO     | database.db_manager | read_gold_energy_prices:142 | Read gold energy prices — 136 rows
+2026-06-14 19:08:14 | INFO     | unusual_prefix_7704d1601d16df29b1271c38f547716d731fb1a3_forecast_dag | load_and_preprocess:53 | Loaded gold data | rows=136 | cols=['id', 'period', 'wti_price', 'brent_price', 'price_spread', 'us_oil_production', 'wti_mom_change', 'henry_hub_price', 'us_gas_storage_bcf', 'us_gas_production', 'gas_mom_change', 'oil_gas_ratio', 'created_at']
+2026-06-14 19:08:14 | INFO     | models.preprocessor | fit_transform:65 | Preprocessing | target=wti_price | rows=136
+2026-06-14 19:08:14 | DEBUG    | models.preprocessor | _set_datetime_index:108 | DatetimeIndex set on 'period'
+2026-06-14 19:08:14 | INFO     | airflow.models.taskinstance | _execute_callable:441 | ::group::Post task execution logs
+2026-06-14 19:08:14 | ERROR    | airflow.task | fetch_handle_failure_context:2905 | Task failed with exception
+Traceback (most recent call last):
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/pandas/core/groupby/groupby.py", line 1944, in _agg_py_fallback
+    res_values = self._grouper.agg_series(ser, alt, preserve_dtype=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/pandas/core/groupby/ops.py", line 873, in agg_series
+    result = self._aggregate_series_pure_python(obj, func)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/pandas/core/groupby/ops.py", line 894, in _aggregate_series_pure_python
+    res = func(group)
+          ^^^^^^^^^^^
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/pandas/core/groupby/groupby.py", line 2461, in <lambda>
+    alt=lambda x: Series(x, copy=False).mean(numeric_only=numeric_only),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/pandas/core/series.py", line 6570, in mean
+    return NDFrame.mean(self, axis, skipna, numeric_only, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/pandas/core/generic.py", line 12485, in mean
+    return self._stat_function(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/pandas/core/generic.py", line 12442, in _stat_function
+    return self._reduce(
+           ^^^^^^^^^^^^^
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/pandas/core/series.py", line 6478, in _reduce
+    return op(delegate, skipna=skipna, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/pandas/core/nanops.py", line 147, in f
+    result = alt(values, axis=axis, skipna=skipna, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/pandas/core/nanops.py", line 404, in new_func
+    result = func(values, axis=axis, skipna=skipna, mask=mask, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/pandas/core/nanops.py", line 720, in nanmean
+    the_sum = _ensure_numeric(the_sum)
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/pandas/core/nanops.py", line 1701, in _ensure_numeric
+    raise TypeError(f"Could not convert string '{x}' to numeric")
+TypeError: Could not convert string '048dd156-0772-43d3-85d6-e45293b52fbf' to numeric
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/forecast_dag.py", line 63, in load_and_preprocess
+    clean  = prep.fit_transform(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/models/preprocessor.py", line 73, in fit_transform
+    df = self._resample_monthly(df, target_col, self.feature_cols)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/models/preprocessor.py", line 126, in _resample_monthly
+    df = df.resample("MS").mean()
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/pandas/core/resample.py", line 1384, in mean
+    return self._downsample("mean", numeric_only=numeric_only)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/pandas/core/resample.py", line 1782, in _downsample
+    result = obj.groupby(self._grouper).aggregate(how, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/pandas/core/groupby/generic.py", line 1432, in aggregate
+    result = op.agg()
+             ^^^^^^^^
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/pandas/core/apply.py", line 187, in agg
+    return self.apply_str()
+           ^^^^^^^^^^^^^^^^
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/pandas/core/apply.py", line 603, in apply_str
+    return self._apply_str(obj, func, *self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/pandas/core/apply.py", line 693, in _apply_str
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/pandas/core/groupby/groupby.py", line 2459, in mean
+    result = self._cython_agg_general(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/pandas/core/groupby/groupby.py", line 2005, in _cython_agg_general
+    new_mgr = data.grouped_reduce(array_func)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/pandas/core/internals/managers.py", line 1488, in grouped_reduce
+    applied = sb.apply(func)
+              ^^^^^^^^^^^^^^
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/pandas/core/internals/blocks.py", line 395, in apply
+    result = func(self.values, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/pandas/core/groupby/groupby.py", line 2002, in array_func
+    result = self._agg_py_fallback(how, values, ndim=data.ndim, alt=alt)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/pandas/core/groupby/groupby.py", line 1948, in _agg_py_fallback
+    raise type(err)(msg) from err
+TypeError: agg function failed [how->mean,dtype->object]
+2026-06-14 19:08:14 | DEBUG    | airflow.models.taskinstance | _set_duration:562 | Task Duration set to None
+2026-06-14 19:08:14 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:08:14 | INFO     | airflow.models.taskinstance | _log_state:1206 | Marking task as UP_FOR_RETRY. dag_id=forecast_dag, task_id=load_and_preprocess, run_id=__airflow_temporary_run_2026-06-15T00:08:13.382756+00:00__, execution_date=20260612T000000, start_date=, end_date=20260615T000814
+2026-06-14 19:08:14 | DEBUG    | airflow.utils.cli_action_loggers | on_post_execution:88 | Calling callbacks: []
+2026-06-14 19:08:14 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 63392)
+2026-06-14 19:10:59 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/transform.log
+2026-06-14 19:10:59 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 19:10:59 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: transform_dag>
+2026-06-14 19:10:59 | INFO     | airflow.task | are_dependencies_met:2076 | Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: forecast_dag.load_and_preprocess __airflow_temporary_run_2026-06-15T00:10:59.805048+00:00__ [None]>
+2026-06-14 19:10:59 | INFO     | airflow.task | are_dependencies_met:2076 | Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: forecast_dag.load_and_preprocess __airflow_temporary_run_2026-06-15T00:10:59.805048+00:00__ [None]>
+2026-06-14 19:10:59 | INFO     | airflow.task | _check_and_change_state_before_execution:2306 | Starting attempt 1 of 2
+2026-06-14 19:10:59 | WARNING  | airflow.task | emit_state_change_metric:2388 | cannot record queued_duration for task load_and_preprocess because previous state change time has not been saved
+2026-06-14 19:10:59 | INFO     | airflow.task | _check_and_change_state_before_execution:2330 | Executing <Task(PythonOperator): load_and_preprocess> on 2026-06-12 00:00:00+00:00
+2026-06-14 19:10:59 | DEBUG    | airflow.plugins_manager | ensure_plugins_loaded:338 | Loading plugins
+2026-06-14 19:10:59 | DEBUG    | airflow.plugins_manager | load_plugins_from_plugin_directory:264 | Loading plugins from directory: /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/airflow/plugins
+2026-06-14 19:10:59 | DEBUG    | airflow.plugins_manager | load_entrypoint_plugins:244 | Loading plugins from entrypoints
+2026-06-14 19:10:59 | DEBUG    | airflow.plugins_manager | integrate_macros_plugins:516 | Integrate DAG plugins
+2026-06-14 19:10:59 | DEBUG    | airflow.models.taskinstance | _get_previous_execution_date:1042 | previous_execution_date was called
+2026-06-14 19:10:59 | INFO     | airflow.task | _execute_task_with_callbacks:2648 | Exporting env vars: AIRFLOW_CTX_DAG_OWNER='oil_gas_pipeline' AIRFLOW_CTX_DAG_ID='forecast_dag' AIRFLOW_CTX_TASK_ID='load_and_preprocess' AIRFLOW_CTX_EXECUTION_DATE='2026-06-12T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='__airflow_temporary_run_2026-06-15T00:10:59.805048+00:00__'
+2026-06-14 19:10:59 | DEBUG    | airflow.plugins_manager | ensure_plugins_loaded:332 | Plugins are already loaded. Skipping.
+2026-06-14 19:10:59 | INFO     | airflow.models.taskinstance | _execute_callable:430 | ::endgroup::
+2026-06-14 19:11:00 | INFO     | database.db_manager | __init__:25 | DatabaseManager initialized | host=localhost | db=oil_gas_db
+2026-06-14 19:11:00 | INFO     | database.db_manager | read_gold_energy_prices:142 | Read gold energy prices — 136 rows
+2026-06-14 19:11:00 | INFO     | unusual_prefix_7704d1601d16df29b1271c38f547716d731fb1a3_forecast_dag | load_and_preprocess:53 | Loaded gold data | rows=136 | cols=['id', 'period', 'wti_price', 'brent_price', 'price_spread', 'us_oil_production', 'wti_mom_change', 'henry_hub_price', 'us_gas_storage_bcf', 'us_gas_production', 'gas_mom_change', 'oil_gas_ratio', 'created_at']
+2026-06-14 19:11:00 | INFO     | models.preprocessor | fit_transform:65 | Preprocessing | target=wti_price | rows=136
+2026-06-14 19:11:00 | DEBUG    | models.preprocessor | _set_datetime_index:108 | DatetimeIndex set on 'period'
+2026-06-14 19:11:00 | DEBUG    | models.preprocessor | _resample_monthly:133 | Resampled to monthly | rows=136
+2026-06-14 19:11:00 | INFO     | models.preprocessor | _fill_missing:152 | Missing value fill | before=12 | after=0
+2026-06-14 19:11:00 | DEBUG    | models.preprocessor | _engineer_features:252 | Feature engineering complete | new cols added for wti_price
+2026-06-14 19:11:00 | INFO     | models.preprocessor | fit_transform:97 | Preprocessing complete | output rows=136 | cols=['wti_price', 'brent_price', 'price_spread', 'us_oil_production', 'wti_mom_change', 'henry_hub_price', 'us_gas_storage_bcf', 'us_gas_production', 'gas_mom_change', 'oil_gas_ratio', 'wti_price_lag_1', 'wti_price_lag_3', 'wti_price_lag_6', 'wti_price_lag_12', 'wti_price_rolling_3_mean', 'wti_price_rolling_6_mean', 'wti_price_rolling_12_mean', 'wti_price_rolling_3_std', 'wti_price_mom_pct', 'month', 'quarter', 'year']
+2026-06-14 19:11:00 | INFO     | unusual_prefix_7704d1601d16df29b1271c38f547716d731fb1a3_forecast_dag | load_and_preprocess:70 | Preprocessed wti_price | {'rows': 136, 'columns': ['wti_price', 'brent_price', 'price_spread', 'us_oil_production', 'wti_mom_change', 'henry_hub_price', 'us_gas_storage_bcf', 'us_gas_production', 'gas_mom_change', 'oil_gas_ratio', 'wti_price_lag_1', 'wti_price_lag_3', 'wti_price_lag_6', 'wti_price_lag_12', 'wti_price_rolling_3_mean', 'wti_price_rolling_6_mean', 'wti_price_rolling_12_mean', 'wti_price_rolling_3_std', 'wti_price_mom_pct', 'month', 'quarter', 'year'], 'date_range': '2015-01-01 → 2026-04-01', 'nulls': {'wti_price': 0, 'brent_price': 0, 'price_spread': 0, 'us_oil_production': 0, 'wti_mom_change': 0, 'henry_hub_price': 0, 'us_gas_storage_bcf': 0, 'us_gas_production': 0, 'gas_mom_change': 0, 'oil_gas_ratio': 0, 'wti_price_lag_1': 1, 'wti_price_lag_3': 3, 'wti_price_lag_6': 6, 'wti_price_lag_12': 12, 'wti_price_rolling_3_mean': 0, 'wti_price_rolling_6_mean': 0, 'wti_price_rolling_12_mean': 0, 'wti_price_rolling_3_std': 1, 'wti_price_mom_pct': 1, 'month': 0, 'quarter': 0, 'year': 0}, 'target_stats': {'mean': 62.8799, 'std': 17.6621, 'min': 16.55, 'max': 114.84}}
+2026-06-14 19:11:00 | INFO     | unusual_prefix_7704d1601d16df29b1271c38f547716d731fb1a3_forecast_dag | load_and_preprocess:82 | Saved preprocessed data | path=/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/data/processed/wti_price_preprocessed.parquet
+2026-06-14 19:11:00 | INFO     | models.preprocessor | fit_transform:65 | Preprocessing | target=henry_hub_price | rows=136
+2026-06-14 19:11:00 | DEBUG    | models.preprocessor | _set_datetime_index:108 | DatetimeIndex set on 'period'
+2026-06-14 19:11:00 | WARNING  | models.preprocessor | _resample_monthly:131 | Resampling introduced 2 missing months in henry_hub_price
+2026-06-14 19:11:00 | DEBUG    | models.preprocessor | _resample_monthly:133 | Resampled to monthly | rows=136
+2026-06-14 19:11:00 | INFO     | models.preprocessor | _fill_missing:152 | Missing value fill | before=12 | after=0
+2026-06-14 19:11:00 | DEBUG    | models.preprocessor | _engineer_features:252 | Feature engineering complete | new cols added for henry_hub_price
+2026-06-14 19:11:00 | INFO     | models.preprocessor | fit_transform:97 | Preprocessing complete | output rows=136 | cols=['henry_hub_price', 'wti_price', 'brent_price', 'price_spread', 'us_oil_production', 'wti_mom_change', 'us_gas_storage_bcf', 'us_gas_production', 'gas_mom_change', 'oil_gas_ratio', 'henry_hub_price_lag_1', 'henry_hub_price_lag_3', 'henry_hub_price_lag_6', 'henry_hub_price_lag_12', 'henry_hub_price_rolling_3_mean', 'henry_hub_price_rolling_6_mean', 'henry_hub_price_rolling_12_mean', 'henry_hub_price_rolling_3_std', 'henry_hub_price_mom_pct', 'month', 'quarter', 'year']
+2026-06-14 19:11:00 | INFO     | unusual_prefix_7704d1601d16df29b1271c38f547716d731fb1a3_forecast_dag | load_and_preprocess:70 | Preprocessed henry_hub_price | {'rows': 136, 'columns': ['henry_hub_price', 'wti_price', 'brent_price', 'price_spread', 'us_oil_production', 'wti_mom_change', 'us_gas_storage_bcf', 'us_gas_production', 'gas_mom_change', 'oil_gas_ratio', 'henry_hub_price_lag_1', 'henry_hub_price_lag_3', 'henry_hub_price_lag_6', 'henry_hub_price_lag_12', 'henry_hub_price_rolling_3_mean', 'henry_hub_price_rolling_6_mean', 'henry_hub_price_rolling_12_mean', 'henry_hub_price_rolling_3_std', 'henry_hub_price_mom_pct', 'month', 'quarter', 'year'], 'date_range': '2015-01-01 → 2026-04-01', 'nulls': {'henry_hub_price': 0, 'wti_price': 0, 'brent_price': 0, 'price_spread': 0, 'us_oil_production': 0, 'wti_mom_change': 0, 'us_gas_storage_bcf': 0, 'us_gas_production': 0, 'gas_mom_change': 0, 'oil_gas_ratio': 0, 'henry_hub_price_lag_1': 1, 'henry_hub_price_lag_3': 3, 'henry_hub_price_lag_6': 6, 'henry_hub_price_lag_12': 12, 'henry_hub_price_rolling_3_mean': 0, 'henry_hub_price_rolling_6_mean': 0, 'henry_hub_price_rolling_12_mean': 0, 'henry_hub_price_rolling_3_std': 1, 'henry_hub_price_mom_pct': 1, 'month': 0, 'quarter': 0, 'year': 0}, 'target_stats': {'mean': 6.8278, 'std': 2.0238, 'min': 2.85, 'max': 12.62}}
+2026-06-14 19:11:00 | INFO     | unusual_prefix_7704d1601d16df29b1271c38f547716d731fb1a3_forecast_dag | load_and_preprocess:82 | Saved preprocessed data | path=/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/data/processed/henry_hub_price_preprocessed.parquet
+2026-06-14 19:11:00 | INFO     | airflow.task.operators.airflow.operators.python.PythonOperator | execute:237 | Done. Returned value was: None
+2026-06-14 19:11:00 | INFO     | airflow.models.taskinstance | _execute_callable:441 | ::group::Post task execution logs
+2026-06-14 19:11:00 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:11:00 | INFO     | airflow.models.taskinstance | _log_state:1206 | Marking task as SUCCESS. dag_id=forecast_dag, task_id=load_and_preprocess, run_id=__airflow_temporary_run_2026-06-15T00:10:59.805048+00:00__, execution_date=20260612T000000, start_date=, end_date=20260615T001100
+2026-06-14 19:11:00 | DEBUG    | airflow.models.taskinstance | _set_duration:562 | Task Duration set to None
+2026-06-14 19:11:00 | DEBUG    | airflow.utils.cli_action_loggers | on_post_execution:88 | Calling callbacks: []
+2026-06-14 19:11:00 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 63843)
+2026-06-14 19:17:52 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/transform.log
+2026-06-14 19:17:52 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 19:17:52 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: transform_dag>
+2026-06-14 19:17:52 | DEBUG    | airflow.plugins_manager | ensure_plugins_loaded:332 | Plugins are already loaded. Skipping.
+2026-06-14 19:17:52 | DEBUG    | airflow.plugins_manager | integrate_macros_plugins:516 | Integrate DAG plugins
+2026-06-14 19:17:52 | DEBUG    | airflow.models.taskinstance | _get_previous_execution_date:1042 | previous_execution_date was called
+2026-06-14 19:17:52 | INFO     | airflow.cli.commands.task_command | task_run:426 | Running <TaskInstance: transform_dag.check_bronze_data manual__2026-06-12T01:13:28.835661+00:00 [running]> on host prajwals-macbook-air.local
+2026-06-14 19:17:52 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 64801)
+2026-06-14 19:17:52 | DEBUG    | airflow.settings | configure_orm:250 | Setting up DB connection pool (PID 64801)
+2026-06-14 19:17:52 | DEBUG    | airflow.settings | prepare_engine_args:298 | settings.prepare_engine_args(): Using NullPool
+2026-06-14 19:17:52 | DEBUG    | airflow.utils.cli_action_loggers | on_post_execution:88 | Calling callbacks: []
+2026-06-14 19:17:52 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 64801)
+2026-06-14 19:18:24 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/transform.log
+2026-06-14 19:18:24 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 19:18:24 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: transform_dag>
+2026-06-14 19:18:24 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:18:24 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:18:24 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:18:24 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:18:24 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:18:24 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:18:24 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:18:24 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:18:24 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:18:24 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:18:24 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:18:24 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:18:24 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:18:24 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:18:24 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:18:24 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:18:24 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:18:24 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:18:24 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:18:24 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:18:24 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:18:24 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:18:24 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:18:24 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:18:24 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:18:24 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:18:24 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:18:24 | DEBUG    | airflow.utils.cli_action_loggers | on_post_execution:88 | Calling callbacks: []
+2026-06-14 19:18:24 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 64903)
+2026-06-14 19:18:49 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/transform.log
+2026-06-14 19:18:49 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 19:18:49 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: transform_dag>
+2026-06-14 19:18:49 | DEBUG    | airflow.plugins_manager | ensure_plugins_loaded:332 | Plugins are already loaded. Skipping.
+2026-06-14 19:18:49 | DEBUG    | airflow.plugins_manager | integrate_macros_plugins:516 | Integrate DAG plugins
+2026-06-14 19:18:49 | DEBUG    | airflow.models.taskinstance | _get_previous_execution_date:1042 | previous_execution_date was called
+2026-06-14 19:18:49 | INFO     | airflow.cli.commands.task_command | task_run:426 | Running <TaskInstance: transform_dag.check_bronze_data manual__2026-06-12T01:13:28.835661+00:00 [queued]> on host prajwals-macbook-air.local
+2026-06-14 19:18:49 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 64983)
+2026-06-14 19:18:49 | DEBUG    | airflow.settings | configure_orm:250 | Setting up DB connection pool (PID 64983)
+2026-06-14 19:18:49 | DEBUG    | airflow.settings | prepare_engine_args:298 | settings.prepare_engine_args(): Using NullPool
+2026-06-14 19:21:24 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/transform.log
+2026-06-14 19:21:24 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 19:21:24 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: transform_dag>
+2026-06-14 19:21:24 | DEBUG    | airflow.plugins_manager | ensure_plugins_loaded:332 | Plugins are already loaded. Skipping.
+2026-06-14 19:21:24 | DEBUG    | airflow.plugins_manager | integrate_macros_plugins:516 | Integrate DAG plugins
+2026-06-14 19:21:24 | DEBUG    | airflow.models.taskinstance | _get_previous_execution_date:1042 | previous_execution_date was called
+2026-06-14 19:21:24 | INFO     | airflow.cli.commands.task_command | task_run:426 | Running <TaskInstance: transform_dag.check_bronze_data manual__2026-06-12T01:13:28.835661+00:00 [queued]> on host prajwals-macbook-air.local
+2026-06-14 19:21:24 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 65397)
+2026-06-14 19:21:24 | DEBUG    | airflow.settings | configure_orm:250 | Setting up DB connection pool (PID 65397)
+2026-06-14 19:21:24 | DEBUG    | airflow.settings | prepare_engine_args:298 | settings.prepare_engine_args(): Using NullPool
+2026-06-14 19:23:58 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/transform.log
+2026-06-14 19:23:58 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 19:23:58 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: transform_dag>
+2026-06-14 19:23:58 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:23:58 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:23:58 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:23:58 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:23:58 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:23:58 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:23:58 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:23:58 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:23:58 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:23:58 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:23:58 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:23:58 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:23:58 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:23:58 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:23:58 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:23:58 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:23:58 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:23:58 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:23:58 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:23:58 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:23:58 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:23:58 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:23:58 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:23:58 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:23:58 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:23:58 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:23:58 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:23:58 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:23:58 | DEBUG    | airflow.utils.cli_action_loggers | on_post_execution:88 | Calling callbacks: []
+2026-06-14 19:23:58 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 65786)
+2026-06-14 19:24:13 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/transform.log
+2026-06-14 19:24:13 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 19:24:13 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: transform_dag>
+2026-06-14 19:24:13 | DEBUG    | airflow.plugins_manager | ensure_plugins_loaded:332 | Plugins are already loaded. Skipping.
+2026-06-14 19:24:13 | DEBUG    | airflow.plugins_manager | integrate_macros_plugins:516 | Integrate DAG plugins
+2026-06-14 19:24:13 | DEBUG    | airflow.models.taskinstance | _get_previous_execution_date:1042 | previous_execution_date was called
+2026-06-14 19:24:13 | INFO     | airflow.cli.commands.task_command | task_run:426 | Running <TaskInstance: transform_dag.check_bronze_data manual__2026-06-12T01:13:28.835661+00:00 [queued]> on host prajwals-macbook-air.local
+2026-06-14 19:24:13 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 65845)
+2026-06-14 19:24:13 | DEBUG    | airflow.settings | configure_orm:250 | Setting up DB connection pool (PID 65845)
+2026-06-14 19:24:13 | DEBUG    | airflow.settings | prepare_engine_args:298 | settings.prepare_engine_args(): Using NullPool
+2026-06-14 19:24:33 | DEBUG    | airflow.utils.cli_action_loggers | on_post_execution:88 | Calling callbacks: []
+2026-06-14 19:24:33 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 65397)
+2026-06-14 19:24:35 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/transform.log
+2026-06-14 19:24:35 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 19:24:36 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: transform_dag>
+2026-06-14 19:24:36 | DEBUG    | airflow.plugins_manager | ensure_plugins_loaded:332 | Plugins are already loaded. Skipping.
+2026-06-14 19:24:36 | DEBUG    | airflow.plugins_manager | integrate_macros_plugins:516 | Integrate DAG plugins
+2026-06-14 19:24:36 | DEBUG    | airflow.models.taskinstance | _get_previous_execution_date:1042 | previous_execution_date was called
+2026-06-14 19:24:36 | INFO     | airflow.cli.commands.task_command | task_run:426 | Running <TaskInstance: transform_dag.check_bronze_data manual__2026-06-12T01:13:28.835661+00:00 [running]> on host prajwals-macbook-air.local
+2026-06-14 19:24:36 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 65904)
+2026-06-14 19:24:36 | DEBUG    | airflow.settings | configure_orm:250 | Setting up DB connection pool (PID 65904)
+2026-06-14 19:24:36 | DEBUG    | airflow.settings | prepare_engine_args:298 | settings.prepare_engine_args(): Using NullPool
+2026-06-14 19:24:36 | DEBUG    | airflow.utils.cli_action_loggers | on_post_execution:88 | Calling callbacks: []
+2026-06-14 19:24:36 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 65904)
+2026-06-14 19:33:32 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/transform.log
+2026-06-14 19:33:32 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 19:33:32 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: transform_dag>
+2026-06-14 19:33:32 | DEBUG    | airflow.utils.cli_action_loggers | on_post_execution:88 | Calling callbacks: []
+2026-06-14 19:33:32 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 67262)
+2026-06-14 19:38:35 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/transform.log
+2026-06-14 19:38:35 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 19:38:35 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: transform_dag>
+2026-06-14 19:38:35 | DEBUG    | airflow.plugins_manager | ensure_plugins_loaded:332 | Plugins are already loaded. Skipping.
+2026-06-14 19:38:35 | DEBUG    | airflow.plugins_manager | integrate_macros_plugins:516 | Integrate DAG plugins
+2026-06-14 19:38:35 | DEBUG    | airflow.models.taskinstance | _get_previous_execution_date:1042 | previous_execution_date was called
+2026-06-14 19:38:35 | INFO     | airflow.cli.commands.task_command | task_run:426 | Running <TaskInstance: transform_dag.check_bronze_data manual__2026-06-12T01:13:28.835661+00:00 [queued]> on host prajwals-macbook-air.local
+2026-06-14 19:38:35 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 68136)
+2026-06-14 19:38:35 | DEBUG    | airflow.settings | configure_orm:250 | Setting up DB connection pool (PID 68136)
+2026-06-14 19:38:35 | DEBUG    | airflow.settings | prepare_engine_args:298 | settings.prepare_engine_args(): Using NullPool
+2026-06-14 19:41:29 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/transform.log
+2026-06-14 19:41:29 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 19:41:29 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: transform_dag>
+2026-06-14 19:41:29 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:667 | Running dagbag.sync_to_db with retries. Try 1 of 3
+2026-06-14 19:41:29 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:672 | Calling the DAG.bulk_sync_to_db method
+2026-06-14 19:41:29 | DEBUG    | airflow.models.serialized_dag | write_dag:166 | Checking if DAG (forecast_dag) changed
+2026-06-14 19:41:29 | DEBUG    | airflow.models.serialized_dag | write_dag:180 | Writing Serialized DAG: forecast_dag to the DB
+2026-06-14 19:41:29 | DEBUG    | airflow.models.serialized_dag | write_dag:182 | DAG: forecast_dag written to the DB
+2026-06-14 19:41:29 | DEBUG    | airflow.models.dagbag.DagBag | _sync_perm_for_dag:701 | Syncing DAG permissions: forecast_dag to the DB
+2026-06-14 19:41:29 | DEBUG    | airflow.www.security_appless.ApplessAirflowSecurityManager | sync_perm_for_dag:1090 | Not syncing DAG-level permissions for DAG 'DAG:forecast_dag' as access control is unset.
+2026-06-14 19:41:29 | DEBUG    | airflow.models.serialized_dag | write_dag:166 | Checking if DAG (daily_ingest_dag) changed
+2026-06-14 19:41:29 | DEBUG    | airflow.models.serialized_dag | write_dag:180 | Writing Serialized DAG: daily_ingest_dag to the DB
+2026-06-14 19:41:29 | DEBUG    | airflow.models.serialized_dag | write_dag:182 | DAG: daily_ingest_dag written to the DB
+2026-06-14 19:41:29 | DEBUG    | airflow.models.dagbag.DagBag | _sync_perm_for_dag:701 | Syncing DAG permissions: daily_ingest_dag to the DB
+2026-06-14 19:41:29 | DEBUG    | airflow.www.security_appless.ApplessAirflowSecurityManager | sync_perm_for_dag:1090 | Not syncing DAG-level permissions for DAG 'DAG:daily_ingest_dag' as access control is unset.
+2026-06-14 19:41:29 | DEBUG    | airflow.models.serialized_dag | write_dag:166 | Checking if DAG (transform_dag) changed
+2026-06-14 19:41:29 | DEBUG    | airflow.models.serialized_dag | write_dag:180 | Writing Serialized DAG: transform_dag to the DB
+2026-06-14 19:41:29 | DEBUG    | airflow.models.serialized_dag | write_dag:182 | DAG: transform_dag written to the DB
+2026-06-14 19:41:29 | DEBUG    | airflow.models.dagbag.DagBag | _sync_perm_for_dag:701 | Syncing DAG permissions: transform_dag to the DB
+2026-06-14 19:41:29 | DEBUG    | airflow.www.security_appless.ApplessAirflowSecurityManager | sync_perm_for_dag:1090 | Not syncing DAG-level permissions for DAG 'DAG:transform_dag' as access control is unset.
+2026-06-14 19:41:29 | INFO     | airflow.models.dag | bulk_write_to_db:3096 | Sync 3 DAGs
+2026-06-14 19:41:29 | DEBUG    | airflow.utils.cli_action_loggers | on_post_execution:88 | Calling callbacks: []
+2026-06-14 19:41:29 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 68615)
+2026-06-14 19:41:58 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/transform.log
+2026-06-14 19:41:58 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 19:41:58 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: transform_dag>
+2026-06-14 19:41:58 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:667 | Running dagbag.sync_to_db with retries. Try 1 of 3
+2026-06-14 19:41:58 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:672 | Calling the DAG.bulk_sync_to_db method
+2026-06-14 19:41:58 | DEBUG    | airflow.models.serialized_dag | write_dag:166 | Checking if DAG (forecast_dag) changed
+2026-06-14 19:41:58 | DEBUG    | airflow.models.serialized_dag | write_dag:180 | Writing Serialized DAG: forecast_dag to the DB
+2026-06-14 19:41:58 | DEBUG    | airflow.models.serialized_dag | write_dag:182 | DAG: forecast_dag written to the DB
+2026-06-14 19:41:58 | DEBUG    | airflow.models.dagbag.DagBag | _sync_perm_for_dag:701 | Syncing DAG permissions: forecast_dag to the DB
+2026-06-14 19:41:58 | DEBUG    | airflow.www.security_appless.ApplessAirflowSecurityManager | sync_perm_for_dag:1090 | Not syncing DAG-level permissions for DAG 'DAG:forecast_dag' as access control is unset.
+2026-06-14 19:41:58 | DEBUG    | airflow.models.serialized_dag | write_dag:166 | Checking if DAG (daily_ingest_dag) changed
+2026-06-14 19:41:58 | DEBUG    | airflow.models.serialized_dag | write_dag:180 | Writing Serialized DAG: daily_ingest_dag to the DB
+2026-06-14 19:41:58 | DEBUG    | airflow.models.serialized_dag | write_dag:182 | DAG: daily_ingest_dag written to the DB
+2026-06-14 19:41:58 | DEBUG    | airflow.models.dagbag.DagBag | _sync_perm_for_dag:701 | Syncing DAG permissions: daily_ingest_dag to the DB
+2026-06-14 19:41:58 | DEBUG    | airflow.www.security_appless.ApplessAirflowSecurityManager | sync_perm_for_dag:1090 | Not syncing DAG-level permissions for DAG 'DAG:daily_ingest_dag' as access control is unset.
+2026-06-14 19:41:58 | DEBUG    | airflow.models.serialized_dag | write_dag:166 | Checking if DAG (transform_dag) changed
+2026-06-14 19:41:58 | DEBUG    | airflow.models.serialized_dag | write_dag:180 | Writing Serialized DAG: transform_dag to the DB
+2026-06-14 19:41:58 | DEBUG    | airflow.models.serialized_dag | write_dag:182 | DAG: transform_dag written to the DB
+2026-06-14 19:41:58 | DEBUG    | airflow.models.dagbag.DagBag | _sync_perm_for_dag:701 | Syncing DAG permissions: transform_dag to the DB
+2026-06-14 19:41:58 | DEBUG    | airflow.www.security_appless.ApplessAirflowSecurityManager | sync_perm_for_dag:1090 | Not syncing DAG-level permissions for DAG 'DAG:transform_dag' as access control is unset.
+2026-06-14 19:41:58 | INFO     | airflow.models.dag | bulk_write_to_db:3096 | Sync 3 DAGs
+2026-06-14 19:41:58 | DEBUG    | airflow.utils.cli_action_loggers | on_post_execution:88 | Calling callbacks: []
+2026-06-14 19:41:58 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 68706)
+2026-06-14 19:42:06 | DEBUG    | airflow.utils.cli_action_loggers | on_post_execution:88 | Calling callbacks: []
+2026-06-14 19:42:06 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 68742)
+2026-06-14 19:42:28 | DEBUG    | airflow.utils.cli_action_loggers | on_post_execution:88 | Calling callbacks: []
+2026-06-14 19:42:28 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 68808)
+2026-06-14 19:44:09 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/transform.log
+2026-06-14 19:44:09 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 19:44:09 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: transform_dag>
+2026-06-14 19:44:09 | DEBUG    | airflow.plugins_manager | ensure_plugins_loaded:332 | Plugins are already loaded. Skipping.
+2026-06-14 19:44:09 | DEBUG    | airflow.plugins_manager | integrate_macros_plugins:516 | Integrate DAG plugins
+2026-06-14 19:44:09 | DEBUG    | airflow.models.taskinstance | _get_previous_execution_date:1042 | previous_execution_date was called
+2026-06-14 19:44:09 | INFO     | airflow.cli.commands.task_command | task_run:426 | Running <TaskInstance: transform_dag.check_bronze_data manual__2026-06-12T01:13:28.835661+00:00 [queued]> on host prajwals-macbook-air.local
+2026-06-14 19:44:09 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 69088)
+2026-06-14 19:44:09 | DEBUG    | airflow.settings | configure_orm:250 | Setting up DB connection pool (PID 69088)
+2026-06-14 19:44:09 | DEBUG    | airflow.settings | prepare_engine_args:298 | settings.prepare_engine_args(): Using NullPool
+2026-06-14 19:45:12 | DEBUG    | airflow.utils.cli_action_loggers | on_post_execution:88 | Calling callbacks: []
+2026-06-14 19:45:12 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 68136)
+2026-06-14 19:48:59 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/transform.log
+2026-06-14 19:48:59 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 19:48:59 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: transform_dag>
+2026-06-14 19:48:59 | DEBUG    | airflow.models.dag.DAG | test:2887 | Clearing existing task instances for execution date 2026-06-14 00:00:00+00:00
+2026-06-14 19:48:59 | DEBUG    | airflow.models.dag.DAG | test:2894 | Getting dagrun for dag forecast_dag
+2026-06-14 19:48:59 | INFO     | airflow.models.dag | _get_or_create_dagrun:4206 | dagrun id: forecast_dag
+2026-06-14 19:48:59 | INFO     | airflow.models.dag | _get_or_create_dagrun:4222 | created dagrun <DagRun forecast_dag @ 2026-06-14 00:00:00+00:00: manual__2026-06-14T00:00:00+00:00, state:running, queued_at: None. externally triggered: False>
+2026-06-14 19:48:59 | DEBUG    | airflow.models.dag.DAG | test:2908 | starting dagrun
+2026-06-14 19:48:59 | DEBUG    | airflow.models.dagrun.DagRun | task_instance_scheduling_decisions:931 | number of tis tasks for <DagRun forecast_dag @ 2026-06-14 00:00:00+00:00: manual__2026-06-14T00:00:00+00:00, state:running, queued_at: None. externally triggered: False>: 7 task(s)
+2026-06-14 19:48:59 | DEBUG    | airflow.models.dagrun.DagRun | task_instance_scheduling_decisions:952 | number of scheduleable tasks for <DagRun forecast_dag @ 2026-06-14 00:00:00+00:00: manual__2026-06-14T00:00:00+00:00, state:running, queued_at: None. externally triggered: False>: 7 task(s)
+2026-06-14 19:48:59 | DEBUG    | airflow.models.dag.DAG | add_logger_if_needed:2873 | Adding Streamhandler to taskinstance load_and_preprocess
+2026-06-14 19:48:59 | INFO     | airflow.models.dag | _run_task:4168 | [DAG TEST] starting task_id=load_and_preprocess map_index=-1
+2026-06-14 19:48:59 | INFO     | airflow.models.dag | _run_task:4171 | [DAG TEST] running task <TaskInstance: forecast_dag.load_and_preprocess manual__2026-06-14T00:00:00+00:00 [scheduled]>
+2026-06-14 19:48:59 | DEBUG    | airflow.plugins_manager | ensure_plugins_loaded:338 | Loading plugins
+2026-06-14 19:48:59 | DEBUG    | airflow.plugins_manager | load_plugins_from_plugin_directory:264 | Loading plugins from directory: /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/airflow/plugins
+2026-06-14 19:48:59 | DEBUG    | airflow.plugins_manager | load_entrypoint_plugins:244 | Loading plugins from entrypoints
+2026-06-14 19:48:59 | DEBUG    | airflow.plugins_manager | integrate_macros_plugins:516 | Integrate DAG plugins
+2026-06-14 19:48:59 | DEBUG    | airflow.models.taskinstance | _get_previous_execution_date:1042 | previous_execution_date was called
+2026-06-14 19:48:59 | DEBUG    | airflow.models.renderedtifields | wrapped_function:91 | Running RenderedTaskInstanceFields.write with retries. Try 1 of 3
+2026-06-14 19:48:59 | DEBUG    | airflow.models.renderedtifields | wrapped_function:91 | Running RenderedTaskInstanceFields._do_delete_old_records with retries. Try 1 of 3
+2026-06-14 19:48:59 | INFO     | airflow.task | _execute_task_with_callbacks:2648 | Exporting env vars: AIRFLOW_CTX_DAG_OWNER='oil_gas_pipeline' AIRFLOW_CTX_DAG_ID='forecast_dag' AIRFLOW_CTX_TASK_ID='load_and_preprocess' AIRFLOW_CTX_EXECUTION_DATE='2026-06-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-14T00:00:00+00:00'
+2026-06-14 19:48:59 | DEBUG    | airflow.plugins_manager | ensure_plugins_loaded:332 | Plugins are already loaded. Skipping.
+2026-06-14 19:48:59 | INFO     | airflow.models.taskinstance | _execute_callable:430 | ::endgroup::
+2026-06-14 19:49:00 | INFO     | database.db_manager | __init__:25 | DatabaseManager initialized | host=localhost | db=oil_gas_db
+2026-06-14 19:49:00 | INFO     | database.db_manager | read_gold_energy_prices:142 | Read gold energy prices — 136 rows
+2026-06-14 19:49:00 | INFO     | unusual_prefix_7704d1601d16df29b1271c38f547716d731fb1a3_forecast_dag | load_and_preprocess:53 | Loaded gold data | rows=136 | cols=['id', 'period', 'wti_price', 'brent_price', 'price_spread', 'us_oil_production', 'wti_mom_change', 'henry_hub_price', 'us_gas_storage_bcf', 'us_gas_production', 'gas_mom_change', 'oil_gas_ratio', 'created_at']
+2026-06-14 19:49:00 | INFO     | models.preprocessor | fit_transform:65 | Preprocessing | target=wti_price | rows=136
+2026-06-14 19:49:00 | DEBUG    | models.preprocessor | _set_datetime_index:108 | DatetimeIndex set on 'period'
+2026-06-14 19:49:00 | DEBUG    | models.preprocessor | _resample_monthly:133 | Resampled to monthly | rows=136
+2026-06-14 19:49:00 | INFO     | models.preprocessor | _fill_missing:152 | Missing value fill | before=12 | after=0
+2026-06-14 19:49:00 | DEBUG    | models.preprocessor | _engineer_features:252 | Feature engineering complete | new cols added for wti_price
+2026-06-14 19:49:00 | INFO     | models.preprocessor | fit_transform:97 | Preprocessing complete | output rows=136 | cols=['wti_price', 'brent_price', 'price_spread', 'us_oil_production', 'wti_mom_change', 'henry_hub_price', 'us_gas_storage_bcf', 'us_gas_production', 'gas_mom_change', 'oil_gas_ratio', 'wti_price_lag_1', 'wti_price_lag_3', 'wti_price_lag_6', 'wti_price_lag_12', 'wti_price_rolling_3_mean', 'wti_price_rolling_6_mean', 'wti_price_rolling_12_mean', 'wti_price_rolling_3_std', 'wti_price_mom_pct', 'month', 'quarter', 'year']
+2026-06-14 19:49:00 | INFO     | unusual_prefix_7704d1601d16df29b1271c38f547716d731fb1a3_forecast_dag | load_and_preprocess:70 | Preprocessed wti_price | {'rows': 136, 'columns': ['wti_price', 'brent_price', 'price_spread', 'us_oil_production', 'wti_mom_change', 'henry_hub_price', 'us_gas_storage_bcf', 'us_gas_production', 'gas_mom_change', 'oil_gas_ratio', 'wti_price_lag_1', 'wti_price_lag_3', 'wti_price_lag_6', 'wti_price_lag_12', 'wti_price_rolling_3_mean', 'wti_price_rolling_6_mean', 'wti_price_rolling_12_mean', 'wti_price_rolling_3_std', 'wti_price_mom_pct', 'month', 'quarter', 'year'], 'date_range': '2015-01-01 → 2026-04-01', 'nulls': {'wti_price': 0, 'brent_price': 0, 'price_spread': 0, 'us_oil_production': 0, 'wti_mom_change': 0, 'henry_hub_price': 0, 'us_gas_storage_bcf': 0, 'us_gas_production': 0, 'gas_mom_change': 0, 'oil_gas_ratio': 0, 'wti_price_lag_1': 1, 'wti_price_lag_3': 3, 'wti_price_lag_6': 6, 'wti_price_lag_12': 12, 'wti_price_rolling_3_mean': 0, 'wti_price_rolling_6_mean': 0, 'wti_price_rolling_12_mean': 0, 'wti_price_rolling_3_std': 1, 'wti_price_mom_pct': 1, 'month': 0, 'quarter': 0, 'year': 0}, 'target_stats': {'mean': 62.8799, 'std': 17.6621, 'min': 16.55, 'max': 114.84}}
+2026-06-14 19:49:00 | INFO     | unusual_prefix_7704d1601d16df29b1271c38f547716d731fb1a3_forecast_dag | load_and_preprocess:82 | Saved preprocessed data | path=/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/data/processed/wti_price_preprocessed.parquet
+2026-06-14 19:49:00 | INFO     | models.preprocessor | fit_transform:65 | Preprocessing | target=henry_hub_price | rows=136
+2026-06-14 19:49:00 | DEBUG    | models.preprocessor | _set_datetime_index:108 | DatetimeIndex set on 'period'
+2026-06-14 19:49:00 | WARNING  | models.preprocessor | _resample_monthly:131 | Resampling introduced 2 missing months in henry_hub_price
+2026-06-14 19:49:00 | DEBUG    | models.preprocessor | _resample_monthly:133 | Resampled to monthly | rows=136
+2026-06-14 19:49:00 | INFO     | models.preprocessor | _fill_missing:152 | Missing value fill | before=12 | after=0
+2026-06-14 19:49:00 | DEBUG    | models.preprocessor | _engineer_features:252 | Feature engineering complete | new cols added for henry_hub_price
+2026-06-14 19:49:00 | INFO     | models.preprocessor | fit_transform:97 | Preprocessing complete | output rows=136 | cols=['henry_hub_price', 'wti_price', 'brent_price', 'price_spread', 'us_oil_production', 'wti_mom_change', 'us_gas_storage_bcf', 'us_gas_production', 'gas_mom_change', 'oil_gas_ratio', 'henry_hub_price_lag_1', 'henry_hub_price_lag_3', 'henry_hub_price_lag_6', 'henry_hub_price_lag_12', 'henry_hub_price_rolling_3_mean', 'henry_hub_price_rolling_6_mean', 'henry_hub_price_rolling_12_mean', 'henry_hub_price_rolling_3_std', 'henry_hub_price_mom_pct', 'month', 'quarter', 'year']
+2026-06-14 19:49:00 | INFO     | unusual_prefix_7704d1601d16df29b1271c38f547716d731fb1a3_forecast_dag | load_and_preprocess:70 | Preprocessed henry_hub_price | {'rows': 136, 'columns': ['henry_hub_price', 'wti_price', 'brent_price', 'price_spread', 'us_oil_production', 'wti_mom_change', 'us_gas_storage_bcf', 'us_gas_production', 'gas_mom_change', 'oil_gas_ratio', 'henry_hub_price_lag_1', 'henry_hub_price_lag_3', 'henry_hub_price_lag_6', 'henry_hub_price_lag_12', 'henry_hub_price_rolling_3_mean', 'henry_hub_price_rolling_6_mean', 'henry_hub_price_rolling_12_mean', 'henry_hub_price_rolling_3_std', 'henry_hub_price_mom_pct', 'month', 'quarter', 'year'], 'date_range': '2015-01-01 → 2026-04-01', 'nulls': {'henry_hub_price': 0, 'wti_price': 0, 'brent_price': 0, 'price_spread': 0, 'us_oil_production': 0, 'wti_mom_change': 0, 'us_gas_storage_bcf': 0, 'us_gas_production': 0, 'gas_mom_change': 0, 'oil_gas_ratio': 0, 'henry_hub_price_lag_1': 1, 'henry_hub_price_lag_3': 3, 'henry_hub_price_lag_6': 6, 'henry_hub_price_lag_12': 12, 'henry_hub_price_rolling_3_mean': 0, 'henry_hub_price_rolling_6_mean': 0, 'henry_hub_price_rolling_12_mean': 0, 'henry_hub_price_rolling_3_std': 1, 'henry_hub_price_mom_pct': 1, 'month': 0, 'quarter': 0, 'year': 0}, 'target_stats': {'mean': 6.8278, 'std': 2.0238, 'min': 2.85, 'max': 12.62}}
+2026-06-14 19:49:00 | INFO     | unusual_prefix_7704d1601d16df29b1271c38f547716d731fb1a3_forecast_dag | load_and_preprocess:82 | Saved preprocessed data | path=/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/data/processed/henry_hub_price_preprocessed.parquet
+2026-06-14 19:49:00 | INFO     | airflow.task.operators.airflow.operators.python.PythonOperator | execute:237 | Done. Returned value was: None
+2026-06-14 19:49:00 | INFO     | airflow.models.taskinstance | _execute_callable:441 | ::group::Post task execution logs
+2026-06-14 19:49:00 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:49:00 | INFO     | airflow.models.taskinstance | _log_state:1206 | Marking task as SUCCESS. dag_id=forecast_dag, task_id=load_and_preprocess, run_id=manual__2026-06-14T00:00:00+00:00, execution_date=20260614T000000, start_date=, end_date=20260615T004900
+2026-06-14 19:49:00 | DEBUG    | airflow.models.taskinstance | _set_duration:562 | Task Duration set to None
+2026-06-14 19:49:00 | INFO     | airflow.models.dag | _run_task:4182 | [DAG TEST] end task task_id=load_and_preprocess map_index=-1
+2026-06-14 19:49:00 | DEBUG    | airflow.models.dagrun.DagRun | task_instance_scheduling_decisions:931 | number of tis tasks for <DagRun forecast_dag @ 2026-06-14 00:00:00+00:00: manual__2026-06-14T00:00:00+00:00, state:running, queued_at: None. externally triggered: False>: 7 task(s)
+2026-06-14 19:49:00 | DEBUG    | airflow.models.dagrun.DagRun | task_instance_scheduling_decisions:952 | number of scheduleable tasks for <DagRun forecast_dag @ 2026-06-14 00:00:00+00:00: manual__2026-06-14T00:00:00+00:00, state:running, queued_at: None. externally triggered: False>: 6 task(s)
+2026-06-14 19:49:00 | INFO     | airflow.models.dag | _run_task:4168 | [DAG TEST] starting task_id=forecast_prophet_wti_price map_index=-1
+2026-06-14 19:49:00 | INFO     | airflow.models.dag | _run_task:4171 | [DAG TEST] running task <TaskInstance: forecast_dag.forecast_prophet_wti_price manual__2026-06-14T00:00:00+00:00 [scheduled]>
+2026-06-14 19:49:00 | DEBUG    | airflow.models.taskinstance | _get_previous_execution_date:1042 | previous_execution_date was called
+2026-06-14 19:49:00 | DEBUG    | airflow.models.renderedtifields | wrapped_function:91 | Running RenderedTaskInstanceFields.write with retries. Try 1 of 3
+2026-06-14 19:49:00 | DEBUG    | airflow.models.renderedtifields | wrapped_function:91 | Running RenderedTaskInstanceFields._do_delete_old_records with retries. Try 1 of 3
+2026-06-14 19:49:00 | INFO     | airflow.task | _execute_task_with_callbacks:2648 | Exporting env vars: AIRFLOW_CTX_DAG_OWNER='oil_gas_pipeline' AIRFLOW_CTX_DAG_ID='forecast_dag' AIRFLOW_CTX_TASK_ID='forecast_prophet_wti_price' AIRFLOW_CTX_EXECUTION_DATE='2026-06-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-14T00:00:00+00:00'
+2026-06-14 19:49:00 | INFO     | airflow.models.taskinstance | _execute_callable:430 | ::endgroup::
+2026-06-14 19:49:00 | INFO     | unusual_prefix_7704d1601d16df29b1271c38f547716d731fb1a3_forecast_dag | _forecast:104 | Running prophet forecast for wti_price
+2026-06-14 19:49:01 | INFO     | models.preprocessor | train_test_split:307 | Train/test split | train=108 rows (2015-01-01 → 2023-12-01) | test=28 rows (2024-01-01 → 2026-04-01)
+2026-06-14 19:49:01 | INFO     | models.forecast_model | __init__:94 | ForecastModel initialized | primary=prophet | horizon=12 months
+2026-06-14 19:49:01 | INFO     | models.forecast_model | fit_predict:291 | fit_predict | model=prophet | target=wti_price | horizon=12
+2026-06-14 19:49:02 | INFO     | models.forecast_model | fit_prophet:204 | Fitting Prophet on 108 periods...
+2026-06-14 19:49:02 | INFO     | models.forecast_model | fit_prophet:214 | Prophet fit complete
+2026-06-14 19:49:02 | INFO     | models.forecast_model | predict_prophet:257 | Prophet forecast | horizon=12
+2026-06-14 19:49:02 | ERROR    | models.evaluator | evaluate:130 | No overlapping periods between actual and predicted for wti_price
+2026-06-14 19:49:02 | INFO     | unusual_prefix_7704d1601d16df29b1271c38f547716d731fb1a3_forecast_dag | _forecast:138 | Backtest metrics | PROPHET | wti_price | RMSE=0.0000 | MAE=0.0000 | MAPE=0.00% | R²=0.0000 | n=0
+2026-06-14 19:49:02 | INFO     | models.forecast_model | save:355 | Model saved | path=/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/saved_models/prophet_wti_price_20260614.pkl
+2026-06-14 19:49:02 | INFO     | database.db_manager | __init__:25 | DatabaseManager initialized | host=localhost | db=oil_gas_db
+2026-06-14 19:49:02 | INFO     | database.db_manager | write_forecast_results:161 | Gold forecast results — inserted 12 rows
+2026-06-14 19:49:02 | INFO     | unusual_prefix_7704d1601d16df29b1271c38f547716d731fb1a3_forecast_dag | _forecast:155 | Forecast complete | model=prophet | target=wti_price | horizon=12 | rows_saved=12
+2026-06-14 19:49:02 | INFO     | airflow.task.operators.airflow.operators.python.PythonOperator | execute:237 | Done. Returned value was: None
+2026-06-14 19:49:02 | INFO     | airflow.models.taskinstance | _execute_callable:441 | ::group::Post task execution logs
+2026-06-14 19:49:02 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:49:02 | INFO     | airflow.models.taskinstance | _log_state:1206 | Marking task as SUCCESS. dag_id=forecast_dag, task_id=forecast_prophet_wti_price, run_id=manual__2026-06-14T00:00:00+00:00, execution_date=20260614T000000, start_date=, end_date=20260615T004902
+2026-06-14 19:49:02 | DEBUG    | airflow.models.taskinstance | _set_duration:562 | Task Duration set to None
+2026-06-14 19:49:02 | INFO     | airflow.models.dag | _run_task:4182 | [DAG TEST] end task task_id=forecast_prophet_wti_price map_index=-1
+2026-06-14 19:49:02 | INFO     | airflow.models.dag | _run_task:4168 | [DAG TEST] starting task_id=forecast_prophet_henry_hub_price map_index=-1
+2026-06-14 19:49:02 | INFO     | airflow.models.dag | _run_task:4171 | [DAG TEST] running task <TaskInstance: forecast_dag.forecast_prophet_henry_hub_price manual__2026-06-14T00:00:00+00:00 [scheduled]>
+2026-06-14 19:49:02 | DEBUG    | airflow.models.taskinstance | _get_previous_execution_date:1042 | previous_execution_date was called
+2026-06-14 19:49:02 | DEBUG    | airflow.models.renderedtifields | wrapped_function:91 | Running RenderedTaskInstanceFields.write with retries. Try 1 of 3
+2026-06-14 19:49:02 | DEBUG    | airflow.models.renderedtifields | wrapped_function:91 | Running RenderedTaskInstanceFields._do_delete_old_records with retries. Try 1 of 3
+2026-06-14 19:49:02 | INFO     | airflow.task | _execute_task_with_callbacks:2648 | Exporting env vars: AIRFLOW_CTX_DAG_OWNER='oil_gas_pipeline' AIRFLOW_CTX_DAG_ID='forecast_dag' AIRFLOW_CTX_TASK_ID='forecast_prophet_henry_hub_price' AIRFLOW_CTX_EXECUTION_DATE='2026-06-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-14T00:00:00+00:00'
+2026-06-14 19:49:02 | INFO     | airflow.models.taskinstance | _execute_callable:430 | ::endgroup::
+2026-06-14 19:49:02 | INFO     | unusual_prefix_7704d1601d16df29b1271c38f547716d731fb1a3_forecast_dag | _forecast:104 | Running prophet forecast for henry_hub_price
+2026-06-14 19:49:02 | INFO     | models.preprocessor | train_test_split:307 | Train/test split | train=108 rows (2015-01-01 → 2023-12-01) | test=28 rows (2024-01-01 → 2026-04-01)
+2026-06-14 19:49:02 | INFO     | models.forecast_model | __init__:94 | ForecastModel initialized | primary=prophet | horizon=12 months
+2026-06-14 19:49:02 | INFO     | models.forecast_model | fit_predict:291 | fit_predict | model=prophet | target=henry_hub_price | horizon=12
+2026-06-14 19:49:02 | INFO     | models.forecast_model | fit_prophet:204 | Fitting Prophet on 108 periods...
+2026-06-14 19:49:02 | INFO     | models.forecast_model | fit_prophet:214 | Prophet fit complete
+2026-06-14 19:49:02 | INFO     | models.forecast_model | predict_prophet:257 | Prophet forecast | horizon=12
+2026-06-14 19:49:02 | ERROR    | models.evaluator | evaluate:130 | No overlapping periods between actual and predicted for henry_hub_price
+2026-06-14 19:49:02 | INFO     | unusual_prefix_7704d1601d16df29b1271c38f547716d731fb1a3_forecast_dag | _forecast:138 | Backtest metrics | PROPHET | henry_hub_price | RMSE=0.0000 | MAE=0.0000 | MAPE=0.00% | R²=0.0000 | n=0
+2026-06-14 19:49:02 | INFO     | models.forecast_model | save:355 | Model saved | path=/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/saved_models/prophet_henry_hub_price_20260614.pkl
+2026-06-14 19:49:02 | INFO     | database.db_manager | __init__:25 | DatabaseManager initialized | host=localhost | db=oil_gas_db
+2026-06-14 19:49:02 | INFO     | database.db_manager | write_forecast_results:161 | Gold forecast results — inserted 12 rows
+2026-06-14 19:49:02 | INFO     | unusual_prefix_7704d1601d16df29b1271c38f547716d731fb1a3_forecast_dag | _forecast:155 | Forecast complete | model=prophet | target=henry_hub_price | horizon=12 | rows_saved=12
+2026-06-14 19:49:02 | INFO     | airflow.task.operators.airflow.operators.python.PythonOperator | execute:237 | Done. Returned value was: None
+2026-06-14 19:49:02 | INFO     | airflow.models.taskinstance | _execute_callable:441 | ::group::Post task execution logs
+2026-06-14 19:49:02 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:49:02 | INFO     | airflow.models.taskinstance | _log_state:1206 | Marking task as SUCCESS. dag_id=forecast_dag, task_id=forecast_prophet_henry_hub_price, run_id=manual__2026-06-14T00:00:00+00:00, execution_date=20260614T000000, start_date=, end_date=20260615T004902
+2026-06-14 19:49:02 | DEBUG    | airflow.models.taskinstance | _set_duration:562 | Task Duration set to None
+2026-06-14 19:49:02 | INFO     | airflow.models.dag | _run_task:4182 | [DAG TEST] end task task_id=forecast_prophet_henry_hub_price map_index=-1
+2026-06-14 19:49:02 | INFO     | airflow.models.dag | _run_task:4168 | [DAG TEST] starting task_id=forecast_sarima_henry_hub_price map_index=-1
+2026-06-14 19:49:02 | INFO     | airflow.models.dag | _run_task:4171 | [DAG TEST] running task <TaskInstance: forecast_dag.forecast_sarima_henry_hub_price manual__2026-06-14T00:00:00+00:00 [scheduled]>
+2026-06-14 19:49:02 | DEBUG    | airflow.models.taskinstance | _get_previous_execution_date:1042 | previous_execution_date was called
+2026-06-14 19:49:02 | DEBUG    | airflow.models.renderedtifields | wrapped_function:91 | Running RenderedTaskInstanceFields.write with retries. Try 1 of 3
+2026-06-14 19:49:02 | DEBUG    | airflow.models.renderedtifields | wrapped_function:91 | Running RenderedTaskInstanceFields._do_delete_old_records with retries. Try 1 of 3
+2026-06-14 19:49:02 | INFO     | airflow.task | _execute_task_with_callbacks:2648 | Exporting env vars: AIRFLOW_CTX_DAG_OWNER='oil_gas_pipeline' AIRFLOW_CTX_DAG_ID='forecast_dag' AIRFLOW_CTX_TASK_ID='forecast_sarima_henry_hub_price' AIRFLOW_CTX_EXECUTION_DATE='2026-06-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-14T00:00:00+00:00'
+2026-06-14 19:49:02 | INFO     | airflow.models.taskinstance | _execute_callable:430 | ::endgroup::
+2026-06-14 19:49:02 | INFO     | unusual_prefix_7704d1601d16df29b1271c38f547716d731fb1a3_forecast_dag | _forecast:104 | Running sarima forecast for henry_hub_price
+2026-06-14 19:49:02 | INFO     | models.preprocessor | train_test_split:307 | Train/test split | train=108 rows (2015-01-01 → 2023-12-01) | test=28 rows (2024-01-01 → 2026-04-01)
+2026-06-14 19:49:02 | INFO     | models.forecast_model | __init__:94 | ForecastModel initialized | primary=prophet | horizon=12 months
+2026-06-14 19:49:02 | INFO     | models.forecast_model | fit_predict:291 | fit_predict | model=sarima | target=henry_hub_price | horizon=12
+2026-06-14 19:49:03 | INFO     | models.forecast_model | fit_sarima:126 | Fitting SARIMA(1, 1, 1)x(1, 1, 1, 12) on 108 periods...
+2026-06-14 19:49:03 | INFO     | models.forecast_model | fit_sarima:136 | SARIMA fit complete
+2026-06-14 19:49:03 | INFO     | models.forecast_model | predict_sarima:174 | SARIMA forecast | horizon=12 | periods=[Timestamp('2024-01-01 00:00:00'), Timestamp('2024-02-01 00:00:00'), Timestamp('2024-03-01 00:00:00'), Timestamp('2024-04-01 00:00:00'), Timestamp('2024-05-01 00:00:00'), Timestamp('2024-06-01 00:00:00'), Timestamp('2024-07-01 00:00:00'), Timestamp('2024-08-01 00:00:00'), Timestamp('2024-09-01 00:00:00'), Timestamp('2024-10-01 00:00:00'), Timestamp('2024-11-01 00:00:00'), Timestamp('2024-12-01 00:00:00')]
+2026-06-14 19:49:03 | ERROR    | models.evaluator | evaluate:130 | No overlapping periods between actual and predicted for henry_hub_price
+2026-06-14 19:49:03 | INFO     | unusual_prefix_7704d1601d16df29b1271c38f547716d731fb1a3_forecast_dag | _forecast:138 | Backtest metrics | SARIMA | henry_hub_price | RMSE=0.0000 | MAE=0.0000 | MAPE=0.00% | R²=0.0000 | n=0
+2026-06-14 19:49:03 | INFO     | models.forecast_model | save:355 | Model saved | path=/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/saved_models/sarima_henry_hub_price_20260614.pkl
+2026-06-14 19:49:03 | INFO     | database.db_manager | __init__:25 | DatabaseManager initialized | host=localhost | db=oil_gas_db
+2026-06-14 19:49:03 | INFO     | database.db_manager | write_forecast_results:161 | Gold forecast results — inserted 12 rows
+2026-06-14 19:49:03 | INFO     | unusual_prefix_7704d1601d16df29b1271c38f547716d731fb1a3_forecast_dag | _forecast:155 | Forecast complete | model=sarima | target=henry_hub_price | horizon=12 | rows_saved=12
+2026-06-14 19:49:03 | INFO     | airflow.task.operators.airflow.operators.python.PythonOperator | execute:237 | Done. Returned value was: None
+2026-06-14 19:49:03 | INFO     | airflow.models.taskinstance | _execute_callable:441 | ::group::Post task execution logs
+2026-06-14 19:49:03 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:49:03 | INFO     | airflow.models.taskinstance | _log_state:1206 | Marking task as SUCCESS. dag_id=forecast_dag, task_id=forecast_sarima_henry_hub_price, run_id=manual__2026-06-14T00:00:00+00:00, execution_date=20260614T000000, start_date=, end_date=20260615T004903
+2026-06-14 19:49:03 | DEBUG    | airflow.models.taskinstance | _set_duration:562 | Task Duration set to None
+2026-06-14 19:49:03 | INFO     | airflow.models.dag | _run_task:4182 | [DAG TEST] end task task_id=forecast_sarima_henry_hub_price map_index=-1
+2026-06-14 19:49:03 | INFO     | airflow.models.dag | _run_task:4168 | [DAG TEST] starting task_id=forecast_sarima_wti_price map_index=-1
+2026-06-14 19:49:03 | INFO     | airflow.models.dag | _run_task:4171 | [DAG TEST] running task <TaskInstance: forecast_dag.forecast_sarima_wti_price manual__2026-06-14T00:00:00+00:00 [scheduled]>
+2026-06-14 19:49:03 | DEBUG    | airflow.models.taskinstance | _get_previous_execution_date:1042 | previous_execution_date was called
+2026-06-14 19:49:03 | DEBUG    | airflow.models.renderedtifields | wrapped_function:91 | Running RenderedTaskInstanceFields.write with retries. Try 1 of 3
+2026-06-14 19:49:03 | DEBUG    | airflow.models.renderedtifields | wrapped_function:91 | Running RenderedTaskInstanceFields._do_delete_old_records with retries. Try 1 of 3
+2026-06-14 19:49:03 | INFO     | airflow.task | _execute_task_with_callbacks:2648 | Exporting env vars: AIRFLOW_CTX_DAG_OWNER='oil_gas_pipeline' AIRFLOW_CTX_DAG_ID='forecast_dag' AIRFLOW_CTX_TASK_ID='forecast_sarima_wti_price' AIRFLOW_CTX_EXECUTION_DATE='2026-06-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-14T00:00:00+00:00'
+2026-06-14 19:49:03 | INFO     | airflow.models.taskinstance | _execute_callable:430 | ::endgroup::
+2026-06-14 19:49:03 | INFO     | unusual_prefix_7704d1601d16df29b1271c38f547716d731fb1a3_forecast_dag | _forecast:104 | Running sarima forecast for wti_price
+2026-06-14 19:49:03 | INFO     | models.preprocessor | train_test_split:307 | Train/test split | train=108 rows (2015-01-01 → 2023-12-01) | test=28 rows (2024-01-01 → 2026-04-01)
+2026-06-14 19:49:03 | INFO     | models.forecast_model | __init__:94 | ForecastModel initialized | primary=prophet | horizon=12 months
+2026-06-14 19:49:03 | INFO     | models.forecast_model | fit_predict:291 | fit_predict | model=sarima | target=wti_price | horizon=12
+2026-06-14 19:49:03 | INFO     | models.forecast_model | fit_sarima:126 | Fitting SARIMA(1, 1, 1)x(1, 1, 1, 12) on 108 periods...
+2026-06-14 19:49:03 | INFO     | models.forecast_model | fit_sarima:136 | SARIMA fit complete
+2026-06-14 19:49:03 | INFO     | models.forecast_model | predict_sarima:174 | SARIMA forecast | horizon=12 | periods=[Timestamp('2024-01-01 00:00:00'), Timestamp('2024-02-01 00:00:00'), Timestamp('2024-03-01 00:00:00'), Timestamp('2024-04-01 00:00:00'), Timestamp('2024-05-01 00:00:00'), Timestamp('2024-06-01 00:00:00'), Timestamp('2024-07-01 00:00:00'), Timestamp('2024-08-01 00:00:00'), Timestamp('2024-09-01 00:00:00'), Timestamp('2024-10-01 00:00:00'), Timestamp('2024-11-01 00:00:00'), Timestamp('2024-12-01 00:00:00')]
+2026-06-14 19:49:03 | ERROR    | models.evaluator | evaluate:130 | No overlapping periods between actual and predicted for wti_price
+2026-06-14 19:49:03 | INFO     | unusual_prefix_7704d1601d16df29b1271c38f547716d731fb1a3_forecast_dag | _forecast:138 | Backtest metrics | SARIMA | wti_price | RMSE=0.0000 | MAE=0.0000 | MAPE=0.00% | R²=0.0000 | n=0
+2026-06-14 19:49:03 | INFO     | models.forecast_model | save:355 | Model saved | path=/Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/saved_models/sarima_wti_price_20260614.pkl
+2026-06-14 19:49:03 | INFO     | database.db_manager | __init__:25 | DatabaseManager initialized | host=localhost | db=oil_gas_db
+2026-06-14 19:49:03 | INFO     | database.db_manager | write_forecast_results:161 | Gold forecast results — inserted 12 rows
+2026-06-14 19:49:03 | INFO     | unusual_prefix_7704d1601d16df29b1271c38f547716d731fb1a3_forecast_dag | _forecast:155 | Forecast complete | model=sarima | target=wti_price | horizon=12 | rows_saved=12
+2026-06-14 19:49:03 | INFO     | airflow.task.operators.airflow.operators.python.PythonOperator | execute:237 | Done. Returned value was: None
+2026-06-14 19:49:03 | INFO     | airflow.models.taskinstance | _execute_callable:441 | ::group::Post task execution logs
+2026-06-14 19:49:03 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:49:03 | INFO     | airflow.models.taskinstance | _log_state:1206 | Marking task as SUCCESS. dag_id=forecast_dag, task_id=forecast_sarima_wti_price, run_id=manual__2026-06-14T00:00:00+00:00, execution_date=20260614T000000, start_date=, end_date=20260615T004903
+2026-06-14 19:49:03 | DEBUG    | airflow.models.taskinstance | _set_duration:562 | Task Duration set to None
+2026-06-14 19:49:03 | INFO     | airflow.models.dag | _run_task:4182 | [DAG TEST] end task task_id=forecast_sarima_wti_price map_index=-1
+2026-06-14 19:49:03 | DEBUG    | airflow.models.dagrun.DagRun | task_instance_scheduling_decisions:931 | number of tis tasks for <DagRun forecast_dag @ 2026-06-14 00:00:00+00:00: manual__2026-06-14T00:00:00+00:00, state:running, queued_at: None. externally triggered: False>: 7 task(s)
+2026-06-14 19:49:03 | DEBUG    | airflow.models.dagrun.DagRun | task_instance_scheduling_decisions:952 | number of scheduleable tasks for <DagRun forecast_dag @ 2026-06-14 00:00:00+00:00: manual__2026-06-14T00:00:00+00:00, state:running, queued_at: None. externally triggered: False>: 2 task(s)
+2026-06-14 19:49:03 | INFO     | airflow.models.dag | _run_task:4168 | [DAG TEST] starting task_id=log_forecast_run map_index=-1
+2026-06-14 19:49:03 | INFO     | airflow.models.dag | _run_task:4171 | [DAG TEST] running task <TaskInstance: forecast_dag.log_forecast_run manual__2026-06-14T00:00:00+00:00 [scheduled]>
+2026-06-14 19:49:03 | DEBUG    | airflow.models.taskinstance | _get_previous_execution_date:1042 | previous_execution_date was called
+2026-06-14 19:49:03 | DEBUG    | airflow.models.renderedtifields | wrapped_function:91 | Running RenderedTaskInstanceFields.write with retries. Try 1 of 3
+2026-06-14 19:49:03 | DEBUG    | airflow.models.renderedtifields | wrapped_function:91 | Running RenderedTaskInstanceFields._do_delete_old_records with retries. Try 1 of 3
+2026-06-14 19:49:03 | INFO     | airflow.task | _execute_task_with_callbacks:2648 | Exporting env vars: AIRFLOW_CTX_DAG_OWNER='oil_gas_pipeline' AIRFLOW_CTX_DAG_ID='forecast_dag' AIRFLOW_CTX_TASK_ID='log_forecast_run' AIRFLOW_CTX_EXECUTION_DATE='2026-06-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-14T00:00:00+00:00'
+2026-06-14 19:49:03 | INFO     | airflow.models.taskinstance | _execute_callable:430 | ::endgroup::
+2026-06-14 19:49:03 | INFO     | database.db_manager | __init__:25 | DatabaseManager initialized | host=localhost | db=oil_gas_db
+2026-06-14 19:49:03 | INFO     | database.db_manager | log_pipeline_run:186 | Pipeline run logged | run=weekly_forecast | status=success | id=83543e41-1b00-4944-b2a1-a9440a6dae23
+2026-06-14 19:49:03 | INFO     | unusual_prefix_7704d1601d16df29b1271c38f547716d731fb1a3_forecast_dag | log_forecast_run:192 | Weekly forecast run logged | total_forecast_rows=48
+2026-06-14 19:49:03 | INFO     | airflow.task.operators.airflow.operators.python.PythonOperator | execute:237 | Done. Returned value was: None
+2026-06-14 19:49:03 | INFO     | airflow.models.taskinstance | _execute_callable:441 | ::group::Post task execution logs
+2026-06-14 19:49:03 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:49:03 | INFO     | airflow.models.taskinstance | _log_state:1206 | Marking task as SUCCESS. dag_id=forecast_dag, task_id=log_forecast_run, run_id=manual__2026-06-14T00:00:00+00:00, execution_date=20260614T000000, start_date=, end_date=20260615T004903
+2026-06-14 19:49:03 | DEBUG    | airflow.models.taskinstance | _set_duration:562 | Task Duration set to None
+2026-06-14 19:49:03 | INFO     | airflow.models.dag | _run_task:4182 | [DAG TEST] end task task_id=log_forecast_run map_index=-1
+2026-06-14 19:49:04 | DEBUG    | airflow.models.dagrun.DagRun | task_instance_scheduling_decisions:931 | number of tis tasks for <DagRun forecast_dag @ 2026-06-14 00:00:00+00:00: manual__2026-06-14T00:00:00+00:00, state:running, queued_at: None. externally triggered: False>: 7 task(s)
+2026-06-14 19:49:04 | DEBUG    | airflow.models.dagrun.DagRun | task_instance_scheduling_decisions:952 | number of scheduleable tasks for <DagRun forecast_dag @ 2026-06-14 00:00:00+00:00: manual__2026-06-14T00:00:00+00:00, state:running, queued_at: None. externally triggered: False>: 1 task(s)
+2026-06-14 19:49:04 | INFO     | airflow.models.dag | _run_task:4168 | [DAG TEST] starting task_id=forecast_complete map_index=-1
+2026-06-14 19:49:04 | INFO     | airflow.models.dag | _run_task:4171 | [DAG TEST] running task <TaskInstance: forecast_dag.forecast_complete manual__2026-06-14T00:00:00+00:00 [scheduled]>
+2026-06-14 19:49:04 | DEBUG    | airflow.models.taskinstance | _get_previous_execution_date:1042 | previous_execution_date was called
+2026-06-14 19:49:04 | DEBUG    | airflow.models.renderedtifields | wrapped_function:91 | Running RenderedTaskInstanceFields.write with retries. Try 1 of 3
+2026-06-14 19:49:04 | DEBUG    | airflow.models.renderedtifields | wrapped_function:91 | Running RenderedTaskInstanceFields._do_delete_old_records with retries. Try 1 of 3
+2026-06-14 19:49:04 | INFO     | airflow.task | _execute_task_with_callbacks:2648 | Exporting env vars: AIRFLOW_CTX_DAG_OWNER='oil_gas_pipeline' AIRFLOW_CTX_DAG_ID='forecast_dag' AIRFLOW_CTX_TASK_ID='forecast_complete' AIRFLOW_CTX_EXECUTION_DATE='2026-06-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-14T00:00:00+00:00'
+2026-06-14 19:49:04 | INFO     | airflow.models.taskinstance | _execute_callable:430 | ::endgroup::
+2026-06-14 19:49:04 | INFO     | airflow.models.taskinstance | _execute_callable:441 | ::group::Post task execution logs
+2026-06-14 19:49:04 | DEBUG    | airflow.models.taskinstance | _clear_next_method_args:584 | Clearing next_method and next_kwargs.
+2026-06-14 19:49:04 | INFO     | airflow.models.taskinstance | _log_state:1206 | Marking task as SUCCESS. dag_id=forecast_dag, task_id=forecast_complete, run_id=manual__2026-06-14T00:00:00+00:00, execution_date=20260614T000000, start_date=, end_date=20260615T004904
+2026-06-14 19:49:04 | DEBUG    | airflow.models.taskinstance | _set_duration:562 | Task Duration set to None
+2026-06-14 19:49:04 | INFO     | airflow.models.dag | _run_task:4182 | [DAG TEST] end task task_id=forecast_complete map_index=-1
+2026-06-14 19:49:04 | DEBUG    | airflow.models.dagrun.DagRun | task_instance_scheduling_decisions:931 | number of tis tasks for <DagRun forecast_dag @ 2026-06-14 00:00:00+00:00: manual__2026-06-14T00:00:00+00:00, state:running, queued_at: None. externally triggered: False>: 7 task(s)
+2026-06-14 19:49:04 | INFO     | airflow.models.dagrun.DagRun | update_state:850 | Marking run <DagRun forecast_dag @ 2026-06-14 00:00:00+00:00: manual__2026-06-14T00:00:00+00:00, state:running, queued_at: None. externally triggered: False> successful
+2026-06-14 19:49:04 | INFO     | airflow.models.dagrun.DagRun | update_state:901 | DagRun Finished: dag_id=forecast_dag, execution_date=2026-06-14 00:00:00+00:00, run_id=manual__2026-06-14T00:00:00+00:00, run_start_date=2026-06-14 00:00:00+00:00, run_end_date=2026-06-15 00:49:04.018623+00:00, run_duration=89344.018623, state=success, external_trigger=False, run_type=manual, data_interval_start=2026-05-31 08:00:00+00:00, data_interval_end=2026-06-07 08:00:00+00:00, dag_hash=None
+2026-06-14 19:49:04 | DEBUG    | airflow.utils.cli_action_loggers | on_post_execution:88 | Calling callbacks: []
+2026-06-14 19:49:04 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 69755)

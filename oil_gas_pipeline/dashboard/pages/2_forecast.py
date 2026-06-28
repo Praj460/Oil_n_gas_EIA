@@ -9,9 +9,10 @@ import streamlit as st
 import pandas as pd
 import psycopg2
 import plotly.graph_objects as go
+from dotenv import load_dotenv
 
 st.set_page_config(page_title="Forecast", page_icon="🔮", layout="wide")
-
+import os
 load_dotenv()
 
 DB = dict(

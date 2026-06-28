@@ -179,6 +179,117 @@ class ForecastModel:
             fitted_values=fitted_values,
             train_periods=len(self._sarima_model.fittedvalues),
         )
+    
+    # ── SARIMAX (SARIMA + exogenous variables) ────────────────────────────────
+
+    def fit_sarimax(
+        self,
+        train:          pd.Series,
+        exog_train:     pd.DataFrame,
+        order:          Optional[tuple] = None,
+        seasonal_order: Optional[tuple] = None,
+    ) -> None:
+        """
+        Fits a SARIMAX model — same SARIMA structure but with exogenous predictors.
+
+        The X = "eXogenous" means the model gets to see additional features
+        (lagged storage, lagged spare capacity, etc.) on top of past prices.
+        CRITICAL: exog features must be lagged so the model only uses
+        information that would actually be available at forecast time.
+
+        Args:
+            train:          pd.Series of the target (e.g. WTI prices) with DatetimeIndex
+            exog_train:     pd.DataFrame of lagged exogenous features, same index as `train`
+            order:          (p,d,q) — defaults to config value
+            seasonal_order: (P,D,Q,s) — defaults to config value
+        """
+        from statsmodels.tsa.statespace.sarimax import SARIMAX
+
+        order          = order          or self.model_cfg.sarima_order
+        seasonal_order = seasonal_order or self.model_cfg.sarima_seasonal_order
+
+        # Sanity check — exog and target must align
+        if len(exog_train) != len(train):
+            raise ValueError(
+                f"exog rows ({len(exog_train)}) != train rows ({len(train)}) — "
+                f"check alignment of lagged features"
+            )
+
+        logger.info(
+            f"Fitting SARIMAX{order}x{seasonal_order} on {len(train)} periods "
+            f"with {exog_train.shape[1]} exog features: {list(exog_train.columns)}"
+        )
+
+        model = SARIMAX(
+            train,
+            exog=exog_train,
+            order=order,
+            seasonal_order=seasonal_order,
+            enforce_stationarity=False,
+            enforce_invertibility=False,
+        )
+        self._sarima_model = model.fit(disp=False)
+        self._sarimax_exog_cols = list(exog_train.columns)   # remember for predict
+        logger.info("SARIMAX fit complete")
+
+    def predict_sarimax(
+        self,
+        exog_test: pd.DataFrame,
+        horizon:   Optional[int] = None,
+        alpha:     float = 0.05,
+    ) -> ForecastResult:
+        """
+        Generates SARIMAX forecast using the provided exogenous future values.
+
+        Args:
+            exog_test: pd.DataFrame of exog features for the forecast horizon.
+                       MUST have the same columns as exog_train, in the same order.
+            horizon:   number of months to forecast (default from config)
+            alpha:     significance level for confidence intervals (0.05 = 95%)
+
+        Returns:
+            ForecastResult with forecast DataFrame and fitted values
+        """
+        if self._sarima_model is None:
+            raise ValueError("Call fit_sarimax() before predict_sarimax()")
+
+        horizon = horizon or self.model_cfg.forecast_horizon
+
+        # Validate exog columns match training
+        missing = set(self._sarimax_exog_cols) - set(exog_test.columns)
+        if missing:
+            raise ValueError(f"exog_test missing columns from training: {missing}")
+        exog_test = exog_test[self._sarimax_exog_cols]   # enforce order
+
+        if len(exog_test) != horizon:
+            raise ValueError(
+                f"exog_test has {len(exog_test)} rows but horizon is {horizon}"
+            )
+
+        forecast_obj = self._sarima_model.get_forecast(steps=horizon, exog=exog_test)
+        forecast_mean = forecast_obj.predicted_mean
+        conf_int      = forecast_obj.conf_int(alpha=alpha)
+
+        forecast_df = pd.DataFrame({
+            "period":   forecast_mean.index,
+            "forecast": forecast_mean.values.round(4),
+            "lower":    conf_int.iloc[:, 0].values.round(4),
+            "upper":    conf_int.iloc[:, 1].values.round(4),
+        })
+
+        fitted_values = pd.Series(
+            self._sarima_model.fittedvalues,
+            index=self._sarima_model.fittedvalues.index,
+        )
+
+        logger.info(f"SARIMAX forecast | horizon={horizon} | exog cols={len(self._sarimax_exog_cols)}")
+        return ForecastResult(
+            model_name="sarimax",
+            target="",
+            forecast_df=forecast_df,
+            fitted_values=fitted_values,
+            train_periods=len(self._sarima_model.fittedvalues),
+        )
 
     # ── Prophet ───────────────────────────────────────────────────────────────
 
@@ -294,6 +405,14 @@ class ForecastModel:
             series = train[target_col].asfreq("MS")
             self.fit_sarima(series)
             result = self.predict_sarima(horizon=horizon)
+
+        elif model == "sarimax":
+            # Caller must pre-pack train as a dict: {"target": Series, "exog_train": DataFrame, "exog_test": DataFrame}
+            # Keeping fit_predict's signature meant overloading `train` here — runner script handles this.
+            raise NotImplementedError(
+                "SARIMAX needs separate exog data — use fit_sarimax()/predict_sarimax() directly "
+                "from the runner script rather than through fit_predict()"
+            )
 
         elif model == "prophet":
             self.fit_prophet(train, target_col)

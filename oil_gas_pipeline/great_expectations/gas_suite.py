@@ -34,8 +34,10 @@ class GasSuite:
     # Henry Hub price has ranged from ~$1 to ~$20/MMBtu historically
     HENRY_HUB_MIN, HENRY_HUB_MAX = 0.0, 25.0
 
-    # US gas storage in BCF — typically 1,000 to 4,000 BCF
-    STORAGE_MIN, STORAGE_MAX = 0.0, 5000.0
+    # US gas storage from EIA series NG.NW2_EPG0_SWO_R48_BCF.M.
+    # Despite "BCF" in the series ID, the API reports values in MMcf
+    # (million cubic feet) = 1000x BCF. Typical range ~1.0M–4.0M MMcf.
+    STORAGE_MIN, STORAGE_MAX = 0.0, 5_000_000.0
 
     MIN_DATE = datetime(1993, 1, 1)   # Henry Hub data starts ~1993
     MAX_DATE = datetime.now()

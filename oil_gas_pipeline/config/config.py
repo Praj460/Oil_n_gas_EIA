@@ -48,6 +48,21 @@ class EIAConfig:
         "us_production": "NG.N9010US2.M"  # US nat gas production (monthly)
     })
 
+@dataclass
+class FREDConfig:
+    """FRED (Federal Reserve Economic Data) API settings."""
+    api_key: str
+    base_url: str = "https://api.stlouisfed.org/fred"
+    timeout: int = 30
+    max_retries: int = 3
+    retry_delay: int = 5
+
+    # Series IDs — macro signals for energy forecasting
+    series: dict = field(default_factory=lambda: {
+        "dollar_index":        "DTWEXBGS",   # trade-weighted USD index (currency)
+        "industrial_production": "INDPRO",   # US industrial output (real demand)
+        "treasury_10y":        "DGS10",      # 10-year Treasury yield (financing cost)
+    })
 
 @dataclass
 class DatabaseConfig:
@@ -130,6 +145,7 @@ class PathConfig:
 class AppConfig:
     """Top-level config — groups all sub-configs together."""
     eia: EIAConfig
+    fred: FREDConfig 
     db: DatabaseConfig
     model: ModelConfig
     paths: PathConfig
@@ -156,6 +172,7 @@ def _load_config() -> AppConfig:
         return val or ""
 
     eia_key = require("EIA_API_KEY")
+    fred_key = require("FRED_API_KEY")  
     db_host  = require("DB_HOST")
     db_name  = require("DB_NAME")
     db_user  = require("DB_USER")
@@ -170,6 +187,7 @@ def _load_config() -> AppConfig:
 
     cfg = AppConfig(
         eia=EIAConfig(api_key=eia_key),
+        fred=FREDConfig(api_key=fred_key),
         db=DatabaseConfig(
             host=db_host,
             port=int(os.getenv("DB_PORT", "5432")),

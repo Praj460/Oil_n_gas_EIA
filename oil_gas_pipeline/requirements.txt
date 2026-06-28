@@ -40,3 +40,5 @@ plotly==5.22.0                # interactive charts used in all 4 pages
 # ── Testing ───────────────────────────────────────────────────────────────────
 pytest==8.2.2                 # test runner
 pytest-cov==5.0.0             # coverage reports
+
+libomp

@@ -123,7 +123,8 @@ class Preprocessor:
         """
         cols_to_keep = [target_col] + [c for c in feature_cols if c in df.columns]
         df = df[cols_to_keep]
-        df = df.resample("MS").mean()
+        numeric_df = df.select_dtypes(include="number")   # keep only numbers
+        df = numeric_df.resample("MS").mean()
 
         gap_count = df[target_col].isna().sum()
         if gap_count > 0:

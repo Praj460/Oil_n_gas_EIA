@@ -104,3 +104,277 @@
 2026-06-11 20:12:57 | INFO     | airflow.models.dag | calculate_dagrun_date_fields:3954 | Setting next_dagrun for forecast_dag to 2026-05-31 08:00:00+00:00, run_after=2026-06-07 08:00:00+00:00
 2026-06-11 20:12:57 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 56378)
 2026-06-11 20:12:57 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 56378)
+2026-06-14 18:42:58 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/forecast.log
+2026-06-14 18:42:58 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 18:42:58 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: forecast_dag>
+2026-06-14 18:42:58 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:667 | Running dagbag.sync_to_db with retries. Try 1 of 3
+2026-06-14 18:42:58 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:672 | Calling the DAG.bulk_sync_to_db method
+2026-06-14 18:42:58 | DEBUG    | airflow.models.serialized_dag | write_dag:166 | Checking if DAG (forecast_dag) changed
+2026-06-14 18:42:58 | DEBUG    | airflow.models.serialized_dag | write_dag:177 | Serialized DAG (forecast_dag) is unchanged. Skipping writing to DB
+2026-06-14 18:42:58 | INFO     | airflow.models.dag | bulk_write_to_db:3096 | Sync 1 DAGs
+2026-06-14 18:42:58 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 59480)
+2026-06-14 18:42:58 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 59480)
+2026-06-14 18:43:30 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/forecast.log
+2026-06-14 18:43:30 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 18:43:30 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: forecast_dag>
+2026-06-14 18:43:30 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:667 | Running dagbag.sync_to_db with retries. Try 1 of 3
+2026-06-14 18:43:30 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:672 | Calling the DAG.bulk_sync_to_db method
+2026-06-14 18:43:30 | DEBUG    | airflow.models.serialized_dag | write_dag:166 | Checking if DAG (forecast_dag) changed
+2026-06-14 18:43:30 | DEBUG    | airflow.models.serialized_dag | write_dag:177 | Serialized DAG (forecast_dag) is unchanged. Skipping writing to DB
+2026-06-14 18:43:30 | INFO     | airflow.models.dag | bulk_write_to_db:3096 | Sync 1 DAGs
+2026-06-14 18:43:30 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 59555)
+2026-06-14 18:43:30 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 59555)
+2026-06-14 18:44:02 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/forecast.log
+2026-06-14 18:44:02 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 18:44:02 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: forecast_dag>
+2026-06-14 18:44:02 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:667 | Running dagbag.sync_to_db with retries. Try 1 of 3
+2026-06-14 18:44:02 | DEBUG    | airflow.models.dagbag.DagBag | _sync_to_db:672 | Calling the DAG.bulk_sync_to_db method
+2026-06-14 18:44:02 | DEBUG    | airflow.models.serialized_dag | write_dag:166 | Checking if DAG (forecast_dag) changed
+2026-06-14 18:44:02 | DEBUG    | airflow.models.serialized_dag | write_dag:177 | Serialized DAG (forecast_dag) is unchanged. Skipping writing to DB
+2026-06-14 18:44:02 | INFO     | airflow.models.dag | bulk_write_to_db:3096 | Sync 1 DAGs
+2026-06-14 18:44:02 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 59626)
+2026-06-14 18:44:02 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 59626)
+2026-06-14 19:02:23 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/forecast.log
+2026-06-14 19:02:23 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 19:02:23 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: forecast_dag>
+2026-06-14 19:02:23 | DEBUG    | airflow.plugins_manager | ensure_plugins_loaded:332 | Plugins are already loaded. Skipping.
+2026-06-14 19:02:23 | DEBUG    | airflow.plugins_manager | integrate_macros_plugins:516 | Integrate DAG plugins
+2026-06-14 19:02:23 | DEBUG    | airflow.models.taskinstance | _get_previous_execution_date:1042 | previous_execution_date was called
+2026-06-14 19:02:23 | INFO     | airflow.cli.commands.task_command | task_run:426 | Running <TaskInstance: forecast_dag.load_and_preprocess manual__2026-06-12T01:13:22.361921+00:00 [queued]> on host prajwals-macbook-air.local
+2026-06-14 19:02:23 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 62334)
+2026-06-14 19:02:23 | DEBUG    | airflow.settings | configure_orm:250 | Setting up DB connection pool (PID 62334)
+2026-06-14 19:02:23 | DEBUG    | airflow.settings | prepare_engine_args:298 | settings.prepare_engine_args(): Using NullPool
+2026-06-14 19:02:59 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/forecast.log
+2026-06-14 19:02:59 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 19:02:59 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: forecast_dag>
+2026-06-14 19:02:59 | DEBUG    | airflow.models.dagbag.DagBag | _load_modules_from_file:337 | Importing /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py
+2026-06-14 19:04:06 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/forecast.log
+2026-06-14 19:04:06 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 19:04:06 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: forecast_dag>
+2026-06-14 19:04:06 | DEBUG    | airflow.plugins_manager | ensure_plugins_loaded:332 | Plugins are already loaded. Skipping.
+2026-06-14 19:04:06 | DEBUG    | airflow.plugins_manager | integrate_macros_plugins:516 | Integrate DAG plugins
+2026-06-14 19:04:06 | DEBUG    | airflow.models.taskinstance | _get_previous_execution_date:1042 | previous_execution_date was called
+2026-06-14 19:04:06 | INFO     | airflow.cli.commands.task_command | task_run:426 | Running <TaskInstance: forecast_dag.load_and_preprocess manual__2026-06-12T01:13:22.361921+00:00 [queued]> on host prajwals-macbook-air.local
+2026-06-14 19:04:06 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 62665)
+2026-06-14 19:04:06 | DEBUG    | airflow.settings | configure_orm:250 | Setting up DB connection pool (PID 62665)
+2026-06-14 19:04:06 | DEBUG    | airflow.settings | prepare_engine_args:298 | settings.prepare_engine_args(): Using NullPool
+2026-06-14 19:08:13 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/forecast.log
+2026-06-14 19:08:13 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 19:08:13 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: forecast_dag>
+2026-06-14 19:08:13 | DEBUG    | airflow.models.dagbag.DagBag | _load_modules_from_file:337 | Importing /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py
+2026-06-14 19:10:59 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/forecast.log
+2026-06-14 19:10:59 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 19:10:59 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: forecast_dag>
+2026-06-14 19:10:59 | DEBUG    | airflow.models.dagbag.DagBag | _load_modules_from_file:337 | Importing /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py
+2026-06-14 19:17:53 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/forecast.log
+2026-06-14 19:17:53 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 19:17:53 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: forecast_dag>
+2026-06-14 19:17:53 | DEBUG    | airflow.plugins_manager | ensure_plugins_loaded:332 | Plugins are already loaded. Skipping.
+2026-06-14 19:17:53 | DEBUG    | airflow.plugins_manager | integrate_macros_plugins:516 | Integrate DAG plugins
+2026-06-14 19:17:53 | DEBUG    | airflow.models.taskinstance | _get_previous_execution_date:1042 | previous_execution_date was called
+2026-06-14 19:17:53 | INFO     | airflow.cli.commands.task_command | task_run:426 | Running <TaskInstance: forecast_dag.load_and_preprocess manual__2026-06-12T01:13:22.361921+00:00 [queued]> on host prajwals-macbook-air.local
+2026-06-14 19:17:53 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 64807)
+2026-06-14 19:17:53 | DEBUG    | airflow.settings | configure_orm:250 | Setting up DB connection pool (PID 64807)
+2026-06-14 19:17:53 | DEBUG    | airflow.settings | prepare_engine_args:298 | settings.prepare_engine_args(): Using NullPool
+2026-06-14 19:18:24 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/forecast.log
+2026-06-14 19:18:24 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 19:18:24 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: forecast_dag>
+2026-06-14 19:18:24 | DEBUG    | airflow.models.dagbag.DagBag | _load_modules_from_file:337 | Importing /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py
+2026-06-14 19:23:58 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/forecast.log
+2026-06-14 19:23:58 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 19:23:58 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: forecast_dag>
+2026-06-14 19:23:58 | DEBUG    | airflow.models.dagbag.DagBag | _load_modules_from_file:337 | Importing /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py
+2026-06-14 19:24:37 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/forecast.log
+2026-06-14 19:24:37 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 19:24:37 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: forecast_dag>
+2026-06-14 19:24:37 | DEBUG    | airflow.plugins_manager | ensure_plugins_loaded:332 | Plugins are already loaded. Skipping.
+2026-06-14 19:24:37 | DEBUG    | airflow.plugins_manager | integrate_macros_plugins:516 | Integrate DAG plugins
+2026-06-14 19:24:37 | DEBUG    | airflow.models.taskinstance | _get_previous_execution_date:1042 | previous_execution_date was called
+2026-06-14 19:24:37 | INFO     | airflow.cli.commands.task_command | task_run:426 | Running <TaskInstance: forecast_dag.load_and_preprocess manual__2026-06-12T01:13:22.361921+00:00 [queued]> on host prajwals-macbook-air.local
+2026-06-14 19:24:37 | DEBUG    | airflow.settings | dispose_orm:363 | Disposing DB connection pool (PID 65909)
+2026-06-14 19:24:37 | DEBUG    | airflow.settings | configure_orm:250 | Setting up DB connection pool (PID 65909)
+2026-06-14 19:24:37 | DEBUG    | airflow.settings | prepare_engine_args:298 | settings.prepare_engine_args(): Using NullPool
+2026-06-14 19:33:32 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/forecast.log
+2026-06-14 19:33:32 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 19:33:32 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: forecast_dag>
+2026-06-14 19:33:32 | DEBUG    | airflow.models.dagbag.DagBag | _load_modules_from_file:337 | Importing /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py
+2026-06-14 19:41:29 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/forecast.log
+2026-06-14 19:41:29 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 19:41:29 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: forecast_dag>
+2026-06-14 19:41:29 | DEBUG    | airflow.models.dagbag.DagBag | _load_modules_from_file:337 | Importing /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py
+2026-06-14 19:41:58 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/forecast.log
+2026-06-14 19:41:58 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 19:41:58 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: forecast_dag>
+2026-06-14 19:41:58 | DEBUG    | airflow.models.dagbag.DagBag | _load_modules_from_file:337 | Importing /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py
+2026-06-14 19:48:59 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/forecast.log
+2026-06-14 19:48:59 | DEBUG    | cron_descriptor.GetText | load_locale:65 | /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2026-06-14 19:48:59 | DEBUG    | airflow.models.dagbag.DagBag | _bag_dag:511 | Loaded DAG <DAG: forecast_dag>
+2026-06-14 19:48:59 | DEBUG    | airflow.models.dagbag.DagBag | _load_modules_from_file:337 | Importing /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/daily_ingest_dag.py
+2026-06-14 19:54:04 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/forecast.log
+2026-06-14 19:54:04 | INFO     | database.db_manager | __init__:25 | DatabaseManager initialized | host=localhost | db=oil_gas_db
+2026-06-14 19:54:04 | INFO     | models.preprocessor | fit_transform:65 | Preprocessing | target=wti_price | rows=136
+2026-06-14 19:54:04 | DEBUG    | models.preprocessor | _set_datetime_index:108 | DatetimeIndex set on 'period'
+2026-06-14 19:54:04 | DEBUG    | models.preprocessor | _resample_monthly:133 | Resampled to monthly | rows=136
+2026-06-14 19:54:04 | INFO     | models.preprocessor | _fill_missing:152 | Missing value fill | before=0 | after=0
+2026-06-14 19:54:04 | DEBUG    | models.preprocessor | _engineer_features:252 | Feature engineering complete | new cols added for wti_price
+2026-06-14 19:54:04 | INFO     | models.preprocessor | fit_transform:97 | Preprocessing complete | output rows=136 | cols=['wti_price', 'wti_price_lag_1', 'wti_price_lag_3', 'wti_price_lag_6', 'wti_price_lag_12', 'wti_price_rolling_3_mean', 'wti_price_rolling_6_mean', 'wti_price_rolling_12_mean', 'wti_price_rolling_3_std', 'wti_price_mom_pct', 'month', 'quarter', 'year']
+2026-06-14 19:54:04 | INFO     | models.preprocessor | train_test_split:307 | Train/test split | train=108 rows (2015-01-01 → 2023-12-01) | test=28 rows (2024-01-01 → 2026-04-01)
+2026-06-14 19:54:04 | INFO     | models.forecast_model | __init__:94 | ForecastModel initialized | primary=prophet | horizon=12 months
+2026-06-14 19:54:04 | INFO     | models.forecast_model | fit_predict:291 | fit_predict | model=prophet | target=wti_price | horizon=12
+2026-06-14 19:54:05 | INFO     | models.forecast_model | fit_prophet:204 | Fitting Prophet on 108 periods...
+2026-06-14 19:54:05 | INFO     | models.forecast_model | fit_prophet:214 | Prophet fit complete
+2026-06-14 19:54:05 | INFO     | models.forecast_model | predict_prophet:257 | Prophet forecast | horizon=12
+2026-06-14 19:54:05 | INFO     | database.db_manager | write_forecast_results:161 | Gold forecast results — inserted 12 rows
+2026-06-14 19:54:05 | INFO     | models.preprocessor | fit_transform:65 | Preprocessing | target=wti_price | rows=136
+2026-06-14 19:54:05 | DEBUG    | models.preprocessor | _set_datetime_index:108 | DatetimeIndex set on 'period'
+2026-06-14 19:54:05 | DEBUG    | models.preprocessor | _resample_monthly:133 | Resampled to monthly | rows=136
+2026-06-14 19:54:05 | INFO     | models.preprocessor | _fill_missing:152 | Missing value fill | before=0 | after=0
+2026-06-14 19:54:05 | DEBUG    | models.preprocessor | _engineer_features:252 | Feature engineering complete | new cols added for wti_price
+2026-06-14 19:54:05 | INFO     | models.preprocessor | fit_transform:97 | Preprocessing complete | output rows=136 | cols=['wti_price', 'wti_price_lag_1', 'wti_price_lag_3', 'wti_price_lag_6', 'wti_price_lag_12', 'wti_price_rolling_3_mean', 'wti_price_rolling_6_mean', 'wti_price_rolling_12_mean', 'wti_price_rolling_3_std', 'wti_price_mom_pct', 'month', 'quarter', 'year']
+2026-06-14 19:54:05 | INFO     | models.preprocessor | train_test_split:307 | Train/test split | train=108 rows (2015-01-01 → 2023-12-01) | test=28 rows (2024-01-01 → 2026-04-01)
+2026-06-14 19:54:05 | INFO     | models.forecast_model | __init__:94 | ForecastModel initialized | primary=prophet | horizon=12 months
+2026-06-14 19:54:05 | INFO     | models.forecast_model | fit_predict:291 | fit_predict | model=sarima | target=wti_price | horizon=12
+2026-06-14 19:54:05 | INFO     | models.forecast_model | fit_sarima:126 | Fitting SARIMA(1, 1, 1)x(1, 1, 1, 12) on 108 periods...
+2026-06-14 19:54:06 | INFO     | models.forecast_model | fit_sarima:136 | SARIMA fit complete
+2026-06-14 19:54:06 | INFO     | models.forecast_model | predict_sarima:174 | SARIMA forecast | horizon=12 | periods=[Timestamp('2024-01-01 00:00:00'), Timestamp('2024-02-01 00:00:00'), Timestamp('2024-03-01 00:00:00'), Timestamp('2024-04-01 00:00:00'), Timestamp('2024-05-01 00:00:00'), Timestamp('2024-06-01 00:00:00'), Timestamp('2024-07-01 00:00:00'), Timestamp('2024-08-01 00:00:00'), Timestamp('2024-09-01 00:00:00'), Timestamp('2024-10-01 00:00:00'), Timestamp('2024-11-01 00:00:00'), Timestamp('2024-12-01 00:00:00')]
+2026-06-14 19:54:06 | INFO     | database.db_manager | write_forecast_results:161 | Gold forecast results — inserted 12 rows
+2026-06-14 19:54:06 | INFO     | models.preprocessor | fit_transform:65 | Preprocessing | target=henry_hub_price | rows=136
+2026-06-14 19:54:06 | DEBUG    | models.preprocessor | _set_datetime_index:108 | DatetimeIndex set on 'period'
+2026-06-14 19:54:06 | WARNING  | models.preprocessor | _resample_monthly:131 | Resampling introduced 2 missing months in henry_hub_price
+2026-06-14 19:54:06 | DEBUG    | models.preprocessor | _resample_monthly:133 | Resampled to monthly | rows=136
+2026-06-14 19:54:06 | INFO     | models.preprocessor | _fill_missing:152 | Missing value fill | before=2 | after=0
+2026-06-14 19:54:06 | DEBUG    | models.preprocessor | _engineer_features:252 | Feature engineering complete | new cols added for henry_hub_price
+2026-06-14 19:54:06 | INFO     | models.preprocessor | fit_transform:97 | Preprocessing complete | output rows=136 | cols=['henry_hub_price', 'henry_hub_price_lag_1', 'henry_hub_price_lag_3', 'henry_hub_price_lag_6', 'henry_hub_price_lag_12', 'henry_hub_price_rolling_3_mean', 'henry_hub_price_rolling_6_mean', 'henry_hub_price_rolling_12_mean', 'henry_hub_price_rolling_3_std', 'henry_hub_price_mom_pct', 'month', 'quarter', 'year']
+2026-06-14 19:54:06 | INFO     | models.preprocessor | train_test_split:307 | Train/test split | train=108 rows (2015-01-01 → 2023-12-01) | test=28 rows (2024-01-01 → 2026-04-01)
+2026-06-14 19:54:06 | INFO     | models.forecast_model | __init__:94 | ForecastModel initialized | primary=prophet | horizon=12 months
+2026-06-14 19:54:06 | INFO     | models.forecast_model | fit_predict:291 | fit_predict | model=prophet | target=henry_hub_price | horizon=12
+2026-06-14 19:54:06 | INFO     | models.forecast_model | fit_prophet:204 | Fitting Prophet on 108 periods...
+2026-06-14 19:54:06 | INFO     | models.forecast_model | fit_prophet:214 | Prophet fit complete
+2026-06-14 19:54:06 | INFO     | models.forecast_model | predict_prophet:257 | Prophet forecast | horizon=12
+2026-06-14 19:54:06 | INFO     | database.db_manager | write_forecast_results:161 | Gold forecast results — inserted 12 rows
+2026-06-14 19:54:06 | INFO     | models.preprocessor | fit_transform:65 | Preprocessing | target=henry_hub_price | rows=136
+2026-06-14 19:54:06 | DEBUG    | models.preprocessor | _set_datetime_index:108 | DatetimeIndex set on 'period'
+2026-06-14 19:54:06 | WARNING  | models.preprocessor | _resample_monthly:131 | Resampling introduced 2 missing months in henry_hub_price
+2026-06-14 19:54:06 | DEBUG    | models.preprocessor | _resample_monthly:133 | Resampled to monthly | rows=136
+2026-06-14 19:54:06 | INFO     | models.preprocessor | _fill_missing:152 | Missing value fill | before=2 | after=0
+2026-06-14 19:54:06 | DEBUG    | models.preprocessor | _engineer_features:252 | Feature engineering complete | new cols added for henry_hub_price
+2026-06-14 19:54:06 | INFO     | models.preprocessor | fit_transform:97 | Preprocessing complete | output rows=136 | cols=['henry_hub_price', 'henry_hub_price_lag_1', 'henry_hub_price_lag_3', 'henry_hub_price_lag_6', 'henry_hub_price_lag_12', 'henry_hub_price_rolling_3_mean', 'henry_hub_price_rolling_6_mean', 'henry_hub_price_rolling_12_mean', 'henry_hub_price_rolling_3_std', 'henry_hub_price_mom_pct', 'month', 'quarter', 'year']
+2026-06-14 19:54:06 | INFO     | models.preprocessor | train_test_split:307 | Train/test split | train=108 rows (2015-01-01 → 2023-12-01) | test=28 rows (2024-01-01 → 2026-04-01)
+2026-06-14 19:54:06 | INFO     | models.forecast_model | __init__:94 | ForecastModel initialized | primary=prophet | horizon=12 months
+2026-06-14 19:54:06 | INFO     | models.forecast_model | fit_predict:291 | fit_predict | model=sarima | target=henry_hub_price | horizon=12
+2026-06-14 19:54:06 | INFO     | models.forecast_model | fit_sarima:126 | Fitting SARIMA(1, 1, 1)x(1, 1, 1, 12) on 108 periods...
+2026-06-14 19:54:06 | INFO     | models.forecast_model | fit_sarima:136 | SARIMA fit complete
+2026-06-14 19:54:06 | INFO     | models.forecast_model | predict_sarima:174 | SARIMA forecast | horizon=12 | periods=[Timestamp('2024-01-01 00:00:00'), Timestamp('2024-02-01 00:00:00'), Timestamp('2024-03-01 00:00:00'), Timestamp('2024-04-01 00:00:00'), Timestamp('2024-05-01 00:00:00'), Timestamp('2024-06-01 00:00:00'), Timestamp('2024-07-01 00:00:00'), Timestamp('2024-08-01 00:00:00'), Timestamp('2024-09-01 00:00:00'), Timestamp('2024-10-01 00:00:00'), Timestamp('2024-11-01 00:00:00'), Timestamp('2024-12-01 00:00:00')]
+2026-06-14 19:54:06 | INFO     | database.db_manager | write_forecast_results:161 | Gold forecast results — inserted 12 rows
+2026-06-14 20:01:19 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/forecast.log
+2026-06-14 20:01:20 | INFO     | database.db_manager | __init__:25 | DatabaseManager initialized | host=localhost | db=oil_gas_db
+2026-06-14 20:01:20 | INFO     | models.preprocessor | fit_transform:65 | Preprocessing | target=wti_price | rows=136
+2026-06-14 20:01:20 | DEBUG    | models.preprocessor | _set_datetime_index:108 | DatetimeIndex set on 'period'
+2026-06-14 20:01:20 | DEBUG    | models.preprocessor | _resample_monthly:133 | Resampled to monthly | rows=136
+2026-06-14 20:01:20 | INFO     | models.preprocessor | _fill_missing:152 | Missing value fill | before=0 | after=0
+2026-06-14 20:01:20 | DEBUG    | models.preprocessor | _engineer_features:252 | Feature engineering complete | new cols added for wti_price
+2026-06-14 20:01:20 | INFO     | models.preprocessor | fit_transform:97 | Preprocessing complete | output rows=136 | cols=['wti_price', 'wti_price_lag_1', 'wti_price_lag_3', 'wti_price_lag_6', 'wti_price_lag_12', 'wti_price_rolling_3_mean', 'wti_price_rolling_6_mean', 'wti_price_rolling_12_mean', 'wti_price_rolling_3_std', 'wti_price_mom_pct', 'month', 'quarter', 'year']
+2026-06-14 20:01:20 | INFO     | models.preprocessor | train_test_split:307 | Train/test split | train=108 rows (2015-01-01 → 2023-12-01) | test=28 rows (2024-01-01 → 2026-04-01)
+2026-06-14 20:01:20 | INFO     | models.forecast_model | __init__:94 | ForecastModel initialized | primary=prophet | horizon=12 months
+2026-06-14 20:01:20 | INFO     | models.forecast_model | fit_predict:291 | fit_predict | model=prophet | target=wti_price | horizon=12
+2026-06-14 20:01:20 | INFO     | models.forecast_model | fit_prophet:204 | Fitting Prophet on 108 periods...
+2026-06-14 20:01:20 | INFO     | models.forecast_model | fit_prophet:214 | Prophet fit complete
+2026-06-14 20:01:20 | INFO     | models.forecast_model | predict_prophet:257 | Prophet forecast | horizon=12
+2026-06-14 20:01:20 | INFO     | database.db_manager | write_forecast_results:171 | Gold forecast results — inserted 12 rows
+2026-06-14 20:01:20 | INFO     | models.preprocessor | fit_transform:65 | Preprocessing | target=wti_price | rows=136
+2026-06-14 20:01:20 | DEBUG    | models.preprocessor | _set_datetime_index:108 | DatetimeIndex set on 'period'
+2026-06-14 20:01:20 | DEBUG    | models.preprocessor | _resample_monthly:133 | Resampled to monthly | rows=136
+2026-06-14 20:01:20 | INFO     | models.preprocessor | _fill_missing:152 | Missing value fill | before=0 | after=0
+2026-06-14 20:01:20 | DEBUG    | models.preprocessor | _engineer_features:252 | Feature engineering complete | new cols added for wti_price
+2026-06-14 20:01:20 | INFO     | models.preprocessor | fit_transform:97 | Preprocessing complete | output rows=136 | cols=['wti_price', 'wti_price_lag_1', 'wti_price_lag_3', 'wti_price_lag_6', 'wti_price_lag_12', 'wti_price_rolling_3_mean', 'wti_price_rolling_6_mean', 'wti_price_rolling_12_mean', 'wti_price_rolling_3_std', 'wti_price_mom_pct', 'month', 'quarter', 'year']
+2026-06-14 20:01:20 | INFO     | models.preprocessor | train_test_split:307 | Train/test split | train=108 rows (2015-01-01 → 2023-12-01) | test=28 rows (2024-01-01 → 2026-04-01)
+2026-06-14 20:01:20 | INFO     | models.forecast_model | __init__:94 | ForecastModel initialized | primary=prophet | horizon=12 months
+2026-06-14 20:01:20 | INFO     | models.forecast_model | fit_predict:291 | fit_predict | model=sarima | target=wti_price | horizon=12
+2026-06-14 20:01:20 | INFO     | models.forecast_model | fit_sarima:126 | Fitting SARIMA(1, 1, 1)x(1, 1, 1, 12) on 108 periods...
+2026-06-14 20:01:21 | INFO     | models.forecast_model | fit_sarima:136 | SARIMA fit complete
+2026-06-14 20:01:21 | INFO     | models.forecast_model | predict_sarima:174 | SARIMA forecast | horizon=12 | periods=[Timestamp('2024-01-01 00:00:00'), Timestamp('2024-02-01 00:00:00'), Timestamp('2024-03-01 00:00:00'), Timestamp('2024-04-01 00:00:00'), Timestamp('2024-05-01 00:00:00'), Timestamp('2024-06-01 00:00:00'), Timestamp('2024-07-01 00:00:00'), Timestamp('2024-08-01 00:00:00'), Timestamp('2024-09-01 00:00:00'), Timestamp('2024-10-01 00:00:00'), Timestamp('2024-11-01 00:00:00'), Timestamp('2024-12-01 00:00:00')]
+2026-06-14 20:01:21 | INFO     | database.db_manager | write_forecast_results:171 | Gold forecast results — inserted 12 rows
+2026-06-14 20:01:21 | INFO     | models.preprocessor | fit_transform:65 | Preprocessing | target=henry_hub_price | rows=136
+2026-06-14 20:01:21 | DEBUG    | models.preprocessor | _set_datetime_index:108 | DatetimeIndex set on 'period'
+2026-06-14 20:01:21 | WARNING  | models.preprocessor | _resample_monthly:131 | Resampling introduced 2 missing months in henry_hub_price
+2026-06-14 20:01:21 | DEBUG    | models.preprocessor | _resample_monthly:133 | Resampled to monthly | rows=136
+2026-06-14 20:01:21 | INFO     | models.preprocessor | _fill_missing:152 | Missing value fill | before=2 | after=0
+2026-06-14 20:01:21 | DEBUG    | models.preprocessor | _engineer_features:252 | Feature engineering complete | new cols added for henry_hub_price
+2026-06-14 20:01:21 | INFO     | models.preprocessor | fit_transform:97 | Preprocessing complete | output rows=136 | cols=['henry_hub_price', 'henry_hub_price_lag_1', 'henry_hub_price_lag_3', 'henry_hub_price_lag_6', 'henry_hub_price_lag_12', 'henry_hub_price_rolling_3_mean', 'henry_hub_price_rolling_6_mean', 'henry_hub_price_rolling_12_mean', 'henry_hub_price_rolling_3_std', 'henry_hub_price_mom_pct', 'month', 'quarter', 'year']
+2026-06-14 20:01:21 | INFO     | models.preprocessor | train_test_split:307 | Train/test split | train=108 rows (2015-01-01 → 2023-12-01) | test=28 rows (2024-01-01 → 2026-04-01)
+2026-06-14 20:01:21 | INFO     | models.forecast_model | __init__:94 | ForecastModel initialized | primary=prophet | horizon=12 months
+2026-06-14 20:01:21 | INFO     | models.forecast_model | fit_predict:291 | fit_predict | model=prophet | target=henry_hub_price | horizon=12
+2026-06-14 20:01:21 | INFO     | models.forecast_model | fit_prophet:204 | Fitting Prophet on 108 periods...
+2026-06-14 20:01:21 | INFO     | models.forecast_model | fit_prophet:214 | Prophet fit complete
+2026-06-14 20:01:21 | INFO     | models.forecast_model | predict_prophet:257 | Prophet forecast | horizon=12
+2026-06-14 20:01:21 | INFO     | database.db_manager | write_forecast_results:171 | Gold forecast results — inserted 12 rows
+2026-06-14 20:01:21 | INFO     | models.preprocessor | fit_transform:65 | Preprocessing | target=henry_hub_price | rows=136
+2026-06-14 20:01:21 | DEBUG    | models.preprocessor | _set_datetime_index:108 | DatetimeIndex set on 'period'
+2026-06-14 20:01:21 | WARNING  | models.preprocessor | _resample_monthly:131 | Resampling introduced 2 missing months in henry_hub_price
+2026-06-14 20:01:21 | DEBUG    | models.preprocessor | _resample_monthly:133 | Resampled to monthly | rows=136
+2026-06-14 20:01:21 | INFO     | models.preprocessor | _fill_missing:152 | Missing value fill | before=2 | after=0
+2026-06-14 20:01:21 | DEBUG    | models.preprocessor | _engineer_features:252 | Feature engineering complete | new cols added for henry_hub_price
+2026-06-14 20:01:21 | INFO     | models.preprocessor | fit_transform:97 | Preprocessing complete | output rows=136 | cols=['henry_hub_price', 'henry_hub_price_lag_1', 'henry_hub_price_lag_3', 'henry_hub_price_lag_6', 'henry_hub_price_lag_12', 'henry_hub_price_rolling_3_mean', 'henry_hub_price_rolling_6_mean', 'henry_hub_price_rolling_12_mean', 'henry_hub_price_rolling_3_std', 'henry_hub_price_mom_pct', 'month', 'quarter', 'year']
+2026-06-14 20:01:21 | INFO     | models.preprocessor | train_test_split:307 | Train/test split | train=108 rows (2015-01-01 → 2023-12-01) | test=28 rows (2024-01-01 → 2026-04-01)
+2026-06-14 20:01:21 | INFO     | models.forecast_model | __init__:94 | ForecastModel initialized | primary=prophet | horizon=12 months
+2026-06-14 20:01:21 | INFO     | models.forecast_model | fit_predict:291 | fit_predict | model=sarima | target=henry_hub_price | horizon=12
+2026-06-14 20:01:21 | INFO     | models.forecast_model | fit_sarima:126 | Fitting SARIMA(1, 1, 1)x(1, 1, 1, 12) on 108 periods...
+2026-06-14 20:01:21 | INFO     | models.forecast_model | fit_sarima:136 | SARIMA fit complete
+2026-06-14 20:01:21 | INFO     | models.forecast_model | predict_sarima:174 | SARIMA forecast | horizon=12 | periods=[Timestamp('2024-01-01 00:00:00'), Timestamp('2024-02-01 00:00:00'), Timestamp('2024-03-01 00:00:00'), Timestamp('2024-04-01 00:00:00'), Timestamp('2024-05-01 00:00:00'), Timestamp('2024-06-01 00:00:00'), Timestamp('2024-07-01 00:00:00'), Timestamp('2024-08-01 00:00:00'), Timestamp('2024-09-01 00:00:00'), Timestamp('2024-10-01 00:00:00'), Timestamp('2024-11-01 00:00:00'), Timestamp('2024-12-01 00:00:00')]
+2026-06-14 20:01:21 | INFO     | database.db_manager | write_forecast_results:171 | Gold forecast results — inserted 12 rows
+2026-06-14 20:01:21 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/forecast.log
+2026-06-14 20:01:22 | INFO     | database.db_manager | __init__:25 | DatabaseManager initialized | host=localhost | db=oil_gas_db
+2026-06-14 20:01:22 | INFO     | models.preprocessor | fit_transform:65 | Preprocessing | target=wti_price | rows=136
+2026-06-14 20:01:22 | DEBUG    | models.preprocessor | _set_datetime_index:108 | DatetimeIndex set on 'period'
+2026-06-14 20:01:22 | DEBUG    | models.preprocessor | _resample_monthly:133 | Resampled to monthly | rows=136
+2026-06-14 20:01:22 | INFO     | models.preprocessor | _fill_missing:152 | Missing value fill | before=0 | after=0
+2026-06-14 20:01:22 | DEBUG    | models.preprocessor | _engineer_features:252 | Feature engineering complete | new cols added for wti_price
+2026-06-14 20:01:22 | INFO     | models.preprocessor | fit_transform:97 | Preprocessing complete | output rows=136 | cols=['wti_price', 'wti_price_lag_1', 'wti_price_lag_3', 'wti_price_lag_6', 'wti_price_lag_12', 'wti_price_rolling_3_mean', 'wti_price_rolling_6_mean', 'wti_price_rolling_12_mean', 'wti_price_rolling_3_std', 'wti_price_mom_pct', 'month', 'quarter', 'year']
+2026-06-14 20:01:22 | INFO     | models.preprocessor | train_test_split:307 | Train/test split | train=108 rows (2015-01-01 → 2023-12-01) | test=28 rows (2024-01-01 → 2026-04-01)
+2026-06-14 20:01:22 | INFO     | models.forecast_model | __init__:94 | ForecastModel initialized | primary=prophet | horizon=12 months
+2026-06-14 20:01:22 | INFO     | models.forecast_model | fit_predict:291 | fit_predict | model=prophet | target=wti_price | horizon=12
+2026-06-14 20:01:22 | INFO     | models.forecast_model | fit_prophet:204 | Fitting Prophet on 108 periods...
+2026-06-14 20:01:22 | INFO     | models.forecast_model | fit_prophet:214 | Prophet fit complete
+2026-06-14 20:01:22 | INFO     | models.forecast_model | predict_prophet:257 | Prophet forecast | horizon=12
+2026-06-14 20:01:22 | INFO     | database.db_manager | write_forecast_results:171 | Gold forecast results — inserted 12 rows
+2026-06-14 20:01:22 | INFO     | models.preprocessor | fit_transform:65 | Preprocessing | target=wti_price | rows=136
+2026-06-14 20:01:22 | DEBUG    | models.preprocessor | _set_datetime_index:108 | DatetimeIndex set on 'period'
+2026-06-14 20:01:22 | DEBUG    | models.preprocessor | _resample_monthly:133 | Resampled to monthly | rows=136
+2026-06-14 20:01:22 | INFO     | models.preprocessor | _fill_missing:152 | Missing value fill | before=0 | after=0
+2026-06-14 20:01:22 | DEBUG    | models.preprocessor | _engineer_features:252 | Feature engineering complete | new cols added for wti_price
+2026-06-14 20:01:22 | INFO     | models.preprocessor | fit_transform:97 | Preprocessing complete | output rows=136 | cols=['wti_price', 'wti_price_lag_1', 'wti_price_lag_3', 'wti_price_lag_6', 'wti_price_lag_12', 'wti_price_rolling_3_mean', 'wti_price_rolling_6_mean', 'wti_price_rolling_12_mean', 'wti_price_rolling_3_std', 'wti_price_mom_pct', 'month', 'quarter', 'year']
+2026-06-14 20:01:22 | INFO     | models.preprocessor | train_test_split:307 | Train/test split | train=108 rows (2015-01-01 → 2023-12-01) | test=28 rows (2024-01-01 → 2026-04-01)
+2026-06-14 20:01:22 | INFO     | models.forecast_model | __init__:94 | ForecastModel initialized | primary=prophet | horizon=12 months
+2026-06-14 20:01:22 | INFO     | models.forecast_model | fit_predict:291 | fit_predict | model=sarima | target=wti_price | horizon=12
+2026-06-14 20:01:22 | INFO     | models.forecast_model | fit_sarima:126 | Fitting SARIMA(1, 1, 1)x(1, 1, 1, 12) on 108 periods...
+2026-06-14 20:01:23 | INFO     | models.forecast_model | fit_sarima:136 | SARIMA fit complete
+2026-06-14 20:01:23 | INFO     | models.forecast_model | predict_sarima:174 | SARIMA forecast | horizon=12 | periods=[Timestamp('2024-01-01 00:00:00'), Timestamp('2024-02-01 00:00:00'), Timestamp('2024-03-01 00:00:00'), Timestamp('2024-04-01 00:00:00'), Timestamp('2024-05-01 00:00:00'), Timestamp('2024-06-01 00:00:00'), Timestamp('2024-07-01 00:00:00'), Timestamp('2024-08-01 00:00:00'), Timestamp('2024-09-01 00:00:00'), Timestamp('2024-10-01 00:00:00'), Timestamp('2024-11-01 00:00:00'), Timestamp('2024-12-01 00:00:00')]
+2026-06-14 20:01:23 | INFO     | database.db_manager | write_forecast_results:171 | Gold forecast results — inserted 12 rows
+2026-06-14 20:01:23 | INFO     | models.preprocessor | fit_transform:65 | Preprocessing | target=henry_hub_price | rows=136
+2026-06-14 20:01:23 | DEBUG    | models.preprocessor | _set_datetime_index:108 | DatetimeIndex set on 'period'
+2026-06-14 20:01:23 | WARNING  | models.preprocessor | _resample_monthly:131 | Resampling introduced 2 missing months in henry_hub_price
+2026-06-14 20:01:23 | DEBUG    | models.preprocessor | _resample_monthly:133 | Resampled to monthly | rows=136
+2026-06-14 20:01:23 | INFO     | models.preprocessor | _fill_missing:152 | Missing value fill | before=2 | after=0
+2026-06-14 20:01:23 | DEBUG    | models.preprocessor | _engineer_features:252 | Feature engineering complete | new cols added for henry_hub_price
+2026-06-14 20:01:23 | INFO     | models.preprocessor | fit_transform:97 | Preprocessing complete | output rows=136 | cols=['henry_hub_price', 'henry_hub_price_lag_1', 'henry_hub_price_lag_3', 'henry_hub_price_lag_6', 'henry_hub_price_lag_12', 'henry_hub_price_rolling_3_mean', 'henry_hub_price_rolling_6_mean', 'henry_hub_price_rolling_12_mean', 'henry_hub_price_rolling_3_std', 'henry_hub_price_mom_pct', 'month', 'quarter', 'year']
+2026-06-14 20:01:23 | INFO     | models.preprocessor | train_test_split:307 | Train/test split | train=108 rows (2015-01-01 → 2023-12-01) | test=28 rows (2024-01-01 → 2026-04-01)
+2026-06-14 20:01:23 | INFO     | models.forecast_model | __init__:94 | ForecastModel initialized | primary=prophet | horizon=12 months
+2026-06-14 20:01:23 | INFO     | models.forecast_model | fit_predict:291 | fit_predict | model=prophet | target=henry_hub_price | horizon=12
+2026-06-14 20:01:23 | INFO     | models.forecast_model | fit_prophet:204 | Fitting Prophet on 108 periods...
+2026-06-14 20:01:23 | INFO     | models.forecast_model | fit_prophet:214 | Prophet fit complete
+2026-06-14 20:01:23 | INFO     | models.forecast_model | predict_prophet:257 | Prophet forecast | horizon=12
+2026-06-14 20:01:23 | INFO     | database.db_manager | write_forecast_results:171 | Gold forecast results — inserted 12 rows
+2026-06-14 20:01:23 | INFO     | models.preprocessor | fit_transform:65 | Preprocessing | target=henry_hub_price | rows=136
+2026-06-14 20:01:23 | DEBUG    | models.preprocessor | _set_datetime_index:108 | DatetimeIndex set on 'period'
+2026-06-14 20:01:23 | WARNING  | models.preprocessor | _resample_monthly:131 | Resampling introduced 2 missing months in henry_hub_price
+2026-06-14 20:01:23 | DEBUG    | models.preprocessor | _resample_monthly:133 | Resampled to monthly | rows=136
+2026-06-14 20:01:23 | INFO     | models.preprocessor | _fill_missing:152 | Missing value fill | before=2 | after=0
+2026-06-14 20:01:23 | DEBUG    | models.preprocessor | _engineer_features:252 | Feature engineering complete | new cols added for henry_hub_price
+2026-06-14 20:01:23 | INFO     | models.preprocessor | fit_transform:97 | Preprocessing complete | output rows=136 | cols=['henry_hub_price', 'henry_hub_price_lag_1', 'henry_hub_price_lag_3', 'henry_hub_price_lag_6', 'henry_hub_price_lag_12', 'henry_hub_price_rolling_3_mean', 'henry_hub_price_rolling_6_mean', 'henry_hub_price_rolling_12_mean', 'henry_hub_price_rolling_3_std', 'henry_hub_price_mom_pct', 'month', 'quarter', 'year']
+2026-06-14 20:01:23 | INFO     | models.preprocessor | train_test_split:307 | Train/test split | train=108 rows (2015-01-01 → 2023-12-01) | test=28 rows (2024-01-01 → 2026-04-01)
+2026-06-14 20:01:23 | INFO     | models.forecast_model | __init__:94 | ForecastModel initialized | primary=prophet | horizon=12 months
+2026-06-14 20:01:23 | INFO     | models.forecast_model | fit_predict:291 | fit_predict | model=sarima | target=henry_hub_price | horizon=12
+2026-06-14 20:01:23 | INFO     | models.forecast_model | fit_sarima:126 | Fitting SARIMA(1, 1, 1)x(1, 1, 1, 12) on 108 periods...
+2026-06-14 20:01:23 | INFO     | models.forecast_model | fit_sarima:136 | SARIMA fit complete
+2026-06-14 20:01:23 | INFO     | models.forecast_model | predict_sarima:174 | SARIMA forecast | horizon=12 | periods=[Timestamp('2024-01-01 00:00:00'), Timestamp('2024-02-01 00:00:00'), Timestamp('2024-03-01 00:00:00'), Timestamp('2024-04-01 00:00:00'), Timestamp('2024-05-01 00:00:00'), Timestamp('2024-06-01 00:00:00'), Timestamp('2024-07-01 00:00:00'), Timestamp('2024-08-01 00:00:00'), Timestamp('2024-09-01 00:00:00'), Timestamp('2024-10-01 00:00:00'), Timestamp('2024-11-01 00:00:00'), Timestamp('2024-12-01 00:00:00')]
+2026-06-14 20:01:23 | INFO     | database.db_manager | write_forecast_results:171 | Gold forecast results — inserted 12 rows

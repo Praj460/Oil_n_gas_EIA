@@ -18,7 +18,7 @@ import psycopg2
 from models.preprocessor import Preprocessor
 from models.forecast_model import ForecastModel
 from database.db_manager import DatabaseManager
-
+from dotenv import load_dotenv
 logger = logging.getLogger(__name__)
 
 load_dotenv()

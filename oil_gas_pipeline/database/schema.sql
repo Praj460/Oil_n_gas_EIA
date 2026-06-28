@@ -154,6 +154,61 @@ CREATE TABLE IF NOT EXISTS data_quality_results (
 );
 
 
+-- Exogenous predictor series — additional EIA signals used as
+-- features for SARIMAX forecasting (imports, refinery util, stocks)
+
+CREATE TABLE IF NOT EXISTS bronze_crude_imports (
+    id              UUID        DEFAULT uuid_generate_v4() PRIMARY KEY,
+    series_id       VARCHAR(60) NOT NULL,
+    series_name     VARCHAR(120),
+    period          VARCHAR(20) NOT NULL,
+    value           NUMERIC(12, 4),
+    unit            VARCHAR(40),
+    source          VARCHAR(20) DEFAULT 'EIA_API',
+    ingested_at     TIMESTAMPTZ DEFAULT NOW(),
+    raw_response    JSONB
+);
+
+CREATE TABLE IF NOT EXISTS bronze_refinery_utilization (
+    id              UUID        DEFAULT uuid_generate_v4() PRIMARY KEY,
+    series_id       VARCHAR(60) NOT NULL,
+    series_name     VARCHAR(120),
+    period          VARCHAR(20) NOT NULL,
+    value           NUMERIC(12, 4),
+    unit            VARCHAR(40),
+    source          VARCHAR(20) DEFAULT 'EIA_API',
+    ingested_at     TIMESTAMPTZ DEFAULT NOW(),
+    raw_response    JSONB
+);
+
+CREATE TABLE IF NOT EXISTS bronze_gasoline_stocks (
+    id              UUID        DEFAULT uuid_generate_v4() PRIMARY KEY,
+    series_id       VARCHAR(60) NOT NULL,
+    series_name     VARCHAR(120),
+    period          VARCHAR(20) NOT NULL,
+    value           NUMERIC(12, 4),
+    unit            VARCHAR(40),
+    source          VARCHAR(20) DEFAULT 'EIA_API',
+    ingested_at     TIMESTAMPTZ DEFAULT NOW(),
+    raw_response    JSONB
+);
+
+CREATE TABLE IF NOT EXISTS bronze_distillate_stocks (
+    id              UUID        DEFAULT uuid_generate_v4() PRIMARY KEY,
+    series_id       VARCHAR(60) NOT NULL,
+    series_name     VARCHAR(120),
+    period          VARCHAR(20) NOT NULL,
+    value           NUMERIC(12, 4),
+    unit            VARCHAR(40),
+    source          VARCHAR(20) DEFAULT 'EIA_API',
+    ingested_at     TIMESTAMPTZ DEFAULT NOW(),
+    raw_response    JSONB
+);
+
+CREATE INDEX IF NOT EXISTS idx_bronze_imports_series    ON bronze_crude_imports (series_id, period);
+CREATE INDEX IF NOT EXISTS idx_bronze_refinery_series   ON bronze_refinery_utilization (series_id, period);
+CREATE INDEX IF NOT EXISTS idx_bronze_gasoline_series   ON bronze_gasoline_stocks (series_id, period);
+CREATE INDEX IF NOT EXISTS idx_bronze_distillate_series ON bronze_distillate_stocks (series_id, period);
 -- ─────────────────────────────────────────────────────────────────────────────
 -- QUICK VERIFICATION
 -- After running this file, check all tables were created:

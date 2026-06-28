@@ -1,0 +1,24 @@
+[2026-06-14T18:42:58.775-0500] {processor.py:161} INFO - Started process (PID=59480) to work on /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/forecast_dag.py
+[2026-06-14T18:42:58.776-0500] {processor.py:830} INFO - Processing file /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/forecast_dag.py for tasks to queue
+[2026-06-14T18:42:58.776-0500] {logging_mixin.py:188} INFO - [2026-06-14T18:42:58.776-0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/forecast_dag.py
+[2026-06-14T18:42:58.809-0500] {logging_mixin.py:188} INFO - [2026-06-14T18:42:58.809-0500] {config.py:185} INFO - Config loaded | env=development | db=localhost/oil_gas_db
+[2026-06-14T18:42:58.809-0500] {logging_mixin.py:188} WARNING - 18:42:58 | INFO     | config.logging_config          | Logging configured | level=DEBUG | file=logs/forecast.log
+[2026-06-14T18:42:58.812-0500] {processor.py:840} INFO - DAG(s) 'forecast_dag' retrieved from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/forecast_dag.py
+[2026-06-14T18:42:58.847-0500] {logging_mixin.py:188} WARNING - 18:42:58 | INFO     | airflow.models.dag             | Sync 1 DAGs
+[2026-06-14T18:42:58.859-0500] {processor.py:183} INFO - Processing /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/forecast_dag.py took 0.085 seconds
+[2026-06-14T18:43:30.064-0500] {processor.py:161} INFO - Started process (PID=59555) to work on /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/forecast_dag.py
+[2026-06-14T18:43:30.065-0500] {processor.py:830} INFO - Processing file /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/forecast_dag.py for tasks to queue
+[2026-06-14T18:43:30.065-0500] {logging_mixin.py:188} INFO - [2026-06-14T18:43:30.065-0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/forecast_dag.py
+[2026-06-14T18:43:30.098-0500] {logging_mixin.py:188} INFO - [2026-06-14T18:43:30.098-0500] {config.py:185} INFO - Config loaded | env=development | db=localhost/oil_gas_db
+[2026-06-14T18:43:30.099-0500] {logging_mixin.py:188} WARNING - 18:43:30 | INFO     | config.logging_config          | Logging configured | level=DEBUG | file=logs/forecast.log
+[2026-06-14T18:43:30.101-0500] {processor.py:840} INFO - DAG(s) 'forecast_dag' retrieved from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/forecast_dag.py
+[2026-06-14T18:43:30.135-0500] {logging_mixin.py:188} WARNING - 18:43:30 | INFO     | airflow.models.dag             | Sync 1 DAGs
+[2026-06-14T18:43:30.146-0500] {processor.py:183} INFO - Processing /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/forecast_dag.py took 0.083 seconds
+[2026-06-14T18:44:02.282-0500] {processor.py:161} INFO - Started process (PID=59626) to work on /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/forecast_dag.py
+[2026-06-14T18:44:02.283-0500] {processor.py:830} INFO - Processing file /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/forecast_dag.py for tasks to queue
+[2026-06-14T18:44:02.283-0500] {logging_mixin.py:188} INFO - [2026-06-14T18:44:02.283-0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/forecast_dag.py
+[2026-06-14T18:44:02.316-0500] {logging_mixin.py:188} INFO - [2026-06-14T18:44:02.316-0500] {config.py:185} INFO - Config loaded | env=development | db=localhost/oil_gas_db
+[2026-06-14T18:44:02.316-0500] {logging_mixin.py:188} WARNING - 18:44:02 | INFO     | config.logging_config          | Logging configured | level=DEBUG | file=logs/forecast.log
+[2026-06-14T18:44:02.319-0500] {processor.py:840} INFO - DAG(s) 'forecast_dag' retrieved from /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/forecast_dag.py
+[2026-06-14T18:44:02.353-0500] {logging_mixin.py:188} WARNING - 18:44:02 | INFO     | airflow.models.dag             | Sync 1 DAGs
+[2026-06-14T18:44:02.364-0500] {processor.py:183} INFO - Processing /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/dags/forecast_dag.py took 0.083 seconds

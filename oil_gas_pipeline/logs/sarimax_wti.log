@@ -1,0 +1,10 @@
+2026-06-19 19:10:30 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/sarimax_wti.log
+2026-06-19 19:10:35 | INFO     | models.forecast_model | __init__:94 | ForecastModel initialized | primary=prophet | horizon=12 months
+2026-06-19 19:10:35 | INFO     | models.forecast_model | fit_sarimax:218 | Fitting SARIMAX(1, 1, 1)x(1, 1, 1, 12) on 96 periods with 8 exog features: ['crude_imports_lag_1', 'refinery_util_lag_1', 'gasoline_stocks_lag_1', 'opec_spare_lag_1', 'global_inv_lag_1', 'dollar_index_lag_1', 'industrial_production_lag_1', 'treasury_10y_lag_1']
+2026-06-19 19:10:35 | INFO     | models.forecast_model | fit_sarimax:233 | SARIMAX fit complete
+2026-06-19 19:10:35 | INFO     | models.forecast_model | predict_sarimax:285 | SARIMAX forecast | horizon=12 | exog cols=8
+2026-06-19 19:17:43 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/sarimax_wti.log
+2026-06-19 19:17:45 | INFO     | models.forecast_model | __init__:94 | ForecastModel initialized | primary=prophet | horizon=12 months
+2026-06-19 19:17:45 | INFO     | models.forecast_model | fit_sarimax:218 | Fitting SARIMAX(1, 1, 1)x(1, 1, 1, 12) on 96 periods with 3 exog features: ['industrial_production_lag_1', 'opec_spare_lag_1', 'dollar_index_lag_1']
+2026-06-19 19:17:45 | INFO     | models.forecast_model | fit_sarimax:233 | SARIMAX fit complete
+2026-06-19 19:17:45 | INFO     | models.forecast_model | predict_sarimax:285 | SARIMAX forecast | horizon=12 | exog cols=3

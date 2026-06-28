@@ -6,3 +6,19 @@
 2026-06-11 19:12:36 | INFO     | great_expectations.gas_suite | run:205 | Running GasSuite on 402 rows...
 2026-06-11 19:12:36 | INFO     | great_expectations.gas_suite | run:222 | GasSuite complete | passed=10/11 | success_rate=90.9%
 2026-06-11 19:12:36 | INFO     | database.db_manager | log_data_quality:211 | Data quality logged | suite=gas_suite | passed=10/11
+2026-06-27 18:37:23 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/quality.log
+2026-06-27 18:37:24 | INFO     | database.db_manager | __init__:25 | DatabaseManager initialized | host=localhost | db=oil_gas_db
+2026-06-27 18:37:24 | INFO     | great_expectations.petroleum_suite | run:224 | Running PetroleumSuite on 406 rows...
+2026-06-27 18:37:24 | INFO     | great_expectations.petroleum_suite | run:240 | PetroleumSuite complete | passed=10/10 | success_rate=100.0%
+2026-06-27 18:37:24 | INFO     | database.db_manager | log_data_quality:208 | Data quality logged | suite=petroleum_suite | passed=10/10
+2026-06-27 18:37:24 | INFO     | great_expectations.gas_suite | run:205 | Running GasSuite on 402 rows...
+2026-06-27 18:37:24 | INFO     | great_expectations.gas_suite | run:222 | GasSuite complete | passed=10/11 | success_rate=90.9%
+2026-06-27 18:37:24 | INFO     | database.db_manager | log_data_quality:208 | Data quality logged | suite=gas_suite | passed=10/11
+2026-06-27 18:41:59 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/quality.log
+2026-06-27 18:41:59 | INFO     | database.db_manager | __init__:25 | DatabaseManager initialized | host=localhost | db=oil_gas_db
+2026-06-27 18:41:59 | INFO     | great_expectations.petroleum_suite | run:224 | Running PetroleumSuite on 406 rows...
+2026-06-27 18:41:59 | INFO     | great_expectations.petroleum_suite | run:240 | PetroleumSuite complete | passed=10/10 | success_rate=100.0%
+2026-06-27 18:41:59 | INFO     | database.db_manager | log_data_quality:208 | Data quality logged | suite=petroleum_suite | passed=10/10
+2026-06-27 18:41:59 | INFO     | great_expectations.gas_suite | run:207 | Running GasSuite on 402 rows...
+2026-06-27 18:41:59 | INFO     | great_expectations.gas_suite | run:224 | GasSuite complete | passed=11/11 | success_rate=100.0%
+2026-06-27 18:41:59 | INFO     | database.db_manager | log_data_quality:208 | Data quality logged | suite=gas_suite | passed=11/11

@@ -271,8 +271,155 @@ class EIAClient:
             unit="Thousand Barrels per Day",
         )
 
-    # ── Natural gas data pulls ────────────────────────────────────────────────
+    def fetch_crude_imports(
+        self,
+        start: Optional[str] = "2000-01",
+        end: Optional[str] = None,
+    ) -> pd.DataFrame:
+        """
+        Fetches monthly US crude oil imports.
 
+        More imports = more supply available = downward pressure on prices.
+        A useful exogenous signal for forecasting WTI.
+
+        Args:
+            start: start period e.g. "2000-01"
+            end:   end period e.g. "2024-12"
+
+        Returns:
+            DataFrame with US crude imports per month in thousand barrels/day
+        """
+        params = {
+            "frequency":  "monthly",
+            "data[0]":    "value",
+            "facets[series][]": "MCRIMUS2",
+            "sort[0][column]": "period",
+            "sort[0][direction]": "asc",
+            "offset": 0,
+            "length": 5000,
+        }
+        if start:
+            params["start"] = start
+        if end:
+            params["end"] = end
+
+        response = self._get("/petroleum/move/imp/data/", params)
+        return self._parse_response(
+            response,
+            series_id="PET.MCRIMUS2.M",
+            series_name="US Crude Oil Imports",
+            unit="Thousand Barrels per Day",
+        )
+
+    def fetch_refinery_utilization(
+        self,
+        start: Optional[str] = "2000-01",
+        end: Optional[str] = None,
+    ) -> pd.DataFrame:
+        """
+        Fetches monthly US refinery utilization (% of capacity in use).
+
+        High utilization = strong crude demand from refiners = upward
+        price pressure on WTI. A demand-side signal.
+
+        Returns:
+            DataFrame with refinery utilization per month (percent)
+        """
+        params = {
+            "frequency":  "monthly",
+            "data[0]":    "value",
+            "facets[series][]": "MOPUEUS2",
+            "sort[0][column]": "period",
+            "sort[0][direction]": "asc",
+            "offset": 0,
+            "length": 5000,
+        }
+        if start:
+            params["start"] = start
+        if end:
+            params["end"] = end
+
+        response = self._get("/petroleum/pnp/unc/data/", params)
+        return self._parse_response(
+            response,
+            series_id="PET.MOPUEUS2.M",
+            series_name="US Refinery Utilization",
+            unit="Percent",
+        )
+
+    def fetch_gasoline_stocks(
+        self,
+        start: Optional[str] = "2000-01",
+        end: Optional[str] = None,
+    ) -> pd.DataFrame:
+        """
+        Fetches monthly US total gasoline stocks (inventory).
+
+        High stocks = oversupplied downstream = bearish for crude.
+        Low stocks = tight market = bullish. A downstream demand signal.
+
+        Returns:
+            DataFrame with gasoline stocks per month in thousand barrels
+        """
+        params = {
+            "frequency":  "monthly",
+            "data[0]":    "value",
+            "facets[series][]": "MGFSTUS1",
+            "sort[0][column]": "period",
+            "sort[0][direction]": "asc",
+            "offset": 0,
+            "length": 5000,
+        }
+        if start:
+            params["start"] = start
+        if end:
+            params["end"] = end
+
+        response = self._get("/petroleum/stoc/typ/data/", params)
+        return self._parse_response(
+            response,
+            series_id="PET.MGFSTUS1.M",
+            series_name="US Finished Motor Gasoline Stocks",
+            unit="Thousand Barrels",
+        )
+
+    def fetch_distillate_stocks(
+        self,
+        start: Optional[str] = "2000-01",
+        end: Optional[str] = None,
+    ) -> pd.DataFrame:
+        """
+        Fetches monthly US distillate fuel oil stocks (diesel + heating oil).
+
+        Distillate inventory reflects industrial + heating demand.
+        Low winter stocks can spike both oil and gas prices.
+
+        Returns:
+            DataFrame with distillate stocks per month in thousand barrels
+        """
+        params = {
+            "frequency":  "monthly",
+            "data[0]":    "value",
+            "facets[series][]": "MDISTUS1",
+            "sort[0][column]": "period",
+            "sort[0][direction]": "asc",
+            "offset": 0,
+            "length": 5000,
+        }
+        if start:
+            params["start"] = start
+        if end:
+            params["end"] = end
+
+        response = self._get("/petroleum/stoc/typ/data/", params)
+        return self._parse_response(
+            response,
+            series_id="PET.MDISTUS1.M",
+            series_name="US Distillate Fuel Oil Stocks",
+            unit="Thousand Barrels",
+        )
+
+    # ── Natural gas data pulls ────────────────────────────────────────────────
     def fetch_henry_hub_price(
         self,
         start: Optional[str] = "2000-01",
@@ -386,6 +533,84 @@ class EIAClient:
             unit="Billion Cubic Feet",
         )
 
+    # ── Weather data (STEO route — different structure) ───────────────────────
+
+    def fetch_heating_degree_days(
+        self,
+        start: Optional[str] = "2000-01",
+        end: Optional[str] = None,
+    ) -> pd.DataFrame:
+        """
+        Fetches monthly US population-weighted Heating Degree Days (HDD).
+
+        Higher HDD = colder month = more heating demand = upward pressure
+        on natural gas prices. The primary winter demand signal for gas.
+
+        Note: comes from EIA's STEO route, which uses 'facets[seriesId][]'
+        rather than the 'facets[series][]' used by the petroleum/gas routes.
+
+        Returns:
+            DataFrame with monthly US-average HDD
+        """
+        params = {
+            "frequency":  "monthly",
+            "data[0]":    "value",
+            "facets[seriesId][]": "ZWHDPUS",
+            "sort[0][column]": "period",
+            "sort[0][direction]": "asc",
+            "offset": 0,
+            "length": 5000,
+        }
+        if start:
+            params["start"] = start
+        if end:
+            params["end"] = end
+
+        response = self._get("/steo/data/", params)
+        return self._parse_response(
+            response,
+            series_id="STEO.ZWHDPUS.M",
+            series_name="US Heating Degree Days",
+            unit="Degree Days",
+        )
+
+    def fetch_cooling_degree_days(
+        self,
+        start: Optional[str] = "2000-01",
+        end: Optional[str] = None,
+    ) -> pd.DataFrame:
+        """
+        Fetches monthly US population-weighted Cooling Degree Days (CDD).
+
+        Higher CDD = hotter month = more air conditioning = more electricity
+        demand = power plants burn more gas = upward pressure on gas prices.
+        The primary summer demand signal for gas.
+
+        Returns:
+            DataFrame with monthly US-average CDD
+        """
+        params = {
+            "frequency":  "monthly",
+            "data[0]":    "value",
+            "facets[seriesId][]": "ZWCDPUS",
+            "sort[0][column]": "period",
+            "sort[0][direction]": "asc",
+            "offset": 0,
+            "length": 5000,
+        }
+        if start:
+            params["start"] = start
+        if end:
+            params["end"] = end
+
+        response = self._get("/steo/data/", params)
+        return self._parse_response(
+            response,
+            series_id="STEO.ZWCDPUS.M",
+            series_name="US Cooling Degree Days",
+            unit="Degree Days",
+        )
+
     # ── Convenience method — fetch everything at once ─────────────────────────
 
     def fetch_all_petroleum(self, start: str = "2000-01") -> dict[str, pd.DataFrame]:
@@ -461,3 +686,78 @@ class EIAClient:
         total_rows = sum(len(df) for df in results.values())
         logger.info(f"Natural gas fetch complete | total rows={total_rows}")
         return results
+    def fetch_opec_spare_capacity(
+        self,
+        start: Optional[str] = "2000-01",
+        end: Optional[str] = None,
+    ) -> pd.DataFrame:
+        """
+        Fetches monthly OPEC total spare crude oil production capacity.
+
+        Spare capacity = how much extra oil OPEC could bring online quickly.
+        LOW spare capacity = no cushion to absorb supply shocks = prices
+        become highly sensitive to disruptions (the early-2026 spike regime).
+        A key supply-side fragility signal. From EIA's STEO route.
+
+        Returns:
+            DataFrame with monthly OPEC spare capacity (million barrels/day)
+        """
+        params = {
+            "frequency":  "monthly",
+            "data[0]":    "value",
+            "facets[seriesId][]": "COPS_OPEC",
+            "sort[0][column]": "period",
+            "sort[0][direction]": "asc",
+            "offset": 0,
+            "length": 5000,
+        }
+        if start:
+            params["start"] = start
+        if end:
+            params["end"] = end
+
+        response = self._get("/steo/data/", params)
+        return self._parse_response(
+            response,
+            series_id="STEO.COPS_OPEC.M",
+            series_name="OPEC Spare Crude Capacity",
+            unit="Million Barrels per Day",
+        )
+
+    def fetch_global_oil_inventory(
+        self,
+        start: Optional[str] = "2000-01",
+        end: Optional[str] = None,
+    ) -> pd.DataFrame:
+        """
+        Fetches monthly total global commercial crude + liquids inventory.
+
+        Global end-of-period commercial inventories. LOW inventories = tight
+        market with little buffer = upward price pressure and shock sensitivity.
+        Complements the US-specific stock data with a worldwide view.
+        From EIA's STEO route.
+
+        Returns:
+            DataFrame with monthly global commercial inventory (million barrels)
+        """
+        params = {
+            "frequency":  "monthly",
+            "data[0]":    "value",
+            "facets[seriesId][]": "PASXPUS",
+            "sort[0][column]": "period",
+            "sort[0][direction]": "asc",
+            "offset": 0,
+            "length": 5000,
+        }
+        if start:
+            params["start"] = start
+        if end:
+            params["end"] = end
+
+        response = self._get("/steo/data/", params)
+        return self._parse_response(
+            response,
+            series_id="STEO.PASXPUS.M",
+            series_name="Global Commercial Oil Inventory",
+            unit="Million Barrels",
+        )

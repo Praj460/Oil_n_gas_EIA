@@ -1,0 +1,8 @@
+2026-06-19 00:27:08 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/feature_engineer.log
+2026-06-19 00:27:11 | INFO     | models.feature_engineer | _fill_edge_nulls:71 | Edge nulls forward-filled: 12 → 0 null cells
+2026-06-19 00:27:11 | INFO     | models.feature_engineer | transform:171 | Built 192 engineered features (total cols: 210)
+2026-06-19 00:27:11 | INFO     | models.feature_engineer | transform:172 | Scaled 207 numeric columns
+2026-06-22 20:19:30 | INFO     | config.logging_config | setup_logging:94 | Logging configured | level=DEBUG | file=logs/feature_engineer.log
+2026-06-22 20:19:30 | INFO     | models.feature_engineer | _fill_edge_nulls:71 | Edge nulls forward-filled: 12 → 0 null cells
+2026-06-22 20:19:30 | INFO     | models.feature_engineer | transform:171 | Built 192 engineered features (total cols: 210)
+2026-06-22 20:19:30 | INFO     | models.feature_engineer | transform:172 | Scaled 207 numeric columns

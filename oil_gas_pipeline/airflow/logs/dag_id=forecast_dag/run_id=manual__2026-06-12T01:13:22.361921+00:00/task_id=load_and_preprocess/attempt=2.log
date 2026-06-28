@@ -1,0 +1,22 @@
+[2026-06-14T19:04:06.702-0500] {taskinstance.py:1042} DEBUG - previous_execution_date was called
+[2026-06-14T19:04:06.758-0500] {taskinstance.py:1042} DEBUG - previous_execution_date was called
+[2026-06-14T19:04:06.761-0500] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-14T19:04:06.772-0500] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: forecast_dag.load_and_preprocess manual__2026-06-12T01:13:22.361921+00:00 [queued]>
+[2026-06-14T19:04:06.774-0500] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: forecast_dag.load_and_preprocess manual__2026-06-12T01:13:22.361921+00:00 [queued]>
+[2026-06-14T19:04:06.774-0500] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2026-06-14T19:04:06.778-0500] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): load_and_preprocess> on 2026-06-12 01:13:22.361921+00:00
+[2026-06-14T19:04:06.783-0500] {logging_mixin.py:188} WARNING - /Users/prajwalanand/Oil_n_gas/oil_gas_pipeline/venv/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=62665) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-06-14T19:04:06.784-0500] {standard_task_runner.py:63} INFO - Started process 62666 to run task
+[2026-06-14T19:04:06.783-0500] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'forecast_dag', 'load_and_preprocess', 'manual__2026-06-12T01:13:22.361921+00:00', '--job-id', '17', '--raw', '--subdir', 'DAGS_FOLDER/forecast_dag.py', '--cfg-path', '/var/folders/ms/f1knphyj7ql38tmz93dy8nlc0000gn/T/tmpg5sbhdft']
+[2026-06-14T19:04:06.785-0500] {standard_task_runner.py:91} INFO - Job 17: Subtask load_and_preprocess
+[2026-06-14T19:04:06.797-0500] {taskinstance.py:1042} DEBUG - previous_execution_date was called
+[2026-06-14T19:04:06.799-0500] {task_command.py:426} INFO - Running <TaskInstance: forecast_dag.load_and_preprocess manual__2026-06-12T01:13:22.361921+00:00 [running]> on host prajwals-macbook-air.local
+[2026-06-14T19:04:06.799-0500] {settings.py:363} DEBUG - Disposing DB connection pool (PID 62666)
+[2026-06-14T19:04:06.799-0500] {settings.py:250} DEBUG - Setting up DB connection pool (PID 62666)
+[2026-06-14T19:04:06.799-0500] {settings.py:298} DEBUG - settings.prepare_engine_args(): Using NullPool
+[2026-06-14T19:04:06.807-0500] {taskinstance.py:1042} DEBUG - previous_execution_date was called
+[2026-06-14T19:04:06.819-0500] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='oil_gas_pipeline' AIRFLOW_CTX_DAG_ID='forecast_dag' AIRFLOW_CTX_TASK_ID='load_and_preprocess' AIRFLOW_CTX_EXECUTION_DATE='2026-06-12T01:13:22.361921+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-12T01:13:22.361921+00:00'
+[2026-06-14T19:04:06.820-0500] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-14T19:04:21.788-0500] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-06-14T19:04:21.797-0500] {process_utils.py:132} INFO - Sending 15 to group 62666. PIDs of all processes in the group: [62666]
+[2026-06-14T19:04:21.797-0500] {process_utils.py:87} INFO - Sending the signal 15 to group 62666
